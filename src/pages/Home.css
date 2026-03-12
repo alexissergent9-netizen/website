@@ -1,87 +1,59 @@
-.home-page {
+/* Home Page - Estilos específicos */
+
+.home-container {
   width: 100%;
-  min-height: 60vh;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.featured-work {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  padding: 40px 0;
+.home-main-content {
+  background-color: #f5f5f5;
+  padding: 15px 15px 20px;
+  overflow: hidden;
+  font-size: 12px;
+  text-align: center;
 }
 
-.featured-image {
-  width: 100%;
-  max-width: 900px;
+.home-main-content img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
   height: auto;
-  object-fit: contain;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.featured-caption {
-  text-align: center;
-  max-width: 900px;
+.home-img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.featured-caption h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
+.home-caption {
+  display: block;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   color: #333;
-}
-
-.work-year,
-.work-medium,
-.work-dimensions {
-  font-size: 14px;
-  color: #666;
-  margin: 5px 0;
-}
-
-.home-default {
-  padding: 60px 20px;
+  font-size: 12px;
   text-align: center;
 }
 
-.home-hero {
-  margin-bottom: 40px;
-}
-
-.home-hero h1 {
-  font-size: 48px;
-  letter-spacing: 3px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.home-subtitle {
-  font-size: 18px;
-  color: #666;
-  font-style: italic;
-}
-
-.home-description {
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.8;
-  color: #555;
-  font-size: 16px;
-}
-
-@media (max-width: 768px) {
-  .home-hero h1 {
-    font-size: 32px;
+/* Responsive breakpoints */
+@media (min-width: 768px) {
+  .home-container {
+    width: 750px;
   }
+}
 
-  .home-subtitle {
-    font-size: 16px;
+@media (min-width: 992px) {
+  .home-container {
+    width: 970px;
   }
+}
 
-  .featured-caption h2 {
-    font-size: 20px;
-  }
-
-  .home-description {
-    font-size: 14px;
+@media (min-width: 1200px) {
+  .home-container {
+    width: 1170px;
   }
 }

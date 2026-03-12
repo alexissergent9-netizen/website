@@ -1,0 +1,15 @@
+/* Footer - Estilos específicos */
+
+.footer-nav {
+  border-top-width: 11px;
+  border-top-style: solid;
+  border-top-color: #ae2a5e;
+  color: #ae2a5e;
+  font-size: 10px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
