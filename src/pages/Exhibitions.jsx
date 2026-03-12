@@ -25,93 +25,121 @@ function Exhibitions() {
     }
   }
 
+  const getTypeLabel = () => {
+    return type.charAt(0).toUpperCase() + type.slice(1)
+  }
+
   if (loading) {
     return <Loading />
   }
 
   return (
-    <div className="exhibitions-page">
-      <div className="exhibitions-header">
-        <h1>EVENTS & EXHIBITIONS</h1>
-        <div className="exhibition-tabs">
+    <div className="exhibitions-container">
+      {/* Breadcrumb */}
+      <ol className="exhibitions-breadcrumb">
+        <li className="title">
+          <Link to="/exhibitions/current">EVENTS & EXHIBITIONS</Link>
+        </li>
+        <li className="title">
+          <Link to={`/exhibitions/${type}`}>{getTypeLabel().toUpperCase()}</Link>
+        </li>
+      </ol>
+
+      {/* Sub Navigation */}
+      <ol className="exhibitions-subnav">
+        <li>
           <Link 
             to="/exhibitions/current" 
-            className={`tab ${type === 'current' ? 'active' : ''}`}
+            className={type === 'current' ? 'active' : ''}
           >
-            current
+            CURRENT
           </Link>
-          <span className="tab-separator">/</span>
+        </li>
+        <li>
           <Link 
             to="/exhibitions/past" 
-            className={`tab ${type === 'past' ? 'active' : ''}`}
+            className={type === 'past' ? 'active' : ''}
           >
-            past
+            PAST
           </Link>
-          <span className="tab-separator">/</span>
+        </li>
+        <li>
           <Link 
             to="/exhibitions/upcoming" 
-            className={`tab ${type === 'upcoming' ? 'active' : ''}`}
+            className={type === 'upcoming' ? 'active' : ''}
           >
-            upcoming
+            UPCOMING
           </Link>
-        </div>
-      </div>
+        </li>
+      </ol>
 
-      {exhibitions.length === 0 ? (
-        <div className="no-exhibitions">
-          <p>No {type} exhibitions available.</p>
-          <p className="hint">Add exhibitions to the Google Sheets with appropriate dates.</p>
-        </div>
-      ) : (
-        <div className="exhibitions-list">
-          {exhibitions.map((exhibition, index) => (
-            <div key={index} className="exhibition-card">
-              {exhibition.imageUrl && (
-                <div className="exhibition-image-container">
-                  <img 
-                    src={exhibition.imageUrl} 
-                    alt={exhibition.title} 
-                    className="exhibition-image" 
-                  />
+      <hr className="exhibitions-divider" />
+
+      {/* Main Content */}
+      <main className="exhibitions-main">
+        <article className="exhibitions-main-content">
+          {exhibitions.length === 0 ? (
+            <div className="no-exhibitions">
+              <p>No {type} exhibitions available.</p>
+            </div>
+          ) : (
+            exhibitions.map((exhibition, index) => (
+              <div key={index} className="exhibition-row">
+                <div className="exhibition-image-column">
+                  {exhibition.imageUrl && (
+                    <>
+                      <img 
+                        src={exhibition.imageUrl} 
+                        alt={exhibition.title} 
+                        className="exhibition-img" 
+                      />
+                      {exhibition.description && (
+                        <figure>{exhibition.description}</figure>
+                      )}
+                    </>
+                  )}
                 </div>
-              )}
-              <div className="exhibition-content">
-                <h2 className="exhibition-title">{exhibition.title}</h2>
-                <div className="exhibition-details">
-                  <p className="venue">{exhibition.venue}</p>
-                  <p className="location">{exhibition.location}</p>
-                  {exhibition.startDate && exhibition.endDate && (
-                    <p className="dates">
-                      {new Date(exhibition.startDate).toLocaleDateString('en-US', { 
-                        day: 'numeric', 
-                        month: 'long', 
-                        year: 'numeric' 
-                      })} - {new Date(exhibition.endDate).toLocaleDateString('en-US', { 
-                        day: 'numeric', 
-                        month: 'long', 
-                        year: 'numeric' 
-                      })}
+                <div className="exhibition-text-column">
+                  <div className="exhibition-vertical-center">
+                    <h3>{exhibition.title}</h3>
+                    <p className="exhibition-location">
+                      <b>{exhibition.location}</b>
                     </p>
-                  )}
-                  {exhibition.description && (
-                    <p className="description">{exhibition.description}</p>
-                  )}
-                  {exhibition.websiteUrl && (
-                    <a 
-                      href={exhibition.websiteUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="exhibition-link"
-                    >
-                      Visit Website
-                    </a>
-                  )}
+                    {exhibition.startDate && (
+                      <p className="exhibition-dates">
+                        <b>
+                          {new Date(exhibition.startDate).toLocaleDateString('en-US', { 
+                            day: 'numeric', 
+                            month: 'long', 
+                            year: 'numeric' 
+                          })}
+                          {exhibition.endDate && (
+                            <> - {new Date(exhibition.endDate).toLocaleDateString('en-US', { 
+                              day: 'numeric', 
+                              month: 'long', 
+                              year: 'numeric' 
+                            })}</>
+                          )}
+                        </b>
+                      </p>
+                    )}
+                    {exhibition.url && (
+                      <a 
+                        href={exhibition.url} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="exhibition-link"
+                      >
+                        {new URL(exhibition.url).hostname.replace('www.', '')}
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-      )}
+            ))
+          )}
+        </article>
+      </main>
     </div>
   )
 }
