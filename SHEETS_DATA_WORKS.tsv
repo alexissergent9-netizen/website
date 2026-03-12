@@ -1,17 +1,1054 @@
-title	category	subcategory	year	medium	dimensions	description	imageUrl	available
-The Entrance	paintings		2019	acrylic on 2 canvases	36 x 96 in. overall	The Entrance, 2019		yes
-A Bigger Splash	paintings		1967	acrylic on canvas	96 x 96 in.	One of Hockney's most iconic works depicting a sunlit swimming pool		yes
-Portrait of an Artist (Pool with Two Figures)	paintings		1972	acrylic on canvas	84 x 120 in.	Double portrait with swimming pool		yes
-My Parents	paintings		1977	oil on canvas	72 x 72 in.	Portrait of Hockney's parents		yes
-Mr and Mrs Clark and Percy	paintings		1970-71	acrylic on canvas	84 x 120 in.	Double portrait with cat		yes
-Pearblossom Highway	photos	photographic-collages	1986	photographic collage	47 x 62 in.	Iconic photographic collage of California highway		yes
-The Grand Canyon	drawings		1982	colored pencil on paper	24 x 36 in.	Drawing of the Grand Canyon		yes
-Self-Portrait with Blue Guitar	graphics	etchings	1977	etching	14 x 11 in.	Self-portrait inspired by Picasso		yes
-Yosemite No. 1	digital	ipad	2010	iPad drawing		Digital drawing of Yosemite landscape		yes
-The Arrival of Spring	digital	ipad	2011	iPad drawing		Series of iPad drawings depicting spring in Yorkshire		yes
-Woldgate Woods	digital	ipad	2006	iPad drawing		Digital landscape of Yorkshire woods		yes
-iPhone Drawing No. 1	digital	iphone	2009	iPhone drawing		Early iPhone artwork		yes
-A Rake's Progress: The Arrival	graphics	rakes-progress-etchings	1961-63	etching	12 x 16 in.	First plate from A Rake's Progress series		yes
-The Blue Guitar: Old Guitarist	graphics	blue-guitar-etchings	1976-77	etching	16 x 20 in.	From The Blue Guitar series		yes
-Paper Pools	etcetera	pools	1978	paper pulp	various	Series of swimming pool works in paper pulp		yes
-BMW Art Car	etcetera	bmw	1995	acrylic on BMW 850 CSi		Hockney's contribution to the BMW Art Car Project		no
+title	category	subcategory	year	medium	dimensions	imageUrl
+Self Portrait	paintings		1951	Oil on paper	12 3/8 x 8 1/2 in	https://www.hockney.com/img/gallery/paintings/50s/51A01.jpg
+Still Life with Bowl of Fruit	paintings		1951	Oil on paper	9 3/4 x 11 1/8 in	https://www.hockney.com/img/gallery/paintings/50s/51A02.jpg
+Tunwell Lane	paintings		1957	Oil on canvas	29 x 36 in	https://www.hockney.com/img/gallery/paintings/50s/53A01.jpg
+Self Portrait	paintings		1954	Oil on board	18 x 14 in	https://www.hockney.com/img/gallery/paintings/50s/54A13.jpg
+Portrait of My Father	paintings		1955	Oil on canvas	20 x 16 in	https://www.hockney.com/img/gallery/paintings/50s/55A01.jpg
+Composition in Yellow and Orange	paintings		1955	Oil on plywood, battened	30 x 22 in	https://www.hockney.com/img/gallery/paintings/50s/55A04.jpg
+Self Portrait	paintings		1955	Oil on plywood	24 x 18 in	https://www.hockney.com/img/gallery/paintings/50s/55A06.jpg
+Abstraction	paintings		1955	Oil on hardboard	48 x 32 in	https://www.hockney.com/img/gallery/paintings/50s/55A08.jpg
+Bolton Junction, Eccleshill	paintings		1956	Oil on board	48 x 40 in	https://www.hockney.com/img/gallery/paintings/50s/56A01.jpg
+Landscape	paintings		1956	1957 - Oil on board	15 1/8 x 23 3/4 in	https://www.hockney.com/img/gallery/paintings/50s/56A11.jpg
+Moorside Road, Fagley	paintings		1956	Oil on canvas	19 1/4 x 28 in	https://www.hockney.com/img/gallery/paintings/50s/56A12.jpg
+Labor Omnia Vincit	paintings		1956	1957 - Oil on board	71 3/4 x 47 3/4 in	https://www.hockney.com/img/gallery/paintings/50s/56A13.jpg
+Bolton Junction, Eccleshill, Bradford	paintings		1956	Oil on canvas	24 x 18 in	https://www.hockney.com/img/gallery/paintings/50s/56A21.jpg
+Nude	paintings		1957	Oil on board	48 x 72 1/2 in	https://www.hockney.com/img/gallery/paintings/50s/57A19.jpg
+Hen Run, Eccleshill	paintings		1954	Oil on board	23 1/2 x 29 in	https://www.hockney.com/img/gallery/paintings/50s/57A25.jpg
+Builders	paintings		1954	Oil on board	19 7/8 x 30 in	https://www.hockney.com/img/gallery/paintings/50s/57A26.jpg
+Roadmenders, Eccleshill	paintings		1957	Oil on canvas stretched over board	48 x 33 1/4 in	https://www.hockney.com/img/gallery/paintings/50s/57A29.jpg
+A Study of Trees in a Landscape	paintings		1957	Oil on board	17 x 21 in	https://www.hockney.com/img/gallery/paintings/50s/57A34.jpg
+The Village Street, Kirton, near Felixstowe, Suffolk	paintings		1957	Oil on board	16 x 24 in	https://www.hockney.com/img/gallery/paintings/50s/57A38.jpg
+American Collectors (Fred & Marcia Weisman)	paintings		1968	acrylic on canvas	84x120 in.	https://www.hockney.com/img/gallery/paintings/60s/68A21.jpg
+A Bigger Splash	paintings		1967	acrylic on canvas	96x96 in.	https://www.hockney.com/img/gallery/paintings/60s/67A34.jpg
+A Lawn Being Sprinkled	paintings		1967	acrylic on canvas	60x60 in.	https://www.hockney.com/img/gallery/paintings/60s/67A01.jpg
+The Room, Manchester Street	paintings		1967	acrylic	96x96 in.	https://www.hockney.com/img/gallery/paintings/60s/67A33.jpg
+Beverly Hills Housewife	paintings		1966	acrylic on 2 canvas	72x144 in.	https://www.hockney.com/img/gallery/paintings/60s/66B18.jpg
+Portrait of Nick Wilder	paintings		1966	acrylic on canvas	72x72 in.	https://www.hockney.com/img/gallery/paintings/60s/66B24.jpg
+Peter Getting Out of Nick’s Pool	paintings		1966	acrylic on canvas	84x84 in.	https://www.hockney.com/img/gallery/paintings/60s/66B21.jpg
+Man In Shower in Beverly Hills	paintings		1964	acrylic on canvas	65 1/2 x 65 1/2 in.	https://www.hockney.com/img/gallery/paintings/60s/64A31.jpg
+California Art Collector	paintings		1964	acrylic on canvas	60x72 in.	https://www.hockney.com/img/gallery/paintings/60s/64A30.jpg
+Building Pershing Square	paintings		1964	oil on canvas	58x58 in.	https://www.hockney.com/img/gallery/paintings/60s/64A32.jpg
+Picture of a Hollywood Swimming Pool	paintings		1964	acrylic on canvas	36x48 in.	https://www.hockney.com/img/gallery/paintings/60s/64A34.jpg
+Domestic Scene, Los Angeles	paintings		1963	oil on canvas	60x60 in.	https://www.hockney.com/img/gallery/paintings/60s/63A37.jpg
+Play Within A Play	paintings		1963	oil on canvas and plexi	72x78 in.	https://www.hockney.com/img/gallery/paintings/60s/63A18.jpg
+First Marriage (A Marriage of Styles 1)	paintings		1962	oil on canvas	70x60 in.	https://www.hockney.com/img/gallery/paintings/60s/62A13.jpg
+Grand Procession of Dignitaries n the Semi-Egyptian Style	paintings		1961	oil on canvas	84x144 in.	https://www.hockney.com/img/gallery/paintings/60s/61A42.jpg
+The Cha Cha That Was Danced in The Early Hours of 24th March, 1961	paintings			oil on canvas	68x60 1/2 in.	https://www.hockney.com/img/gallery/paintings/60s/61B07.jpg
+We two Boys Together Clinging Together	paintings		1961	oil on board	48x60 in.	https://www.hockney.com/img/gallery/paintings/60s/61B04.jpg
+Doll Boy	paintings		1960	oil on canvas	48x39 in.	https://www.hockney.com/img/gallery/paintings/60s/61B13.jpg
+Adhesiveness	paintings		1960	oil on board	50x40 in.	https://www.hockney.com/img/gallery/paintings/60s/60A37.jpg
+Going To Be A Queen For Tonight	paintings		1960	oil on board	48x36 in.	https://www.hockney.com/img/gallery/paintings/60s/60B02.jpg
+Divine	paintings		1979	acrylic on canvas	60x60 in.	https://www.hockney.com/img/gallery/paintings/70s/79G35.jpg
+Santa Monica Boulevard	paintings		1979	acrylic on canvas	24x36 in.	https://www.hockney.com/img/gallery/paintings/70s/79G38.jpg
+Schwimmbad Mitternacht  (Paper Pool 11)	paintings		1978	colored and pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/paintings/70s/78C34.jpg
+A Large Diver  (Paper Pool 27)	paintings		1978	colored and pressed paper pulp	72x171 in.	https://www.hockney.com/img/gallery/paintings/70s/78C35.jpg
+Looking At Pictures On A Screen	paintings		1977	oil on canvas	74x74 in.	https://www.hockney.com/img/gallery/paintings/70s/77B36.jpg
+My Parents	paintings		1977	oil on canvas	72x72 in.	https://www.hockney.com/img/gallery/paintings/70s/77B37.jpg
+Model With Unfinished Self-Portrait	paintings		1977	oil on canvas	60x60 in.	https://www.hockney.com/img/gallery/paintings/70s/77B35.jpg
+Self-Portrait With Blue Guitar	paintings		1977	oil on canvas	60x72 in.	https://www.hockney.com/img/gallery/paintings/70s/77B34.jpg
+Invented Man Revealing Still Life	paintings		1975	oil on canvas	36x28 1/2 in.	https://www.hockney.com/img/gallery/paintings/70s/75C05.jpg
+Kerby (After Hogart) Useful Knowledge	paintings		1975	oil on canvas	72x60 in.	https://www.hockney.com/img/gallery/paintings/70s/75C04.jpg
+Shirley Goldfarb & Gregory Masurovsky	paintings		1974	acrylic on canvas	45x84 in.	https://www.hockney.com/img/gallery/paintings/70s/74B01.jpg
+Contre-Jour in the French Style-Against the day Dans Le Style-Francais	paintings		1974	oil on canvas	72x72 in.	https://www.hockney.com/img/gallery/paintings/70s/74D37.jpg
+Yves Marie in the Rain	paintings		1973	oil on canvas	48x60 in.	https://www.hockney.com/img/gallery/paintings/70s/73B06.jpg
+Mt. Fuji and Flowers	paintings		1972	acrylic on canvas	60x48 in.	https://www.hockney.com/img/gallery/paintings/70s/72A25.jpg
+Portrait of an Artist (Pool with two figures)	paintings		1972	acrylic on canvas	84x120 in.	https://www.hockney.com/img/gallery/paintings/70s/72A33.jpg
+Two deck chairs, Calvi	paintings		1972	acrylic on canvas	60x48 in.	https://www.hockney.com/img/gallery/paintings/70s/72A27.jpg
+Still Life On a Glass Table	paintings		1971	acrylic on canvas	72x108 in.	https://www.hockney.com/img/gallery/paintings/70s/71A21.jpg
+Beach Umbrella	paintings		1971	acrylic on canvas	48x35 3/4 in.	https://www.hockney.com/img/gallery/paintings/70s/71A17.jpg
+Rubber Ring Floating In a Swimming Pool	paintings		1971	acrylic on canvas	36x48 in.	https://www.hockney.com/img/gallery/paintings/70s/71A19.jpg
+Mr. and Mrs. Clark and Percy	paintings		1970	71 - acrylic on canvas	84x120 in.	https://www.hockney.com/img/gallery/paintings/70s/70A34.jpg
+Under and Out of the Arch	paintings		1989	oil on canvas	24x36 in.	https://www.hockney.com/img/gallery/paintings/80s/89N35.jpg
+Breakfast At Malibu, Sunday	paintings		1989	oil on canvas	24x36 in.	https://www.hockney.com/img/gallery/paintings/80s/89B12.jpg
+Malibu House	paintings		1988	oil on canvas	24x36 in.	https://www.hockney.com/img/gallery/paintings/80s/88D01.jpg
+Potted Jade, 1988 oil on canvas,	paintings		1988	oil on canvas	30 1/2 x 61 in.	https://www.hockney.com/img/gallery/paintings/80s/88A36.jpg
+The Sea At Malibu	paintings		1988	oil on canvas	36x48 in.	https://www.hockney.com/img/gallery/paintings/80s/88B15.jpg
+Red And Black Fruit	paintings		1988	oil on canvas	12x24 in.	https://www.hockney.com/img/gallery/paintings/80s/88B30.jpg
+Henry	paintings		1988	oil on canvas	24x24 in.	https://www.hockney.com/img/gallery/paintings/80s/88B16.jpg
+Kasmin	paintings		1988	oil	24x24 in.	https://www.hockney.com/img/gallery/paintings/80s/88B25.jpg
+Livingroom at Malibu With View	paintings		1988	oil on canvas	24x36 in.	https://www.hockney.com/img/gallery/paintings/80s/88D02.jpg
+Used Chair	paintings		1988	oil on canvas	24x36 in.	https://www.hockney.com/img/gallery/paintings/80s/88B13.jpg
+Green and Blue Plant	paintings		1987	acrylic on canvas	24x36 in.	https://www.hockney.com/img/gallery/paintings/80s/87J04.jpg
+A Walk Around the Hotel Courtyard, Acatlan	paintings		1985	oil on 2 canvases	72x240 in.	https://www.hockney.com/img/gallery/paintings/80s/85A05.jpg
+The Chair	paintings		1985	oil on canvas	48x36 in.	https://www.hockney.com/img/gallery/paintings/80s/85A04.jpg
+Celia With Her Foot on a Chair	paintings		1984	oil on canvas	30 1/4 x 22 5/8 in.	https://www.hockney.com/img/gallery/paintings/80s/84G30.jpg
+Study of Dining Table, Chris & Don’s House	paintings		1984	oil on canvas	57x43 in.	https://www.hockney.com/img/gallery/paintings/80s/84H05.jpg
+Christopher With His Glasses On	paintings		1984	oil	30 1/2 x 22 7/8 in.	https://www.hockney.com/img/gallery/paintings/80s/84H06.jpg
+David, Celia, Stephan and Ian, London	paintings		1982	oil on 8 canvases	72x80 in.	https://www.hockney.com/img/gallery/paintings/80s/82B26.jpg
+Hollywood Hills House	paintings		1981-82	oil, charcoal & collage on canvas	60x120 in.	https://www.hockney.com/img/gallery/paintings/80s/82A21.jpg
+Mulholland Drive: The Road to the Studio	paintings		1980	acrylic on canvas	86x243 in.	https://www.hockney.com/img/gallery/paintings/80s/80A34.jpg
+Nichols Canyon	paintings		1980	acrylic on canvas	84x60 in.	https://www.hockney.com/img/gallery/paintings/80s/80A37.jpg
+Ken  Wathey  January 3 1997, 1997  oil on canvas,	paintings		1997	oil on canvas	24x15 in.	https://www.hockney.com/img/gallery/paintings/80s/97A07.jpg
+Jonathan Silver  February 27 1996	paintings				13 3/4 x 10 3/4 in.	https://www.hockney.com/img/gallery/paintings/80s/97A29.jpg
+Gregory Evans  January 20	paintings		1997	oil on canvas	13 3/4 x 10 3/4 in.	https://www.hockney.com/img/gallery/paintings/80s/97A10.jpg
+Halaconia In Green Vase	paintings		1996	oil on canvas	72x72 in.	https://www.hockney.com/img/gallery/paintings/80s/96B41.jpg
+Three Sunflowers And A Bottle of Water	paintings		1996	oil on canvas	25 3/4 x 32 in.	https://www.hockney.com/img/gallery/paintings/80s/96B28.jpg
+Red, Purple & Green Vegetables	paintings		1996	oil on canvas	25 3/4 x 32 in.	https://www.hockney.com/img/gallery/paintings/80s/96B09.jpg
+A Bigger Bridlington Studio Interior	paintings		1996	oil on canvas	32x48 in.	https://www.hockney.com/img/gallery/paintings/80s/96B12.jpg
+Antheriums	paintings		1995	oil on canvas	36x48 in.	https://www.hockney.com/img/gallery/paintings/80s/95F14.jpg
+Dog Painting 17	paintings		1995	oil on canvas	13x21 3/4 in.	https://www.hockney.com/img/gallery/paintings/80s/95C14.jpg
+Snails Space with Vari-lites, “Painting as Performance”	paintings		1995-96	mixed media 84 1/4 x	264x135 in.	https://www.hockney.com/img/gallery/paintings/80s/96B13-2.jpg
+The Other Side	paintings		1990-93	oil on 2 canvases	72x132 in.	https://www.hockney.com/img/gallery/paintings/80s/93B01.jpg
+Light And Dark Getting Together	paintings		1991	oil on canvas	10 1/2 x16 1/2 in.	https://www.hockney.com/img/gallery/paintings/80s/91D19.jpg
+The Fourth V.N. Painting	paintings		1992	oil on canvas	24x24 in.	https://www.hockney.com/img/gallery/paintings/80s/92A09.jpg
+The Twenty Fourth  V.N. Painting	paintings		1992	oil on canvas	24x36 in.	https://www.hockney.com/img/gallery/paintings/80s/92A35.jpg
+The Only One With Waves	paintings		1997	oil on canvas	36x48 in.	https://www.hockney.com/img/gallery/paintings/80s/91D03.jpg
+What About The Caves	paintings		1991	oil on canvas	36x48 in.	https://www.hockney.com/img/gallery/paintings/80s/91D04.jpg
+John Fitzherbert	paintings		1990	oil on canvas	36x24 in.	https://www.hockney.com/img/gallery/paintings/80s/90C03.jpg
+The Railing	paintings		1990	oil on canvas	36x48 in.	https://www.hockney.com/img/gallery/paintings/80s/90E10.jpg
+Mum	paintings		1990	oil on canvas	36x24 in.	https://www.hockney.com/img/gallery/paintings/80s/90C04.jpg
+Small Santa Monica & The Bay From the Mountains	paintings		1990	oil on canvas	36x72 in.	https://www.hockney.com/img/gallery/paintings/80s/90E16.jpg
+Felled Totem I	paintings		2009	oil on canvas	60 X 72in.	https://www.hockney.com/img/gallery/paintings/00s/09A13.jpg
+May Blossom on the Roman Road	paintings		2009	oil on 8 canvases 72 X 192		https://www.hockney.com/img/gallery/paintings/00s/09A12.jpg
+Early Blossom, Woldgate	paintings		2009	oil on canvas 36 X 72		https://www.hockney.com/img/gallery/paintings/00s/09A03.jpg
+The Big Hawthorne	paintings		2008	oil on canvas, 9 panels	108 x 144 in.	https://www.hockney.com/img/gallery/paintings/00s/08A16.jpg
+Hawthorne Blossom Near Rudston	paintings		2008	oil on canvas, two panels	60 x 96 in.	https://www.hockney.com/img/gallery/paintings/00s/08A13.jpg
+More Felled Trees on Woldgate	paintings		2008	oil on canvas, two panels	60 x 96 in.	https://www.hockney.com/img/gallery/paintings/00s/08A09.jpg
+Three Trees Near Thixendale (Series of 4)	paintings			Spring 2008 - oil on canvas, 8 panels	72 x 192 in.	https://www.hockney.com/img/gallery/paintings/00s/08A08.jpg
+Bigger Trees Nearer Warter, Winter	paintings		2007	oil on canvas, six panels	108 x 144 in.	https://www.hockney.com/img/gallery/paintings/00s/08A01.jpg
+Woldgate Lane to Burton Agnes	paintings		2007	oil on canvas, two panels	48 x 72 in.	https://www.hockney.com/img/gallery/paintings/00s/07A05.jpg
+Bigger Trees Near Warter or/ou Peinture sur le Motif pour le Nouvel Age Post-Photographique	paintings		2007	oil on 50 canvases	180 x 480 in.	https://www.hockney.com/img/gallery/paintings/00s/07A04.jpg
+Wheatfields off Woldgate	paintings		2006	oil on canvas	36 x 48 in	https://www.hockney.com/img/gallery/paintings/00s/06A35.jpg
+Late Spring Tunnel	paintings			May 2006 - oil on canvas, two parts	48 x 72 in	https://www.hockney.com/img/gallery/paintings/00s/06A26.jpg
+Woldgate Woods III , May 20 & 21	paintings		2006	Oil on 6 canvases 72in x 144in		https://www.hockney.com/img/gallery/paintings/00s/06A23.jpg
+Woldgate Woods, 30 March-21 April	paintings		2006	Oil on 6 canvases 72in x 144in		https://www.hockney.com/img/gallery/paintings/00s/06A15.jpg
+Winter Tunnel with Snow	paintings			March 2006 - Oil on canvas	36x48in	https://www.hockney.com/img/gallery/paintings/00s/06A11.jpg
+The Photographer & His Daughter (Jim & Chloe McHugh)	paintings		2005	Oil on canvas	56x76 in.	https://www.hockney.com/img/gallery/paintings/00s/05A32.jpg
+Self Portrait with Charlie	paintings		2005	Oil on canvas	76x36 in.	https://www.hockney.com/img/gallery/paintings/00s/05A31.jpg
+Andalucia Mosque, Cordova	paintings		2004	Watercolor on 2 sheets of paper (	29 1/2 x 41 1/2 in.	https://www.hockney.com/img/gallery/paintings/00s/04A06.jpg
+Cactus Garden III	paintings		2003	Watercolor on paper (4 sheets)	39 7/8 x 51 1/2 in.	https://www.hockney.com/img/gallery/paintings/00s/03C31.jpg
+Interior With Lamp	paintings		2003	Watercolor on paper (6 sheets)	39 1/4 x 75 3/8 in	https://www.hockney.com/img/gallery/paintings/00s/03A32.jpg
+Tujfjord Nordkapp II	paintings		2002	Watercolor on paper (6 sheets)	36x72in	https://www.hockney.com/img/gallery/paintings/00s/02R30.jpg
+Lindy Dufferin I	paintings		2002	Watercolor on paper (2 sheets)	48x18 1/8 in.	https://www.hockney.com/img/gallery/paintings/00s/02U19.jpg
+Arcadia Fletcher and Robin Katz	paintings		2002	Watercolor on paper (4 sheets)	54 1/4 x 42 3/8 in.	https://www.hockney.com/img/gallery/paintings/00s/02U05.jpg
+Guest House Wall	paintings		2000	Oil on canvas	36x46in	https://www.hockney.com/img/gallery/paintings/00s/00G06.jpg
+Red Pots In The Garden	paintings		2000	Oil on canvas	60x76 in.	https://www.hockney.com/img/gallery/paintings/00s/00G03.jpg
+A Bigger Interior with Blue Terrace and Garden	paintings		2017	Acrylic on canvas	51 x 96 in	https://www.hockney.com/img/gallery/paintings/10s/17A05.jpg
+Birth and Copulation and Death. That’s all the facts when you come to brass tacks.	paintings		2017	Acrylic on canvas	50 x 96 in	https://www.hockney.com/img/gallery/paintings/10s/17A04.jpg
+Annunciation 2, after Fra Angelico	paintings		2017	Acrylic on canvas	49 x 96 in	https://www.hockney.com/img/gallery/paintings/10s/17A03.jpg
+Annunciation 1, Interior and Exterior with Flowers	paintings		2017	Acrylic on canvas	48 x 96 in	https://www.hockney.com/img/gallery/paintings/10s/17A02.jpg
+Interior with Blue Terrace and Garden	paintings		2017	Acrylic on canvas	48 x 96 in	https://www.hockney.com/img/gallery/paintings/10s/17A01.jpg
+Garden #3	paintings		2016	Acrylic on canvas	36 x 48 in	https://www.hockney.com/img/gallery/paintings/10s/16B01.jpg
+Chair with Banana and Fruit	paintings		2015	Acrylic on canvas	48 x 36 in	https://www.hockney.com/img/gallery/paintings/10s/15A17.jpg
+Garden with Blue Terrace	paintings		2015	Acrylic on canvas	48 x 72 in	https://www.hockney.com/img/gallery/paintings/10s/15A12.jpg
+The Chair	paintings		2015	Acrylic on canvas	48 x 36 in	https://www.hockney.com/img/gallery/paintings/10s/15A09.jpg
+Garden, 2015	paintings		2015	Acrylic on canvas	48 x 72 in	https://www.hockney.com/img/gallery/paintings/10s/15A08.jpg
+Studio Interior #4	paintings		2014-2015	Acrylic on canvas	72 x 48 in	https://www.hockney.com/img/gallery/paintings/10s/15A01.jpg
+Card Players #2	paintings		2014	Acrylic on canvas	48 x 72 in	https://www.hockney.com/img/gallery/paintings/10s/14B21.jpg
+Studio Interior #3	paintings		2014	Acrylic on canvas	48 x 72 in	https://www.hockney.com/img/gallery/paintings/10s/14B20.jpg
+Studio Interior #2	paintings		2014	Acrylic on canvas	48 x 72 in	https://www.hockney.com/img/gallery/paintings/10s/14B19.jpg
+Card Players #1	paintings		2014	Acrylic on canvas	48 x 72 in	https://www.hockney.com/img/gallery/paintings/10s/14B17.jpg
+The Dancers III, 13 August - 8 September	paintings		2014	Acrylic on canvas	48 x 72 in	https://www.hockney.com/img/gallery/paintings/10s/14B14.jpg
+Jean-Pierre Goncalves de Lima, 1 August	paintings		2014	Acrylic on canvas	24 x 24 in	https://www.hockney.com/img/gallery/paintings/10s/14B09.jpg
+Jonathan Mills, 30-31 July	paintings		2014	Acrylic on canvas	24 x 24 in	https://www.hockney.com/img/gallery/paintings/10s/14B08.jpg
+John Knight, 27-28 July	paintings		2014	Acrylic on canvas	24 x 24 in	https://www.hockney.com/img/gallery/paintings/10s/14B07.jpg
+The Group XI, 7-11 July	paintings		2014	Acrylic on canvas	48 x 72 in	https://www.hockney.com/img/gallery/paintings/10s/14B03.jpg
+The Group VII, 20-27 May	paintings		2014	Acrylic on canvas	48 x 72 in	https://www.hockney.com/img/gallery/paintings/10s/14A36.jpg
+The Group I, 31 March - 11 April	paintings		2014	Acrylic on 2 canvases (	48 x 36in	https://www.hockney.com/img/gallery/paintings/10s/14A26.jpg
+Douglas Baxter’s Back	paintings		2014	Acrylic on canvas	48 x 36 in	https://www.hockney.com/img/gallery/paintings/10s/14A10.jpg
+Bing McGilvray, 7-8 August	paintings		2013	Acrylic on canvas	24 x 16 in	https://www.hockney.com/img/gallery/paintings/10s/13C18.jpg
+Richard Schmidt	paintings		2013	Acrylic on canvas	28 x 22 in	https://www.hockney.com/img/gallery/paintings/10s/13C09.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven)	paintings		2011	Oil on 32 canvases (	36 x 48in	https://www.hockney.com/img/gallery/paintings/10s/11A03.jpg
+Queen Anne’s Lace near Kilham	paintings		2010	2011 - Oil on canvas	67 1/2 x 102 1/4 in	https://www.hockney.com/img/gallery/paintings/10s/10A18.jpg
+Early Spring, Woldgate	paintings		2010	Oil on canvas	67 1/2 x 102 1/4 in	https://www.hockney.com/img/gallery/paintings/10s/10A17.jpg
+The Sermon on the Mount X (after Claude)	paintings		2010	Oil on canvas	67 1/2 x 102 1/4 in	https://www.hockney.com/img/gallery/paintings/10s/10A10.jpg
+The Sermon on the Mount II (after Claude)	paintings		2010	Oil on canvas	67 1/2 x 102 1/4 in	https://www.hockney.com/img/gallery/paintings/10s/10A02.jpg
+J-P Gonçalves de Lima, 11th, 12th, 13th July 2013	paintings				48 x 36in	https://www.hockney.com/img/gallery/paintings/82portraits/13C10.jpg
+Bing McGilvray, 23rd, 24th, 25th August 2013	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/13C22.jpg
+Richard Sassin, 9th, 10th, 11th September 2013	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/13C24.jpg
+Douglas Roberts, 17th, 18th, 19th September 2013	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/13C26.jpg
+Greg Rose, 20th, 21st, 22nd September 2013	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/13C27.jpg
+Larry Gagosian, 28th, 29th September 2013	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/13C29.jpg
+Jonathan Mills, 1st, 2nd, 3rd October 2013	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/13C30.jpg
+George Snyder, 7th, 8th October 2013	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/13C31.jpg
+Joan Agajanian Quinn, 16th, 17th, 18th October 2013	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/13C32.jpg
+Kevin Druez, 28th, 29th, 30th October 2013	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/13C33.jpg
+Chloe McHugh, 9th, 10th, 11th November 2013	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/13C36.jpg
+Dr. Leon Banks, 12th, 13th, 15th November 2013	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/13C37.jpg
+David Stoltz, 16th, 17th, 19th November 2013	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/13C38.jpg
+Oliver Goulds, 25th, 26th, 27th November 2013	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/13C39.jpg
+Gregory Evans, 1st, 2nd, 3rd December 2013	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/13C40.jpg
+Martin Gayford, 4th, 5th, 6th December 2013	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/13C41.jpg
+Benedikt Taschen, 9th, 10th, 11th December 2013	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/13C42.jpg
+John Baldessari, 13th, 16th December 2013	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/13C44.jpg
+Bing McGilvray, 21st, 22nd, 23rd December 2013	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/13C45.jpg
+Peter Goulds, 31st December 2013, 1st, 2nd January 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A01.jpg
+Stephanie Barron, 7th, 8th, 9th January 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A02.jpg
+Dagny Corcoran, 15th, 16th, 17th January 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A03.jpg
+Jonathan Wilkinson, 19th, 20th, 21st January 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A04.jpg
+Kate Pynoos, 23rd, 24th, 25th January 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A05.jpg
+Avner Chaim, 27th, 28th, 29th January 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A06.jpg
+Merle Glick, 1st, 2nd, 3rd February 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A07.jpg
+Jacob Rothschild, 5th, 6th February 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A08.jpg
+Douglas Baxter, 8th, 9th, 10th February 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A09.jpg
+Ray Charles White, 12th, 13th, 14th February 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A11.jpg
+Sam Perlman, 15th, 16th February 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A12.jpg
+Jack Perlman, 17th, 18th February 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A13.jpg
+Ivan Schreiber, 24th, 25th, 26th February 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A14.jpg
+Rita Pynoos, 1st, 2nd March 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A15.jpg
+Jim McHugh, 3rd, 4th, 5th March 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A16.jpg
+Fruit on a Bench, 6th, 7th, 8th March 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A17.jpg
+Ayn Grinstein, 10th, 11th, 12th March 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A18.jpg
+Irving Blum, 17th, 18th, 19th March 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A19.jpg
+Brad Bontems, 22nd, 23rd, 24th March 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A20.jpg
+Paul Gray, 29th, 30th, 31st March 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A24.jpg
+Jackson McCoy, 4th, 5th, 6th April 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A27.jpg
+Arthur Lambert, 11th, 12th, 13th April 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A28.jpg
+Ian Gray, 3rd, 4th, 5th May 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A32.jpg
+Maurice Payne, 30th May, 1st, 2nd June 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A38.jpg
+Augustus and Perry Barringer, 16th, 17th June 2014	paintings				36 x 48 in	https://www.hockney.com/img/gallery/paintings/82portraits/14A40.jpg
+John Fitzherbert, 17th, 18th, 19th July 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14B04.jpg
+Oona Zlamany, 22nd, 23rd July 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14B05.jpg
+Gary Wood, 28th, 29th, 30th December 2014	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/14B24.jpg
+Doris Velasco, 5th, 6th January 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A02.jpg
+Julie Green, 11th, 12th, 13th January 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A03.jpg
+Jonathan Mills, 16th, 17th, 18th January 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A04.jpg
+Sir Norman Rosenthal, 30th, 31st January, 1st February 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A05.jpg
+Patricia Choxon, 23rd, 24th, 25th February 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A07.jpg
+David Juda, 22nd, 23rd, 25th March 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A10.jpg
+Barry Humphries, 26th, 27th, 28th March 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A11.jpg
+Charlie Scheips, 6th, 7th, 8th June 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A13.jpg
+Priscilla Velasco, 15th, 16th, 17th June 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A14.jpg
+Richard Benefield, 27th, 28th, 29th June 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A15.jpg
+Don Cribb, 3rd, 4th, 5th July 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A16.jpg
+Pierre Saint-Jean, 7th, 8th, 10th July 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A18.jpg
+Brian Hastings, 18th, 19th, 20th July 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A19.jpg
+Hunter Schmidt, 24th, 25th, 26th July 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A20.jpg
+Holden Schmidt, 27th, 28th, 29th July 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A21.jpg
+Liz Goulds, 3rd, 4th, 5th August 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A22.jpg
+Caroline Cushing Graham, 10th, 11th, 12th August 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A23.jpg
+Margaret Hockney, 14th, 15th, 16th August 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A24.jpg
+Pauline Ling, 20th, 21st, 22nd August 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A25.jpg
+Isabella Clark, 26th, 27th, 28th August 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A26.jpg
+Celia Birtwell, 31st August, 1st, 2nd September 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A28.jpg
+Andrew Palmer, 4th, 5th, 6th September 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A29.jpg
+Bing McGilvray, 28th, 29th, 30th September 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A31.jpg
+Alex Calderon, 5th, 6th, 7th October 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A32.jpg
+Didier Ottinger, 21st, 22nd, 23rd October 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A34.jpg
+Rufus Hale, 23rd, 24th, 25th November 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A35.jpg
+Matthias Weischer, 9th, 10th, 11th December 2015	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/15A36.jpg
+Helen Hockney, 1st, 2nd, 3rd, 4th, 5th January 2016	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/16A01.jpg
+John Hockney, 1st, 2nd, 3rd, 4th, 5th January 2016	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/16A02.jpg
+J-P Gonçalves de Lima, 15th, 16th, 17th January 2016	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/16A03.jpg
+Hans Werner Holzwarth, 25th, 26th, 27th January 2016	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/16A04.jpg
+Dominique Deroche, 4th, 5th, 6th February 2016	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/16A05.jpg
+Edith Devaney, 11th, 12th, 13th February 2016	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/16A06.jpg
+Frank Gehry, 24th, 25th February 2016	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/16A07.jpg
+Earl Simms, 29th February, 1st, 2nd March 2016	paintings				48 x 36 in	https://www.hockney.com/img/gallery/paintings/82portraits/16A08.jpg
+Fruhe Zeichnung	drawings		1959	charcoal on paper	22x14 1/2 in.	https://www.hockney.com/img/gallery/drawings/50s/59A20.jpg
+Skeleton II	drawings		1959	charcoal	15 5/8 x 22 in.	https://www.hockney.com/img/gallery/drawings/50s/59A18.jpg
+Male Nude Crossed Legged	drawings		1957	pencil	15x22 in.	https://www.hockney.com/img/gallery/drawings/50s/57A04.jpg
+Musician	drawings		1956	pencil on paper	9 1/2 x 6 5/8 in.	https://www.hockney.com/img/gallery/drawings/50s/56A07.jpg
+Seated Nude	drawings		1954	indian ink	23 1/4 x11 in	https://www.hockney.com/img/gallery/drawings/50s/54A12.jpg
+Self Portrait	drawings		1954	pencil on paper	15x11 in.	https://www.hockney.com/img/gallery/drawings/50s/54A02.jpg
+Self Portrait Study	drawings		1954	pencil on paper	14x10 in.	https://www.hockney.com/img/gallery/drawings/50s/54A01.jpg
+Skeleton	drawings		1959	charcoal	15 5/8 x 22 in.	https://www.hockney.com/img/gallery/drawings/50s/59A17.jpg
+Charles Alan	drawings		1969	ink on paper	17x14 in.	https://www.hockney.com/img/gallery/drawings/50s/69A25.jpg
+Sheridan Sleeping and Cushion	drawings		1968	ink	14x17 in.	https://www.hockney.com/img/gallery/drawings/50s/68A04.jpg
+Bob and Betsy Miller	drawings		1968	pencil and colored pencil	14x17 in.	https://www.hockney.com/img/gallery/drawings/50s/68B02.jpg
+Peter on a Bed	drawings		1968	pen and ink	13 3/4 x17 in.	https://www.hockney.com/img/gallery/drawings/50s/68A29.jpg
+Mo	drawings		1967	pencil and crayon on paper		https://www.hockney.com/img/gallery/drawings/50s/67B24.jpg
+1059 Balboa Blvd.	drawings		1967	colored crayon on paper	14x17 in.	https://www.hockney.com/img/gallery/drawings/50s/67B16.jpg
+Peter Seated, Half Nude	drawings		1966	pencil	17x14 in.	https://www.hockney.com/img/gallery/drawings/50s/66B01.jpg
+Study of Water in a Pool	drawings		1966	pencil and colored pencil on paper	17 x 14 in.	https://www.hockney.com/img/gallery/drawings/50s/66C12.jpg
+Bedroom	drawings		1966	pencil and colored crayon on paper	14x17 in.	https://www.hockney.com/img/gallery/drawings/50s/66C15.jpg
+Lawn Sprinkler	drawings		1966	colored crayon on paper	14x17 in.	https://www.hockney.com/img/gallery/drawings/50s/66A41.jpg
+Swimming Pool and Garden	drawings		1965	pencil and colored crayon on paper	19 x 24 in.	https://www.hockney.com/img/gallery/drawings/50s/65B04.jpg
+Cubistic Tree	drawings		1965	colored crayon on paper	14x16 3/4 in.	https://www.hockney.com/img/gallery/drawings/50s/65B05.jpg
+Pershing Square, Study I	drawings		1964	Pencil	10 3/4 x 13 3/4 in.	https://www.hockney.com/img/gallery/drawings/50s/64A35.jpg
+Nude Boy, Los Angeles	drawings		1964		12 1/4x10 in.	https://www.hockney.com/img/gallery/drawings/50s/64B07.jpg
+Evil Man	drawings		1963	crayon on paper	20x12 in.	https://www.hockney.com/img/gallery/drawings/50s/63A17.jpg
+Man With Blue Eye	drawings		1961	watercolor and crayon on paper	20x16 in.	https://www.hockney.com/img/gallery/drawings/50s/61A02.jpg
+Fuck (My Brother)	drawings		1961	charcoal on paper	20x16 in.	https://www.hockney.com/img/gallery/drawings/50s/61A09.jpg
+Fuck (Cunt)	drawings		1961	ink on paper	16x20 in.	https://www.hockney.com/img/gallery/drawings/50s/61A10.jpg
+Typhoo Tea	drawings		1961	charcoal on paper	20x16 in.	https://www.hockney.com/img/gallery/drawings/50s/61A01.jpg
+Work After Ford Maddox Brown III	drawings		1961	charcoal	20x16 in.	https://www.hockney.com/img/gallery/drawings/50s/61A05.jpg
+Gregory	drawings		1978	crayon on paper	17x14 in.	https://www.hockney.com/img/gallery/drawings/50s/78B36.jpg
+The Luxor Hotel	drawings		1978	colored crayon	14x17 in.	https://www.hockney.com/img/gallery/drawings/50s/78B15.jpg
+Study of Water	drawings		1976	crayon on paper	18x19 5/8 in.	https://www.hockney.com/img/gallery/drawings/50s/76B15.jpg
+De Longpre Ave. Hollywood	drawings		1976	colored crayon and pencil on paper	17x14 in.	https://www.hockney.com/img/gallery/drawings/50s/76B16.jpg
+Larry Stanton, Wearing a Colourful Baseball Jacket	drawings		1976	crayon on paper	17x14 in.	https://www.hockney.com/img/gallery/drawings/50s/76B14.jpg
+Don Cribb, Fire Island	drawings		1975	crayon on paper	17x14 in.	https://www.hockney.com/img/gallery/drawings/50s/75B34.jpg
+Andy, Paris	drawings		1974	colored pencil and pencil	25 5/8 x 19 3/4 in.	https://www.hockney.com/img/gallery/drawings/50s/74D36.jpg
+Study for Portrait of Nick Wilder & Gregory Evans	drawings		1974	crayon on paper	19 1/2 x 25 1/4 in.	https://www.hockney.com/img/gallery/drawings/50s/74D31.jpg
+Yves Marie, New York	drawings		1974	crayon on paper	17x14 in.	https://www.hockney.com/img/gallery/drawings/50s/74A06.jpg
+My Father, Paris	drawings			Jan. 1974 - crayon	25 1/2 x 19 1/2 in.	https://www.hockney.com/img/gallery/drawings/50s/74A02.jpg
+Lila Di Nobilis, Paris	drawings		1973	crayon on paper	26x20 in.	https://www.hockney.com/img/gallery/drawings/50s/73B25.jpg
+Celia In a Negligee, Paris	drawings			Nov. 1973 - crayon on paper	25 1/2 x 19 1/2 in.	https://www.hockney.com/img/gallery/drawings/50s/73A15.jpg
+Man Ray	drawings		1973	colored crayon	17x14 in.	https://www.hockney.com/img/gallery/drawings/50s/73B21.jpg
+Henry, Seventh Avenue	drawings		1972	crayon on paper	17x14 in.	https://www.hockney.com/img/gallery/drawings/50s/72B04.jpg
+The Artist’s Mother	drawings		1972	crayon on paper	17x14 in.	https://www.hockney.com/img/gallery/drawings/50s/72A05.jpg
+Ann Upton	drawings		1971	ink on paper	17x14 in.	https://www.hockney.com/img/gallery/drawings/50s/71A05.jpg
+Chairs, Mamounia Hotel, Marrakesh	drawings		1971	colored crayon on paper	14x17 in.	https://www.hockney.com/img/gallery/drawings/50s/71A33.jpg
+Vichy Water and “Howard’s End”, Carennac	drawings		1970	ink on paper	14x17 in.	https://www.hockney.com/img/gallery/drawings/50s/70B18.jpg
+Ossie Wearing a Fairisle Sweater	drawings		1970	crayon on paper	17x14 in.	https://www.hockney.com/img/gallery/drawings/50s/70B03.jpg
+Window, Grand Hotel, Vittel	drawings		1970	crayon on paper	17x14 in.	https://www.hockney.com/img/gallery/drawings/50s/70B01.jpg
+Portrait of Henry XI	drawings		1988	pencil	30 x 22 1/2 in.	https://www.hockney.com/img/gallery/drawings/50s/88D25.jpg
+Livingroom Interior With Terrace	drawings		1985	crayon on paper	13x19 1/2 in.	https://www.hockney.com/img/gallery/drawings/80s/85A10.jpg
+Stanley	drawings		1987	ink on paper	3 x 5 in.	https://www.hockney.com/img/gallery/drawings/80s/87A37.jpg
+Richard Sassin	drawings		1987	pencil on paper	24x20 in.	https://www.hockney.com/img/gallery/drawings/80s/87A07.jpg
+Views of the Hotel Well III	drawings		1984	charcoal	45 7/8 x 34 7/8 in.	https://www.hockney.com/img/gallery/drawings/80s/84H25.jpg
+Pierre Saint-Jean III	drawings		1984	charcoal	30x22 1/2 in.	https://www.hockney.com/img/gallery/drawings/80s/84A25.jpg
+Celia	drawings		1984	crayon on paper	30x22 1/2 in.	https://www.hockney.com/img/gallery/drawings/80s/84G18.jpg
+Ann	drawings		1984	charcoal on paper	30x22 1/2 in.	https://www.hockney.com/img/gallery/drawings/80s/84G31-B.jpg
+Billy Wilder	drawings		1983	charcoal on paper	30x22 1/2 in.	https://www.hockney.com/img/gallery/drawings/80s/83B14.jpg
+Self Portrait Sketch	drawings		1983	ink charcoal on paper	22 1/2 x18 in.	https://www.hockney.com/img/gallery/drawings/80s/83A15.jpg
+Self Portrait	drawings		1983	charcoal on paper	22 1/2 x18 in.	https://www.hockney.com/img/gallery/drawings/80s/83A32.jpg
+Ian In a Wicker Chair I	drawings		1982	sepia ink on paper	22 1/2 x30 in.	https://www.hockney.com/img/gallery/drawings/80s/82B34.jpg
+View Through Window with Kitaj Poster	drawings		1982	sepia ink on paper	22 1/2 x30 in.	https://www.hockney.com/img/gallery/drawings/80s/82A06.jpg
+Boat With Red Flag & Caterpillar	drawings		1981	wash & crayon on paper	14x17 in.	https://www.hockney.com/img/gallery/drawings/80s/81O04.jpg
+Mr Lin in an Armchair	drawings		1981	sepia ink & wash on paper	19 1/2 x17 in.	https://www.hockney.com/img/gallery/drawings/80s/81E34.jpg
+My Hand	drawings		1981	ink	14x17 in.	https://www.hockney.com/img/gallery/drawings/80s/81A29.jpg
+William Burroughs II	drawings		1980	ink	17x14 in.	https://www.hockney.com/img/gallery/drawings/80s/80H12.jpg
+The Proprietor in Hollywood	drawings		1980	crayon on paper	20x30 in.	https://www.hockney.com/img/gallery/drawings/80s/80A13.jpg
+Sir Isiah Berlin	drawings		1980	crayon on board	30 x 22 1/2 in.	https://www.hockney.com/img/gallery/drawings/80s/80J22.jpg
+Self-Portrait, Baden-Baden	drawings			10th June 1999 - pencil on grey paper	11 1/8 x15 in.	https://www.hockney.com/img/gallery/drawings/80s/99B07.jpg
+Ron Lillywhite, London	drawings			17th December 1999 - pencil, white crayon and gouache on grey paper using a camera lucida	22 1/8 x15 in.	https://www.hockney.com/img/gallery/drawings/80s/CL234.jpg
+Jean-Pierre Goncalves-de Lima, London	drawings			23rd June 1999 - pencil and crayon on grey paper using a camera lucida	14 3/4 x 15 7/8 in.	https://www.hockney.com/img/gallery/drawings/80s/CL115.jpg
+David Fernandez Jr, Los Angeles	drawings			23rd August 1999 - pencil and white crayon on grey paper using a camera lucida	22 1/4 x 15in.	https://www.hockney.com/img/gallery/drawings/80s/CL182.jpg
+Don Cribb, Los Angeles	drawings			1st August 1999 - pencil and white crayon on grey paper using a camera lucida	22 1/4 x15 in.	https://www.hockney.com/img/gallery/drawings/80s/CL164.jpg
+Houston Burkhart Graham, Los Angeles	drawings			22nd August 1999 - pencil on grey paper using a camera lucida	22 1/4 x 15 1/4 in.	https://www.hockney.com/img/gallery/drawings/90s/CL181.jpg
+Mark Glazebrook, London	drawings			14th December 1999 - pencil and white crayon on grey paper using a camera lucida	22 1/8 x 15 in.	https://www.hockney.com/img/gallery/drawings/80s/CL231.jpg
+John Schlesinger, Los Angeles	drawings			26th August 1999 - pencil and white crayon on grey paper using a camera lucida	22 1/4 x15 in.	https://www.hockney.com/img/gallery/drawings/90s/CL186.jpg
+Charcoal Drawing for a Closer Grand Canyon	drawings		1998	charcoal, uni-ball pen on 4 sheets of paper	33 1/2 x 120 in.	https://www.hockney.com/img/gallery/drawings/80s/98B07.jpg
+Study For a Closer Grand Canyon VII Cheops Pyramid	drawings		1998	oil pastel on paper	19 3/4 x 25 1/2 in.	https://www.hockney.com/img/gallery/drawings/80s/98B15.jpg
+Study For a Closer Grand Canyon VIII	drawings		1998	oil pastel on 2 sheets of paper	19 3/4 x51 in.	https://www.hockney.com/img/gallery/drawings/80s/98B16.jpg
+Study of The Grand Canyon	drawings		1998	oil pastel and gouache on paper	12 3/4 x 19 3/4 in.	https://www.hockney.com/img/gallery/drawings/80s/98B38.jpg
+Jeff Burkhart	drawings		1994	crayon	30 1/4 x 22 1/2 in.	https://www.hockney.com/img/gallery/drawings/80s/94A12.jpg
+Celia Birtwell	drawings		1994	crayon	30 1/4 x 22 1/2 in.	https://www.hockney.com/img/gallery/drawings/80s/94H09.jpg
+Dr. Leon Banks	drawings		1994	crayon	30 1/4 x 22 1/2 in.	https://www.hockney.com/img/gallery/drawings/80s/94A17.jpg
+John Fitzherbert	drawings		1993	crayon	30 1/4 x 22 1/2 in	https://www.hockney.com/img/gallery/drawings/80s/93D11.jpg
+Stanley	drawings		1993	crayon on paper	22 1/2 x 30 1/4 in.	https://www.hockney.com/img/gallery/drawings/80s/93C10.jpg
+Boodgie	drawings		1993	crayon	22 1/2 x 30 1/4 in.	https://www.hockney.com/img/gallery/drawings/80s/93C05.jpg
+3 Trees With Rock	drawings		1991	gouaghe, felt marker, uni-ball pen on foamcore	12x29 1/2 in.	https://www.hockney.com/img/gallery/drawings/80s/91A06.jpg
+Running Construction	drawings		1991	uni-ball pen, collage, gouaghe on foamcore	15 1/4 x12 in.	https://www.hockney.com/img/gallery/drawings/80s/91A10.jpg
+Untitled III	drawings		2009	charcoal on paper	26 x 40 in.	https://www.hockney.com/img/gallery/drawings/00s/09B03.jpg
+Untitled I	drawings		2009	charcoal on paper	40 x 26 in.	https://www.hockney.com/img/gallery/drawings/00s/09B01.jpg
+Autumn Thixendale	drawings			October 22nd, 2008 - charcoal and inkjet print	16 x 44 in.	https://www.hockney.com/img/gallery/drawings/00s/08B25-lg.jpg
+Kilham to Rudston	drawings			22 August 2008 - charcoal on paper	26 x 40 in.	https://www.hockney.com/img/gallery/drawings/00s/08B19.jpg
+Little Left	drawings		2008	charcoal on paper	40 x 26 in.	https://www.hockney.com/img/gallery/drawings/00s/08B18.jpg
+Still There	drawings		2008	charcoal on paper	40 x 26 in.	https://www.hockney.com/img/gallery/drawings/00s/08B16.jpg
+Timber Gone	drawings		2008	charcoal on paper	26 x 40 in.	https://www.hockney.com/img/gallery/drawings/00s/08B21.jpg
+Cut Trees - Timber	drawings		2008	charcoal on paper	26 x 40 in.	https://www.hockney.com/img/gallery/drawings/00s/08B11.jpg
+Big Trees Near Warter II	drawings		2008	charcoal on paper 22.5 x 30.5 in.		https://www.hockney.com/img/gallery/drawings/00s/08B10.jpg
+More Crooked Timber on Woldgate	drawings		2008	charcoal on paper 22.5 x30.5 in.		https://www.hockney.com/img/gallery/drawings/00s/08B08.jpg
+Fresh Timber on Woldgate	drawings		2008	charcoal on paper	18 x24 in.	https://www.hockney.com/img/gallery/drawings/00s/08B07.jpg
+Hawthorn Blossom Near Rudston	drawings		2008	charcoal on paper	18 x24 in.	https://www.hockney.com/img/gallery/drawings/00s/08B05.jpg
+Hawthorn Bush Near Kilham	drawings		2008	charcoal on paper	18 x24 in.	https://www.hockney.com/img/gallery/drawings/00s/08B04.jpg
+The Big Hawthorn	drawings		2008	charcoal on paper	18 x24 in.	https://www.hockney.com/img/gallery/drawings/00s/08B02.jpg
+Carla Powell	drawings		2003	watercolor on paper	16 1/8 x 12 1/4 in.	https://www.hockney.com/img/gallery/drawings/00s/03M19.jpg
+Cyclamen, Mayflower Hotel, New York	drawings		2002	watercolor and crayon on paper	20x14 in.	https://www.hockney.com/img/gallery/drawings/00s/02D07.jpg
+George Mulder	drawings		2002	ink and watercolor on paper	24 x 18 1/8 in.	https://www.hockney.com/img/gallery/drawings/00s/02U15.jpg
+Jean-Pierre De Lima II	drawings		2002	ink on paper	14 1/4 x 10 1/4 in.	https://www.hockney.com/img/gallery/drawings/00s/02R22.jpg
+Bing, Baden Baden	drawings		2002	ink on paper (2 sheets) 23 1/2 x 10 1/4	25 3/4 x 12 1/2 in.	https://www.hockney.com/img/gallery/drawings/00s/02T24.jpg
+The Gate	drawings		2000	charcoal on paper	22 1/4 x30 in.	https://www.hockney.com/img/gallery/drawings/70s/00K01.jpg
+Cactus and Wall	drawings		2000	charcoal on paper	30x 22 1/4 in.	https://www.hockney.com/img/gallery/drawings/70s/00K15.jpg
+Guest House Wall	drawings		2000	charcoal on paper	22 1/4 x30 in.	https://www.hockney.com/img/gallery/drawings/00s/00K05.jpg
+John Fitzherbert	drawings			October 2, 2000 - charcoal on paper	30x22 1/4 in.	https://www.hockney.com/img/gallery/drawings/00s/00F22.jpg
+Lady Gowrie	drawings		2002	Ink on paper 14 1/4 x 10 1/4		https://www.hockney.com/img/gallery/drawings/00s/02S31.jpg
+James Watson	drawings		2002	Ink on paper 12 1/4 x 9		https://www.hockney.com/img/gallery/drawings/00s/02R04.jpg
+Woldgate, 6 July	drawings		2010	Charcoal on paper	22 1/2 x 30 3/8 in	https://www.hockney.com/img/gallery/drawings/10s/10C01.jpg
+John Fitzherbert, 18 February	drawings		2012	Charcoal and crayon on paper	40 1/4 x 26 1/8 in	https://www.hockney.com/img/gallery/drawings/10s/12A02.jpg
+Dominic Elliott, 21 February	drawings		2012	Charcoal and crayon on paper	40 1/4 x 26 1/8 in	https://www.hockney.com/img/gallery/drawings/10s/12A04.jpg
+Jonathan Wilkinson, 22 February	drawings		2012	Charcoal and crayon on paper	40 1/4 x 26 1/8 in	https://www.hockney.com/img/gallery/drawings/10s/12A05.jpg
+Woldgate, 26-27 June	drawings		2012	Charcoal on paper	26 1/8 x 40 1/4 in	https://www.hockney.com/img/gallery/drawings/10s/12A09.jpg
+Woldgate, 4-5 July	drawings		2012	Charcoal on paper	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/10s/12A10.jpg
+Vandalized Totem, 16-17 November	drawings		2012	Charcoal on paper	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/10s/12A22.jpg
+Vandalized Totem, 19-20 November	drawings		2012	Charcoal on paper	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/10s/12A23.jpg
+Vandalized Totem, 22 November	drawings		2012	Charcoal on paper	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/10s/12A24.jpg
+Vandalized Totem, 25 November	drawings		2012	Charcoal on paper	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/10s/12A25.jpg
+Vandalized Totem in Snow, 5 December	drawings		2012	Charcoal on paper	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/10s/12A32.jpg
+Self Portrait, 4 December	drawings		2012	Charcoal on paper	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/10s/12A30.jpg
+Self Portrait, 5 December	drawings		2012	Charcoal on paper	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/10s/12A31.jpg
+Self Portrait, 11 December	drawings		2012	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/12A33.jpg
+Self Portrait, 12 December	drawings		2012	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/12A34.jpg
+Self Portrait, 13 December	drawings		2012	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/12A35.jpg
+Self Portrait, 17 December	drawings		2012	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/12A36.jpg
+Maurice Payne, 25 and 27 December	drawings		2012	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/12A38.jpg
+Woldgate Woods, 23 January	drawings		2013	Charcoal on paper	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/10s/13A03.jpg
+Jean-Pierre Goncalves de Lima, 25 January	drawings		2013	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/13A05.jpg
+Robbie Stark, 27 January	drawings		2013	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/13A06.jpg
+John Fitzherbert, 28 January	drawings		2013	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/13A07.jpg
+Richard Todd, 29 January	drawings		2013	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/13A08.jpg
+Dominic Elliott, 30-31 January	drawings		2013	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/13A09.jpg
+Jonathan Wilkinson, 1 February	drawings		2013	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/13A10.jpg
+John Hockney, 13-14 February	drawings		2013	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/13A14.jpg
+Margaret Hockney, 14 February	drawings		2013	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/13A15.jpg
+Randall Wright, 18-19 February	drawings		2013	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/13A16.jpg
+Mark Shephard, 28 February	drawings		2013	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/13A20.jpg
+Richard Marriott, 3-4 March	drawings		2013	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/13A21.jpg
+Sally Marriott, 5, 7 & 11 March	drawings		2013	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/13A22.jpg
+Bruno Wollheim, 5-6 March	drawings		2013	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/13A23.jpg
+Maurice Payne, 16 April	drawings		2013	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/13A29.jpg
+Charlie Scheips, 19 April	drawings		2013	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/13A30.jpg
+Maurice Payne, 20 April	drawings		2013	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/13A31.jpg
+Dr. David Neave, 27-29 April	drawings		2013	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/13A34.jpg
+Pool Garden, Morning	drawings		2013	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/13C01.jpg
+Pool Garden, Evening	drawings		2013	Charcoal on paper	30 1/4 x 22 5/8 in	https://www.hockney.com/img/gallery/drawings/10s/13C02.jpg
+Woldgate, 25 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/25-13B17.jpg
+Woldgate, 16 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/24-13B11.jpg
+Woldgate, 11-12 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/22-13B08.jpg
+Woldgate, 6-7 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/21-13B02.jpg
+Woldgate, 25-27 February from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/21-13A18.jpg
+Woldgate, 26 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/20-13B19.jpg
+Woldgate, 18-19 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/19-13B13.jpg
+Woldgate, 10-11 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/18-13B07.jpg
+Woldgate, 3 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/17-13A40.jpg
+Woldgate, 22-23 January from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/16-13A02.jpg
+Woldgate, 26 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/15-13B20.jpg
+Woldgate, 15-16 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/14-13B10.jpg
+Woldgate, 8 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/13-13B05.jpg
+Woldgate, 30 April, 1 & 5 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/12-13A36.jpg
+Woldgate, 6-7 February from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/11-13A13.jpg
+Woldgate, 21-22 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/10-13B15.jpg
+Woldgate, 17 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/09-13B12.jpg
+Woldgate, 9 & 12 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/08-13B06.jpg
+Woldgate, 3 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/07-13A39.jpg
+Woldgate, 16 & 26 March from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/06-13A26.jpg
+Woldgate, 27 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/05-13B21.jpg
+Woldgate, 20-21 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/04-13B14.jpg
+Woldgate, 12-13 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/03-13B09.jpg
+Woldgate, 6 May from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/02-13B01.jpg
+Woldgate, 6-7 February from The Arrival of Spring in 2013 (twenty thirteen)	drawings			Charcoal on paper (one of a 25-part work)	22 5/8 x 30 1/4 in	https://www.hockney.com/img/gallery/drawings/arrival_of_spring/01-13A12.jpg
+Slow Rise	graphics	lithographs	1993	Edition of 98, lithograph and screenprint	25x30 1/2 in.	https://www.hockney.com/img/gallery/graphics/lithographs/12_P93-M.jpg
+Table Flowable	graphics	lithographs	1991	Edition of 50, lithograph	44x57 in.	https://www.hockney.com/img/gallery/graphics/lithographs/11_P91-B.jpg
+Caribbean Tea Time	graphics	lithographs	1987	Edition of 36, lithograph, screenprint, collage, stencil, folding screen 4 panels	84 5/8 x134 1/2 in.	https://www.hockney.com/img/gallery/graphics/lithographs/10_P87-A-Back.jpg
+Caribbean Tea Time	graphics	lithographs	1987	Edition of 36, lithograph, screenprint, collage, stencil, folding screen 4 panels	84 5/8 x134 1/2 in.	https://www.hockney.com/img/gallery/graphics/lithographs/09_P87-A-Front.jpg
+Hotel Acatlan: Two Weeks Later	graphics	lithographs	1985	Edition of 98, lithograph	28 3/4 x 74 in.	https://www.hockney.com/img/gallery/graphics/lithographs/P85-D-large.jpg
+Black Tulips	graphics	lithographs	1980	Edition of 100 lithograph	44x30 in.	https://www.hockney.com/img/gallery/graphics/lithographs/07_P80-I.jpg
+Bora Bora	graphics	lithographs	1979-80	Edition of 100, lithograph	34 1/2 x 48 in	https://www.hockney.com/img/gallery/graphics/lithographs/06_P79-RR.jpg
+“Rain” From The Weather Series	graphics	lithographs	1973	Edition of	98 39 x 30 1/2 in.	https://www.hockney.com/img/gallery/graphics/lithographs/05_P73-I.jpg
+Tree	graphics	lithographs	1968	Edition of 95, lithograph in six colors	21 3/4 x19 in.	https://www.hockney.com/img/gallery/graphics/lithographs/04_P68-A.jpg
+Still Life	graphics	lithographs	1965	Edition of 50, lithograph in three colors	30x22 in.	https://www.hockney.com/img/gallery/graphics/lithographs/03_P65-B.jpg
+Water Pouring Into A Swimming Pool, Santa Monica	graphics	lithographs	1964	Edition of 75, - lithograph in four colors	19x25 in.	https://www.hockney.com/img/gallery/graphics/etchings/02_P64-F.jpg
+Figure By A Curtain	graphics	lithographs	1964	Edition of 75, lithograph in two colors	19 5/8 x 25 1/2 in.	https://www.hockney.com/img/gallery/graphics/lithographs/P64-E.jpg
+Artist and Model	graphics	etchings	1973-74	Etching - Edition of 100	29 1/2 x 22 1/2 in.	https://www.hockney.com/img/gallery/graphics/etchings/P74-B.jpg
+Rue De Seine	graphics	etchings	1972	Etching, aquatint, Edition of 150	35 x 28 in.	https://www.hockney.com/img/gallery/graphics/etchings/P72-C.jpg
+French Shop	graphics	etchings	1971	Etching - Edition of 500	21 x 17 3/4 in.	https://www.hockney.com/img/gallery/graphics/etchings/P71-F.jpg
+W.H.Auden	graphics	etchings	1970	Edition of 8	20 1/2 x 15 5/8 in.	https://www.hockney.com/img/gallery/graphics/etchings/P70-A.jpg
+Vase and Flowers	graphics	etchings	1969	Edition of 75, lithograph in two colors	35 1/2 x 28 in.	https://www.hockney.com/img/gallery/graphics/etchings/P69-C.jpg
+Peter Schlesinger	graphics	etchings	1968	Etching	11 1/2 x 15 in.	https://www.hockney.com/img/gallery/graphics/etchings/P68-G.jpg
+Three Kings and a Queen	graphics	etchings	1961	1961 Etching in Black with Aquatint, Edition of 50 (Approx)	9x25 3/4 in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P61-D.jpg
+Bedlam, From A Rake’s Progress	graphics	rakes-progress-etchings	1961-63	Etching, Aquatint Edition of 50	17 3/4 x 11 1/2 in.	https://www.hockney.com/img/gallery/graphics/rakes_progress/P61-63-Y.jpg
+Meeting The Other People	graphics	rakes-progress-etchings	1961-63	Etching, Aquatint Edition of 50	19 1/2 x 24 1/2 in.	https://www.hockney.com/img/gallery/graphics/rakes_progress/P61-63-X.jpg
+Cast Aside, From A Rake’s Progress	graphics	rakes-progress-etchings	1961-63	Etching, Aquatint Edition of 50	19 1/2 x 24 1/2 in.	https://www.hockney.com/img/gallery/graphics/rakes_progress/P61-63-W.jpg
+Disintegration	graphics	rakes-progress-etchings	1961	Etching, Aquatint Edition of 50	19 1/2 x 24 1/2 in.	https://www.hockney.com/img/gallery/graphics/rakes_progress/P61-63-V.jpg
+The Wallet Begins to Empty	graphics	rakes-progress-etchings	1961-63	Etching, Aquatint Edition of 50	19 1/2 x 24 1/2 in.	https://www.hockney.com/img/gallery/graphics/rakes_progress/P61-63-U.jpg
+Death in Harlem	graphics	rakes-progress-etchings	1961-63	Etching, Aquatint, Edition of 50	19 1/2 x 24 1/2 in.	https://www.hockney.com/img/gallery/graphics/rakes_progress/P61-63-T.jpg
+Vieving A Prison Scene	graphics	rakes-progress-etchings	1961-63	Etching, Aquatint Edition of 50	16 1/2 x 20 in.	https://www.hockney.com/img/gallery/graphics/rakes_progress/P61-63-S.jpg
+The Election Campaign (With Dark Message)	graphics	rakes-progress-etchings	1961-63	Etching, Aquatint Edition of 50	19 1/2 x 24 1/2 in.	https://www.hockney.com/img/gallery/graphics/rakes_progress/P61-63-R.jpg
+“Marries An Old Maid”	graphics	rakes-progress-etchings	1961-63	Etching, Aquatint Edition of 50, 17 1/4 x 24 1/2		https://www.hockney.com/img/gallery/graphics/rakes_progress/P61-63-Q.jpg
+“The Drinking Scene”	graphics	rakes-progress-etchings	1961-63	Etching, Aquatint Edition of 50, 19 1/2 x 24 1/2		https://www.hockney.com/img/gallery/graphics/rakes_progress/P61-63-P.jpg
+“The Seven Stone Weakling”	graphics	rakes-progress-etchings	1961-63	Etching, Aquatint Edition of 50, 16 3/4 x 20 1/2		https://www.hockney.com/img/gallery/graphics/rakes_progress/P61-63-O.jpg
+“The Start of the Spending Spree and the Door Opening for a Blonde”	graphics	rakes-progress-etchings	1961-63	Etching, Aquatint Edition of 50	18 x 23in.	https://www.hockney.com/img/gallery/graphics/rakes_progress/P61-63-N.jpg
+“The Gospel Singing (Good People) Madison Square Garden”	graphics	rakes-progress-etchings	1961-63	Etching, Aquatint Edition of 50	15 1/2 x 22 1/2 in.	https://www.hockney.com/img/gallery/graphics/rakes_progress/P61-63-M.jpg
+“Meeting The Good People (Washington)”	graphics	rakes-progress-etchings	1961-63	Etching, Aquatint Edition of 50	15 3/4 x 22 1/4in.	https://www.hockney.com/img/gallery/graphics/rakes_progress/P61-63-L.jpg
+“Receiving The Inheritance” From A Rake’s Progress	graphics	rakes-progress-etchings	1961-63	Etching, Aquatint, Edition of 50	15 1/4 x 22 1/2in.	https://www.hockney.com/img/gallery/graphics/rakes_progress/P61-63-K.jpg
+“The Arrival” From A Rake’s Progress	graphics	rakes-progress-etchings	1961-63	Etching Edition of 50	15 1/2 x 22 1/2in.	https://www.hockney.com/img/gallery/graphics/rakes_progress/P61-63-J.jpg
+What Is This Picasso From The Blue Guitar	graphics	blue-guitar-etchings	1976-1977	Etching	18 x 20 1/2in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-WW.jpg
+Serenade From The Blue Guitar	graphics	blue-guitar-etchings	1976-1977	Etching	20 1/2 x 18 in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-VV.jpg
+A Moving Still Life From The Blue Guitar	graphics	blue-guitar-etchings	1976-1977	Etching	18 x 20 1/2in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-UU.jpg
+On It May Stay His Eye From The Blue Guitar	graphics	blue-guitar-etchings	1976-1977	Etching	18 x 20 1/2in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-SS.jpg
+I Say They Are From The Blue Guitar	graphics	blue-guitar-etchings	1976-1977	Etching	18 x 20 1/2in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-RR.jpg
+Tick It Tock It Turn It True From The Blue Guitar	graphics	blue-guitar-etchings	1976-1977	Etching	20 1/2 x 18 in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-QQ.jpg
+Etching Is The Subject From The Blue Guitar	graphics	blue-guitar-etchings	1976-1977	Etching	18 x 20 1/2in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-PP.jpg
+The Poet From The Blue Guitar	graphics	blue-guitar-etchings	1976-1977	Etching and aquatint on paper	18 x 20 1/2in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-OO.jpg
+A Picture of Ourselves From The Blue Guitar	graphics	blue-guitar-etchings	1976-1977	Etching	18 x 20 1/2in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-NN.jpg
+Made In April From The Blue Guitar	graphics	blue-guitar-etchings	1976-1977	Etching	20 1/2 x 18 in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-MM.jpg
+Figure With Still Life From The Blue Guitar	graphics	blue-guitar-etchings	1976-1977	Etching	20 1/2 x 18 in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-LL.jpg
+In A Chiaroscuro From The Blue Guitar	graphics	blue-guitar-etchings	1976-1977	Etching	18 x 20 1/2in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-KK.jpg
+The Buzzing Of The Blue Guitar From The Blue Guitar	graphics	blue-guitar-etchings	1976-1977	Etching	20 1/2 x 18 in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-JJ.jpg
+Discord Merely Magnifies From The Blue Guitar	graphics	blue-guitar-etchings	1976-1977	Etching	18 x 20 1/2 in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-II.jpg
+Parade From The Blue Guitar	graphics	blue-guitar-etchings	1976-1977	Etching	20 1/2 x 18 in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-HH.jpg
+Franco-American Mail From The Blue Guitar	graphics	blue-guitar-etchings	1976-1977	Etching	18 x 20 1/2 in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-GG.jpg
+“It Picks It’s Way, From The Blue Guitar”	graphics	blue-guitar-etchings	1976-1977	Etching	18 x 20 1/2 in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-FF.jpg
+A Tune From The Blue Guitar	graphics	blue-guitar-etchings	1976-1977	Etching	18 x 20 1/2 in	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-EE.jpg
+The Old Guitarist From The Blue Guitar	graphics	blue-guitar-etchings	1976-1977	Etching	20 1/2 x 18 in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-DD.jpg
+The Blue Guitar, Frontispiece From The Blue Guitar	graphics	blue-guitar-etchings	1976-1977	Etching	20 1/2 x18 in.	https://www.hockney.com/img/gallery/graphics/blue_guitar/P76-77-CC.jpg
+Apple, Grapes, Lemon on a Table (For Bam)	graphics	prints	1988	Home Made Print on two sheets of paper	14x17 in.	https://www.hockney.com/img/gallery/graphics/prints/37-X-167.jpg
+The Tree	graphics	prints		November 1986 - Home Made Print in eight parts 10 x 10ft. Overall Edition of 15		https://www.hockney.com/img/gallery/graphics/prints/36-X-122.jpg
+Stanley at 8 Weeks	graphics	prints	1986	Home Made Print	8 1/2 x 11 in.	https://www.hockney.com/img/gallery/graphics/prints/35-X-121.jpg
+Stanley In a Basket	graphics	prints		October 1986 - Home Made Print	8 1/2 x 14 in.	https://www.hockney.com/img/gallery/graphics/prints/34-X-120.jpg
+Green, Grey and Blue Plant	graphics	prints		July 1986 - Home Made Print	17x22 in.	https://www.hockney.com/img/gallery/graphics/prints/33-X-113.jpg
+Two Red Chairs and Table	graphics	prints		March 1986 - Home Made Print	8 1/2 x 11 in.	https://www.hockney.com/img/gallery/graphics/prints/32-X-45.jpg
+Growing	graphics	prints		June 1986 - Home Made Print	11 x 8 1/2 in.	https://www.hockney.com/img/gallery/graphics/prints/31-X-101.jpg
+The Tall Tree	graphics	prints		September 1986 - Home Made Print on two sheets of paper	28 x 8 1/2 in.	https://www.hockney.com/img/gallery/graphics/prints/30-X-118.jpg
+Three Black Flowers	graphics	prints		May 1986 - Home Made Print	11 x 8 1/2 in.	https://www.hockney.com/img/gallery/graphics/prints/29-X-102.jpg
+Jug on Table	graphics	prints		March 1986 - Home Made Print	8 1/2 x 11 in.	https://www.hockney.com/img/gallery/graphics/prints/28-X-37.jpg
+The Red Pot	graphics	prints		April 1986 - Home Made Print	14 x 8 1/2 in.	https://www.hockney.com/img/gallery/graphics/prints/27-X-69.jpg
+The Juggler	graphics	prints		September 1986 - Home Made Print	14 x 8 1/2 in.	https://www.hockney.com/img/gallery/graphics/prints/26-X-119.jpg
+The Drooping Plant	graphics	prints		June 1986 - Home Made Print	11 x 8 1/2 in.	https://www.hockney.com/img/gallery/graphics/prints/25-X-103.jpg
+The Red Chair	graphics	prints		April 1986 - Home Made Print	11 x 8 1/2 in.	https://www.hockney.com/img/gallery/graphics/prints/24-X-81.jpg
+The Round Plate	graphics	prints		April 1986 - Home Made Print	8 1/2 x 11 in.	https://www.hockney.com/img/gallery/graphics/prints/23-X-68.jpg
+Dancing Flowers	graphics	prints		May 1986 - Home Made Print	22 x 25 1/2 in.	https://www.hockney.com/img/gallery/graphics/prints/22-X-98.jpg
+Red, Blue and Wicker	graphics	prints		July 1986 - Home Made Print	8 1/2 x 14in.	https://www.hockney.com/img/gallery/graphics/prints/21-X-106.jpg
+Mulhollad Drive	graphics	prints		June 1986 - Home Made Print	11x17 in.	https://www.hockney.com/img/gallery/graphics/prints/20-X-107.jpg
+Celia with Chair	graphics	prints		March 1986 - Home Made Print	8 1/2 x 11 in.	https://www.hockney.com/img/gallery/graphics/prints/19-X-40.jpg
+Grey Blooms	graphics	prints	1986	Home Made Print on two sheets of paper	14x17 in.	https://www.hockney.com/img/gallery/graphics/prints/18-X-105.jpg
+Walking	graphics	prints		June 1986 - Home Made Print	8 1/2 x14 in.	https://www.hockney.com/img/gallery/graphics/prints/17-X-111.jpg
+Livingroom and Terrace	graphics	prints		July 1986 - Home Made Print on 2 sheets of paper (	17 x 11in.	https://www.hockney.com/img/gallery/graphics/prints/16-X-110.jpg
+Man Reading Stendahl	graphics	prints		July 1986 - Home Made Print	14 x 8 1/2 in.	https://www.hockney.com/img/gallery/graphics/prints/15-X-115.jpg
+Waving	graphics	prints		April 1986 - Home Made Print	11 x 8 1/2 in.	https://www.hockney.com/img/gallery/graphics/prints/14-X-92.jpg
+Red, Blue and Green Flowers	graphics	prints		July 1986 - Home Made Print	28 x 8 1/2 in.	https://www.hockney.com/img/gallery/graphics/prints/13-X-117.jpg
+Bowl of Fruit	graphics	prints		April 1986 - Home Made Print	11x 8 1/2 in.	https://www.hockney.com/img/gallery/graphics/prints/12-X-63.jpg
+Two Red Chairs	graphics	prints		March 1986 - Home Made Print	8 1/2 x 11 in.	https://www.hockney.com/img/gallery/graphics/prints/11-X-43.jpg
+Man Looking For His Glasses	graphics	prints		April 1986 - Home Made Print	8 1/2 x11in.	https://www.hockney.com/img/gallery/graphics/prints/10-X-108.jpg
+Flowers, Apples and Pear on a Table	graphics	prints		July 1986 - Home Made Print on 4 sheets of paper	22x17 in.	https://www.hockney.com/img/gallery/graphics/prints/9-X-116.jpg
+Celia With Guest	graphics	prints	1986	Home Made Print	17 x 22in.	https://www.hockney.com/img/gallery/graphics/prints/8-X-114.jpg
+Landscape with a Plant	graphics	prints		July 1986 - Home Made Print	11x17 in.	https://www.hockney.com/img/gallery/graphics/prints/7-X-112.jpg
+Self Portrait	graphics	prints		July 1986 - Home Made Print	22 x 8 1/2 in.	https://www.hockney.com/img/gallery/graphics/prints/6-X-109.jpg
+Ian and Heinz	graphics	prints		June 1986 - Home Made Print	8 1/2 x 11 in.	https://www.hockney.com/img/gallery/graphics/prints/5-X-100.jpg
+Lemons and Oranges	graphics	prints		May 1986 - Home Made Print	8 1/2 x14 in.	https://www.hockney.com/img/gallery/graphics/prints/4-X-99.jpg
+Apples, Pears and Grapes	graphics	prints		May 1986 - Home Made Print	8 1/2 x14 in.	https://www.hockney.com/img/gallery/graphics/prints/3-X-104.jpg
+Black Plant on Table	graphics	prints		April 1986 - Home Made Print	22 x 25 1/2 in.	https://www.hockney.com/img/gallery/graphics/prints/2-X-83.jpg
+Still Life With Curtains	graphics	prints		March 1986 - Home Made Print	8 1/2 x11 in.	https://www.hockney.com/img/gallery/graphics/prints/1-X-38.jpg
+Tall Black Trees	digital	computer-drawings	2008	inkjet printed computer drawing on paper	93 1/2 X 41 3/4in.	https://www.hockney.com/img/gallery/digital/computer_drawings/PD17large.jpg
+Less Trees Near Warter	digital	computer-drawings	2009	inkjet printed computer drawing on paper	95 1/2 X 44in.	https://www.hockney.com/img/gallery/digital/computer_drawings/PD26-large.jpg
+The Atelier March 17th 2009	digital	computer-drawings		inkjet printed computer drawing on paper	29 1/2 X 43in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-084.jpg
+Matelot Kevin Druez 2	digital	computer-drawings	2009	inkjet printed computer drawing on paper	60 X 41in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-081.jpg
+Matelot Kevin Druez 1	digital	computer-drawings	2009	inkjet printed computer drawing on paper	49 X 33 1/2in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-080.jpg
+Francis Russell	digital	computer-drawings	2009	inkjet printed computer drawing on paper	49 X 33 1/2in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-079.jpg
+Paul & Margaret Hockney	digital	computer-drawings	2009	inkjet printed computer drawing on paper	49 X 33 1/2in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-078.jpg
+Paul Hockney 2	digital	computer-drawings	2009	inkjet printed computer drawing on paper	49 X 33 1/2in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-077.jpg
+Paul Hockney 1	digital	computer-drawings	2009	inkjet printed computer drawing on paper	60 X 41in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-076.jpg
+Michele And John Spike	digital	computer-drawings	2009	inkjet printed computer drawing on paper	49 X 33 1/2in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-075.jpg
+Peter Goulds	digital	computer-drawings	2009	inkjet printed computer drawing on paper	49 X 33 1/2in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-074.jpg
+Jamie McHale 2	digital	computer-drawings	2008	inkjet printed computer drawing on paper	49 X 33 1/2in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-073.jpg
+Sir Tatton Sykes	digital	computer-drawings	2008	inkjet printed computer drawing on paper	60 X 41in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-072.jpg
+Maurice Payne	digital	computer-drawings	2008	inkjet printed computer drawing on paper	49 X 33 1/2in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-071.jpg
+Dr. Elizabeth Barton	digital	computer-drawings	2008	inkjet printed computer drawing on paper	49 X 33 1/2in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-070.jpg
+Margaret  Hockney	digital	computer-drawings	2008	inkjet printed computer drawing on paper	49 X 33 1/2in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-069.jpg
+Jonathan Wilkinson	digital	computer-drawings	2008	inkjet printed computer drawing on paper	60 X 41in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-068.jpg
+Jean-Pierre  Goncalves de Lima	digital	computer-drawings	2008	inkjet printed computer drawing on paper	49 X 33 1/2in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-067.jpg
+John Fitzherbert	digital	computer-drawings	2008	inkjet printed computer drawing on paper	60 X 41in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-066.jpg
+Dominic Elliott	digital	computer-drawings	2008	inkjet printed computer drawing on paper	49 X 33 1/2in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-065.jpg
+Jamie McHale 1	digital	computer-drawings	2008	inkjet printed computer drawing on paper	49 X 33 1/2in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-064.jpg
+Green Valley	digital	computer-drawings	2008	inkjet printed computer drawing on paper	35 X 46 1/2in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-063.jpg
+Autumn Leaves	digital	computer-drawings	2008	inkjet printed computer drawing on paper	35 X 46 1/2in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-062.jpg
+Autumn Trees Near Thixendale	digital	computer-drawings		28 October 2008 - inkjet printed computer drawing on paper	35 X 84 1/8in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-061.jpg
+Kilham With Church	digital	computer-drawings	2008	inkjet printed computer drawing on paper	40 3/4 X 34in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-058.jpg
+Cardigan Road, Bridlington	digital	computer-drawings	2008	inkjet printed computer drawing on paper	44 3/4 X 32in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-057.jpg
+Rainy Night On Bridlington Promenade	digital	computer-drawings	2008	inkjet printed computer drawing on paper	46 X 32in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-056.jpg
+Summer Sky	digital	computer-drawings	2008	inkjet printed computer drawing on paper		https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-054.jpg
+Summer Road Near Kilham	digital	computer-drawings	2008	inkjet printed computer drawing on paper	48 1/4 X 37in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-055.jpg
+Winter Road Near Kilham	digital	computer-drawings	2008	Edition: 25 inkjet printed computer drawing on paper	48 1/4 X 37in.	https://www.hockney.com/img/gallery/digital/computer_drawings/C.D.-053.jpg
+Untitled, 607	digital	iphone	2010	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0607.jpg
+Untitled, 522	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0495.jpg
+Untitled, 521	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0522.jpg
+Untitled, 512	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0521.jpg
+Untitled, 510	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0512.jpg
+Untitled, 498	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0510.jpg
+Untitled, 497	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0474.jpg
+Untitled, 496	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0498.jpg
+Untitled, 495	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0494.jpg
+Untitled, 494	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0493.jpg
+Untitled, 493	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0497.jpg
+Untitled, 474	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0496.jpg
+Untitled, 471	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0469.jpg
+Untitled, 470	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0470.jpg
+Untitled, 469	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0471.jpg
+Untitled, 468	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0468.jpg
+Untitled, 465	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0465.jpg
+Untitled, 400	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0400.jpg
+Untitled, 398	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0398.jpg
+Untitled, 392	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0392.jpg
+Untitled, 383	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0383.jpg
+Untitled, 382	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0382.jpg
+Untitled, 365	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0365.jpg
+Untitled, 357	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0357.jpg
+Untitled, 297	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0297.jpg
+Untitled, 175	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0175.jpg
+Untitled, 165	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0165.jpg
+Untitled, 162	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0162.jpg
+Untitled, 161	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0145.jpg
+Untitled, 160	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0148.jpg
+Untitled, 151	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0151.jpg
+Untitled, 148	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0161.jpg
+Untitled, 145	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0160.jpg
+Untitled, 144	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0144.jpg
+Untitled, 143	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0143.jpg
+Untitled, 121	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0121.jpg
+Untitled, 102	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0091.jpg
+Untitled, 88	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0102.jpg
+Untitled, 91	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0088.jpg
+Untitled, 83	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0083.jpg
+Untitled, 72	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0068.jpg
+Untitled, 68	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0021.jpg
+Untitled, 67	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0045.jpg
+Untitled, 45	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0067.jpg
+Untitled, 21	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0072.jpg
+Untitled, 10	digital	iphone	2009	iPhone Drawing		https://www.hockney.com/img/gallery/digital/iphone/0010.jpg
+Self Portrait, 25 March 2012, No. 1 (1231)	digital	ipad	2012	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/1231.jpg
+Self Portrait, 20 March 2012 (1219)	digital	ipad	2012	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/1219.jpg
+Self Portrait, 14 March 2012 (1201)	digital	ipad	2012	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/1201.jpg
+Self Portrait, 11 March 2012 (1193)	digital	ipad	2012	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/1193.jpg
+Untitled, 1159	digital	ipad	2012	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/1159.jpg
+Untitled, 1094	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/1094.jpg
+Untitled, 1072	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/1072.jpg
+Untitled, 1067	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/1067.jpg
+Untitled, 1062	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/1062.jpg
+Untitled, 1037	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/1037.jpg
+Untitled, 1031	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/1031.jpg
+Untitled, 1030	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/1030.jpg
+Untitled, 1000	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/1000.jpg
+Untitled, 998	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0998.jpg
+Untitled, 978	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0978.jpg
+Untitled, 977	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0977.jpg
+Untitled, 966	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0966.jpg
+Untitled, 955	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0955.jpg
+Untitled, 938	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0938.jpg
+Untitled, 922	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0922.jpg
+Untitled, 918	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0918.jpg
+Untitled, 917	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0917.jpg
+Untitled, 913	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0913.jpg
+Untitled, 910	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0910.jpg
+Untitled, 894	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0894.jpg
+Untitled, 888	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0888.jpg
+Untitled, 883	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0883.jpg
+Untitled, 878	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0878.jpg
+Untitled, 863	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0863.jpg
+Untitled, 852	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0852.jpg
+Untitled, 829	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0829.jpg
+Untitled, 822	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0822.jpg
+Untitled, 820	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0820.jpg
+Untitled, 810	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0810.jpg
+Untitled, 791	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0791.jpg
+Untitled, 780	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0780.jpg
+Untitled, 776	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0776.jpg
+Untitled, 772	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0772.jpg
+Untitled, 753	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0753.jpg
+Untitled, 743	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0743.jpg
+Untitled, 739	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0739.jpg
+Untitled, 714	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0714.jpg
+Untitled, 712	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0712.jpg
+Untitled, 705	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0705.jpg
+Untitled, 701	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0701.jpg
+Untitled, 691	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0691.jpg
+Plug in for the Next Generation (684)	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0684.jpg
+Untitled, 656	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0656.jpg
+Untitled, 655	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0655.jpg
+Untitled, 654	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0654.jpg
+Untitled, 651	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0651.jpg
+Untitled, 644	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0644.jpg
+Untitled, 643	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0643.jpg
+Untitled, 642	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0642.jpg
+Untitled, 632	digital	ipad	2011	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0632.jpg
+Untitled, 621	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0621.jpg
+Untitled, 610	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0610.jpg
+Untitled, 609	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0609.jpg
+Untitled, 592	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0592.jpg
+Untitled, 589	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0589.jpg
+Untitled, 580	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0580.jpg
+Untitled, 577	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0577.jpg
+Untitled, 456	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0456.jpg
+Untitled, 455	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0455.jpg
+Untitled, 453	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0453.jpg
+Untitled, 452	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0452.jpg
+Untitled, 353	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0353.jpg
+Untitled, 336	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0336_13_08_2010.jpg
+Untitled, 311	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0311.jpg
+Untitled, 298	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0298.jpg
+Untitled, 291	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0291_25_08_2010.jpg
+Untitled, 278	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0278.jpg
+Untitled, 268	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0268.jpg
+Untitled, 263	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0263.jpg
+Untitled, 258	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0258.jpg
+Untitled, 242	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0242.jpg
+Untitled, 239	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0239.jpg
+Untitled, 224	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0224.jpg
+Untitled, 210	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0210.jpg
+Untitled, 196	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0196.jpg
+Untitled, 191	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0191.jpg
+Untitled, 190-2	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0190-2.jpg
+Untitled, 188	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0188.jpg
+Untitled, 182	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0182.jpg
+Untitled, 181	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0181.jpg
+Untitled, 180	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0180.jpg
+Untitled, 177	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0177.jpg
+Untitled, 168	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0168.jpg
+Untitled, 156	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0156.jpg
+Untitled, 65	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0065.jpg
+Untitled, 61	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0061.jpg
+Untitled, 41	digital	ipad	2010	iPad Drawing		https://www.hockney.com/img/gallery/digital/ipad/0041.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 1 January	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/01-0622.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 2 January	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/02-1147.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 3 January	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/03-0623.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 4 January	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/04-0619.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 8 January	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/05-0630.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 13 January	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/06-0687.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 18 January	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/07-0647.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 29 January	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/08-0661.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 19 February	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/09-0688.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 23 February	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/10-0698.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 25 February	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/11-0700.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 5 March	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/12-0711.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 14 March	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/13-0721.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 15 March	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/14-0728.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 16 March	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/15-1144.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 18 March	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/16-0731.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 19 March	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/17-0724.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 21 March	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/18-0736.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 22 March	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/19-0735.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 25 March	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/20-0742.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 30 March	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/21-0748.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 1 April	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/22-0746.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 12 April, No. 1	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/23-0762.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 12 April, No. 2	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/24-0765.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 14 April	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/25-0768.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 17 April	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/26-0773.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 19 April	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/27-0782.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 23 April	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/29-0793.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 24 April	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/30-0789.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 25 April	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/31-0797.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 26 April	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/32-0808.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 27 April	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/33-0811.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 28 April	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/34-0815.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 30 April	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/35-0827.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 4 May	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/36-0839.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 5 May	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/37-0838.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 6 May	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/38-0845.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 11 May	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/40-0853.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 12 May	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/41-0858.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 14 May	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/42-0870.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 16 May	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/43-0873.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 17 May	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/44-0875.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 18 May	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/45-0877.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 19 May	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/46-0879.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 22 May	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/47-0885.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 30 May	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/48-1160.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 31 May, No. 1	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/49-0900.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 31 May, No. 2	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/50-0868.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 2 June	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on paper	55 x 41 1/2 in	https://www.hockney.com/img/gallery/digital/woldgate/51-0903.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 18 December	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on four sheets of paper	93 x 70 in	https://www.hockney.com/img/gallery/digital/woldgate/01-1326.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 29 December, No. 1	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on four sheets of paper	93 x 70in	https://www.hockney.com/img/gallery/digital/woldgate/02-1116.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 29 December, No. 2	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on four sheets of paper	93 x 70in	https://www.hockney.com/img/gallery/digital/woldgate/03-1124.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 2 January	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on four sheets of paper	93 x 70in	https://www.hockney.com/img/gallery/digital/woldgate/04-1147.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 29 January	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on four sheets of paper	93 x 70 in	https://www.hockney.com/img/gallery/digital/woldgate/05-0661.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 25 March	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on four sheets of paper	93 x 70 in	https://www.hockney.com/img/gallery/digital/woldgate/06-0742.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 4 May	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on four sheets of paper	93 x 70 in	https://www.hockney.com/img/gallery/digital/woldgate/07-0839.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 11 May	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on four sheets of paper	93 x 70 in	https://www.hockney.com/img/gallery/digital/woldgate/08-0853.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 16 May	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on four sheets of paper	93 x 70 in	https://www.hockney.com/img/gallery/digital/woldgate/09-0873.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 30 May	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on four sheets of paper	93 x 70 in	https://www.hockney.com/img/gallery/digital/woldgate/10-1160.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 31 May, No. 1	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on four sheets of paper	93 x 70 in	https://www.hockney.com/img/gallery/digital/woldgate/11-0900.jpg
+The Arrival of Spring in Woldgate, East Yorkshire in 2011 (twenty eleven) - 2 June	digital	arrival-of-spring-woldgate	2011	iPad drawing printed on four sheets of paper	93 x 70 in	https://www.hockney.com/img/gallery/digital/woldgate/12-0903.jpg
+Untitled No. 2 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper	37 x 28 in	https://www.hockney.com/img/gallery/digital/yosemite/0396.jpg
+Untitled No. 1 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper	37 x 28 in	https://www.hockney.com/img/gallery/digital/yosemite/0395.jpg
+Untitled No. 3 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper	37 x 28 in	https://www.hockney.com/img/gallery/digital/yosemite/0397.jpg
+Untitled No. 4 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper	37 x 28 in	https://www.hockney.com/img/gallery/digital/yosemite/0399.jpg
+Untitled No. 5 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper	37 x 28 in	https://www.hockney.com/img/gallery/digital/yosemite/0401.jpg
+Untitled No. 6 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper 37 x 28 edition of 25		https://www.hockney.com/img/gallery/digital/yosemite/0408.jpg
+Untitled No. 7 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper 37 x 28 edition of 25		https://www.hockney.com/img/gallery/digital/yosemite/0409.jpg
+Untitled No. 8 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper 37 x 28 edition of 25		https://www.hockney.com/img/gallery/digital/yosemite/0410.jpg
+Untitled No. 9 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper	37 x 28 in	https://www.hockney.com/img/gallery/digital/yosemite/0411.jpg
+Untitled No. 10 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper	37 x 28 in	https://www.hockney.com/img/gallery/digital/yosemite/0413.jpg
+Untitled No. 11 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper	37 x 28 in	https://www.hockney.com/img/gallery/digital/yosemite/0415.jpg
+Untitled No. 12 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper	37 x 28in	https://www.hockney.com/img/gallery/digital/yosemite/0416.jpg
+Untitled No. 13 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper 37 x 28		https://www.hockney.com/img/gallery/digital/yosemite/0418.jpg
+Untitled No. 14 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper 37 x 28		https://www.hockney.com/img/gallery/digital/yosemite/0419.jpg
+Untitled No. 15 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper	37 x 28 in	https://www.hockney.com/img/gallery/digital/yosemite/0420.jpg
+Untitled No. 16 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper 37 x 28		https://www.hockney.com/img/gallery/digital/yosemite/0422.jpg
+Untitled No. 17 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper 37 x 28		https://www.hockney.com/img/gallery/digital/yosemite/0424.jpg
+Untitled No. 18 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper 37 x 28		https://www.hockney.com/img/gallery/digital/yosemite/0428.jpg
+Untitled No. 19 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper 37 x 28		https://www.hockney.com/img/gallery/digital/yosemite/0429.jpg
+Untitled No. 20 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper 37 x 28		https://www.hockney.com/img/gallery/digital/yosemite/0430.jpg
+Untitled No. 21  from  The Yosemite Suite	digital	yosemite-suite	2010	iPad drawing printed on paper 37 x 28		https://www.hockney.com/img/gallery/digital/yosemite/0434.jpg
+Untitled No. 22 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper 37 x 28		https://www.hockney.com/img/gallery/digital/yosemite/0435.jpg
+Untitled No. 23 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper	37 x 28 in	https://www.hockney.com/img/gallery/digital/yosemite/0436.jpg
+Untitled No. 24 from “The Yosemite Suite”	digital	yosemite-suite	2010	iPad drawing printed on paper 37 x 28		https://www.hockney.com/img/gallery/digital/yosemite/0440.jpg
+Yosemite I, October 5th	digital	yosemite-suite	2011	iPad drawing printed on four sheets of paper mounted on four sheets of Dibond	93 x 70 in	https://www.hockney.com/img/gallery/digital/yosemite/1025.jpg
+Yosemite II, October 5th	digital	yosemite-suite	2011	iPad drawing printed on four sheets of paper mounted on four sheets of Dibond	93 x 70 in	https://www.hockney.com/img/gallery/digital/yosemite/1029.jpg
+Yosemite III, October 5th	digital	yosemite-suite	2011	iPad drawing printed on four sheets of paper mounted on four sheets of Dibond	93 x 70in	https://www.hockney.com/img/gallery/digital/yosemite/1022.jpg
+Yosemite I, October 16th	digital	yosemite-suite	2011	iPad drawing printed on four sheets of paper mounted on four sheets of Dibond 78 x 70 overall		https://www.hockney.com/img/gallery/digital/yosemite/1059.jpg
+Yosemite II, October 16th	digital	yosemite-suite	2011	iPad drawing printed on four sheets of paper, mounted on four sheets of Dibond	93 x 70 in	https://www.hockney.com/img/gallery/digital/yosemite/1063.jpg
+Pearblossom Highway #1	photos	photographic-collages		11th-18th April 1986 - photographic collage	47 x 64 in.	https://www.hockney.com/img/gallery/photos/collages/S35-A-LG.jpg
+Walking In The Zen Garden, Ryoanji Temple, Kyoto	photos	photographic-collages	1983	photographic collage	40 x 62 1/2 in.	https://www.hockney.com/img/gallery/photos/collages/06.jpg
+Photographing Annie Leibovitz While She Is Photographing Me, Mojave Desert	photos	photographic-collages		Feb.1983 - photographic collage, edition of 4	25 7/8 x 61 3/4 in.	https://www.hockney.com/img/gallery/photos/collages/05.jpg
+Robert Littman Floating in My Pool	photos	photographic-collages		Oct. 1982 - photographic collage	22 1/2 x 30 in.	https://www.hockney.com/img/gallery/photos/collages/04.jpg
+Prehistoric Museum Near Palm Springs	photos	photographic-collages	1982	photographic collage	84 1/2 x 56 1/2 in.	https://www.hockney.com/img/gallery/photos/collages/03.jpg
+Merced River, Yosemite Valley	photos	photographic-collages	1982	photographic collage	52x61 in.	https://www.hockney.com/img/gallery/photos/collages/02.jpg
+Telephone Pole	photos	photographic-collages	1982	photographic collage	66x40 in.	https://www.hockney.com/img/gallery/photos/collages/01.jpg
+Patrick Procktor, Pembroke Studios, London	photos	composite-polaroids		7th May 1982 - composite polaroid	52 1/2 x 21 in.	https://www.hockney.com/img/gallery/photos/composites/CP-119.jpg
+Mother, Bradford, Yorkshire	photos	composite-polaroids		4th May 1982 - composite polaroid	56 x 23 1/2 in.	https://www.hockney.com/img/gallery/photos/composites/CP-109.jpg
+Sun On The Pool Los Angeles	photos	composite-polaroids		April 13th 1982 - composite polaroid	34 3/4 x 36 1/4 in.	https://www.hockney.com/img/gallery/photos/composites/CP-139.jpg
+Celia’s Children Albert + George Clark Los Angeles	photos	composite-polaroids		April 7th 1982 - composite polaroid	35 x 23 1/4 in.	https://www.hockney.com/img/gallery/photos/composites/CP-035.jpg
+Still Life Blue Guitar	photos	composite-polaroids		4th April 1982 - composite polaroid	24 1/2 x 30 in.	https://www.hockney.com/img/gallery/photos/composites/CP-136.jpg
+Nicholas Wilder Studying Picasso. Los Angeles	photos	composite-polaroids		24th March 1982 - composite polaroid	48 1/2 x 26 1/2 in.	https://www.hockney.com/img/gallery/photos/composites/CP-116.jpg
+Don + Christopher Los Angeles	photos	composite-polaroids		6th March 1982 - composite polaroid	31 1/2 x 23 1/4 in.	https://www.hockney.com/img/gallery/photos/composites/CP-045.jpg
+Inside It Opens Up As Well	photos	photo_drawings		: 2018 - Photographic drawing printed on paper, mounted on Dibond, Edition of	25 23 3/4 x 65 3/4in.	https://www.hockney.com/img/gallery/photos/photo_drawings/PD-031-A.jpg
+Pictured Gathering with Mirror	photos	photo_drawings	2018	Photographic drawing printed on paper, mounted on Dibond Edition of 25	23 3/4 x 63 3/4in.	https://www.hockney.com/img/gallery/photos/photo_drawings/PD-037-A.jpg
+Viewers Looking at a Ready-made with Skull and Mirrors	photos	photo_drawings	2018	Photographic drawing printed on paper, mounted on Dibond Edition of 25	28 1/2 x 47 3/4in.	https://www.hockney.com/img/gallery/photos/photo_drawings/PD-036-A.jpg
+Pictures at an Exhibition	photos	photo_drawings	2018	Photographic drawing printed on paper, mounted on Dibond Edition of 25	23 3/4 x 76 1/4in.	https://www.hockney.com/img/gallery/photos/photo_drawings/PD-035-A.jpg
+Focus Moving	photos	photo_drawings	2018	Photographic drawing printed on paper, mounted on Dibond, Edition of 25, 35 1/4 x 45 1/4		https://www.hockney.com/img/gallery/photos/photo_drawings/PD-033-A.jpg
+In the Studio, December 2017	photos	photo_drawings	2017	Photographic drawing printed on paper, mounted on Dibond, Edition of	25 23 3/4 x 65 3/4in.	https://www.hockney.com/img/gallery/photos/photo_drawings/PD-027-A.jpg
+Reading in the Studio	photos	photo_drawings	2015	Photographic drawing printed on paper, mounted on Dibond, Edition of 25	42 1/2 x 59 1/2in	https://www.hockney.com/img/gallery/photos/photo_drawings/PD-023-BAT.jpg
+The Scrabble Players	photos	photo_drawings	2015	Photographic drawing printed on paper, mounted on Dibond, Edition of 25	42 1/4 x 42 1/4in	https://www.hockney.com/img/gallery/photos/photo_drawings/PD-022-BAT.jpg
+Perspective Should Be Reversed	photos	photo_drawings	2014	Photographic drawing printed on paper, mounted on Dibond, Edition of 25	42 1/2 x 69 1/2in	https://www.hockney.com/img/gallery/photos/photo_drawings/PD-020-BAT.jpg
+The Chairs	photos	photo_drawings	2014	Photographic drawing printed on paper, mounted on Dibond, Edition of 25	42 1/2 x 69 1/2in	https://www.hockney.com/img/gallery/photos/photo_drawings/PD-017-BAT.jpg
+The Red Table	photos	photo_drawings	2014	Photographic drawing printed on paper, mounted on Dibond, Edition of 25, 42 1/2 x 69 1/2		https://www.hockney.com/img/gallery/photos/photo_drawings/PD-019-BAT.jpg
+The Potted Palm	photos	photo_drawings	2014	Photographic drawing printed on paper, mounted on Dibond, Edition of 25	42 1/2 x 69 1/2in	https://www.hockney.com/img/gallery/photos/photo_drawings/PD-015-BAT.jpg
+4 Blue Stools	photos	photo_drawings	2014	Photographic drawing printed on paper, mounted on Dibond, Edition of 25, 42 1/2 x 69 1/2		https://www.hockney.com/img/gallery/photos/photo_drawings/PD-016-BAT.jpg
+Sparer Chairs	photos	photo_drawings	2014	Photographic drawing printed on paper, mounted on Dibond, Edition of 25	42 1/4 x 69 1/4In	https://www.hockney.com/img/gallery/photos/photo_drawings/PD-013-BAT.jpg
+Two Chairs with People	photos	photo_drawings	2014	Photographic drawing printed on paper, mounted on Dibond, Edition of 25	42 1/4 x 69 1/4in	https://www.hockney.com/img/gallery/photos/photo_drawings/PD-009-BAT.jpg
+The Rake’s Progress	stage_design	the-rakes-progress		Designs from The Rakes Progress , as performed at the Glyndebourne Opera, East Sussex, U.K., 1975.Composer: Igor Stravinsky Libretto: W.H. Auden and Chester Kallman Conductor: Bernard Haitinik Producer: John Cox Designer: David Hockney Lighting: Robert Bryan Associate Producer: Julian Hop		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/rakes_prog_credits.jpg
+Drop Curtain for The Rake’s Progress	stage_design	the-rakes-progress	1975-1979	Ink and collage on cardboard 14 X 20 1/2		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/13.jpg
+Trulove’s Garden From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink on carboard 16 X 21 X 12		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/02.jpg
+Night Garden From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink on carboard 16 X 21 X 12		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/01.jpg
+Tom’s Room From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink on cardboard 16 X 21 X 12		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/07.jpg
+Mother Goose’s Brothel From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink on carboard 16 X 21 X 12		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/10.jpg
+Street Scene From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink on cardboard 16 X 21 X 12		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/06.jpg
+Tom’s Room with Baba’s Hanging Objects From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink and photos on cardboard 16 X 21 X 12		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/04.jpg
+Graveyard From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink on cardboard 16 X 21 X 12		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/15.jpg
+Bedlam From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink on cardboard 16 5/8 X 21 5/8 X 12 5/8		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/12.jpg
+Chandelier, Tom’s Room From The Rake’s Progress	stage_design	the-rakes-progress	1975	Pencil and ink on paper 10 1/2 X 13 7/8		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/09.jpg
+Baba’s Hanging Objects From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink and collage on paper 11 3/4 X 16 1/4		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/08.jpg
+Cobweb Drape, Tom’s House From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink on paper 19 3/4 X 24		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/18.jpg
+Front and Back of Painting of a Pike From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink on paper 14 X 11		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/14.jpg
+Unused Lustometer From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink on paper 13 7/8 X 11		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/19.jpg
+Tom, Town Clothes From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink on paper 14 X 11		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/05.jpg
+Mother Goose From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink on paper 14 X 11		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/26.jpg
+Baba The Turk From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink and collage on paper 14 X 11		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/23.jpg
+Sellem, Scene 7 From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink on paper 13 7/8 X 11		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/03.jpg
+Trulove, Scene 1 From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink on paper 14 X 11		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/27.jpg
+Baba - Red Pantaloons From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink on paper 17 X 11		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/29.jpg
+Tom, Scene 1 From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink on paper 19 3/4 X 24		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/20.jpg
+Nick (Shadow) From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink and collage on paper 14 X 11		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/30.jpg
+Baba The Turk Poster From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink and pencil on paper 21 X 16 3/4		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/24.jpg
+Ann, Scene 1 From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink on paper 14 X 11		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/22.jpg
+Sketch for The Rake’s Progress From The Rake’s Progress	stage_design	the-rakes-progress	1975	Crayon on paper 17 X 13 7/8		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/25.jpg
+Study for Mother Goose From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink and collage 14 X 17		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/28.jpg
+Study for The Rake’s Progress From The Rake’s Progress	stage_design	the-rakes-progress	1976	Colored crayon on paper 13 1/4 x 21 1/2		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/32.jpg
+Lustometer and Bread Machine From The Rake’s Progress	stage_design	the-rakes-progress	1975	Pencil and ink on paper 14 X 17		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/16.jpg
+Study for Bedlam From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink on paper 10 1/4 X 10 1/8		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/17.jpg
+Bread Machine From The Rake’s Progress	stage_design	the-rakes-progress	1975	Ink and wash on paper 14 X 17		https://www.hockney.com/img/gallery/stagedesign/rakesprogress/31.jpg
+The Magic Flute	stage_design	magic-flute		Designs from The Magic Flute, as performed at the Glyndebourne Opera, East Sussex, U.K. 1978. Composer: Wolfgang Amadeus Mozart Libretto: Emanuel Schikaneder Producer: John Cox Director: Dave Heather Designer: David Hockney Conductor: Bernard Haitinik		https://www.hockney.com/img/gallery/stagedesign/magicflute/magic_credits.jpg
+The Appearance Of The Queen Of The Night From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/02_77A24.jpg
+Sarastro’s Kingdom From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/03_77A26.jpg
+An Avenue of Palms From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/04_77A27.jpg
+Outside The Temple From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/05_77A28.jpg
+A Moon Lit Garden From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/06_77A29.jpg
+A Great Hall From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/07_77A30.jpg
+A Room In Sarastro’s Palace From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/08._77A25jpg.jpg
+Trial By Fire From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/09_77A32.jpg
+Trial By Water From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/10_77A33.jpg
+The Triumph Of Light From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/11_77A34.jpg
+Study Rock For Appearance Of The Queen Of The Night From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/12_77D01A.jpg
+Study Rock For Appearance Of The Queen Of The Night From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/13_77D01B.jpg
+The Queen Of The Night From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/14_77A21.jpg
+Temple Models From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/15_Temples.jpg
+Enchanted Animals From The Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/16_77A35.jpg
+Crocodile From The Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/18_77A18.jpg
+Dragon From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/18_77A18.jpg
+Priests With Aprons From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/19_77A03.jpg
+Sarastro From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/20_77A04.jpg
+Study For The Speaker From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/21_77A05.jpg
+Costume Study For Sarastro From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/22_77A06.jpg
+Study For Sarastro From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/23_77A07.jpg
+Sarastro’s Kingdom From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/24_77A08.jpg
+Study For Sarastro’s Cloak From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/25_77A09.jpg
+Sarastro’s Chariot From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/26_77A10.jpg
+Study for Priests From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/27_77A11.jpg
+The Speaker From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/28_77A12.jpg
+Priests With Lanterns From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/29_77A13.jpg
+Tamino From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/30_77A15.jpg
+Pamina From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/31_77A16.jpg
+Three Boys From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/32_77A17.jpg
+Papageno From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/33_77A19.jpg
+Three Ladies From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/34_77A20.jpg
+Monostatos From Magic Flute	stage_design	magic-flute				https://www.hockney.com/img/gallery/stagedesign/magicflute/35_77A22.jpg
+Parade Title	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/parade.jpg
+Model for Backdrop	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/01-80G26.jpg
+Parade	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/02-80S13.jpg
+Drop Curtain For Parade Ballet	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/03-80E16.jpg
+Picasso Horse “For John Dexter”	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/04-80G29.jpg
+The Stage From The Orchestra	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/05-80E35.jpg
+Harlequin Against Gold	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/06-80I11.jpg
+Troop of Actors & Acrobats (Harlequins Against Gold Proscenium)	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/07-80G04.jpg
+Acrobat. Doctori	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/08-80I12.jpg
+Jazz Dancers With Punchinello	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/09-80E18.jpg
+For Parade	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/10-80I13.jpg
+Chinese Conjuror	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/11-80I16.jpg
+Les Mamelles de Tiresias	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/lesmamells.jpg
+Picasso Stage Manager	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/12-80E21.jpg
+Curtain With Curved Stage	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/13-79H15.jpg
+Model For Drop Curtain	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/14-80I26.jpg
+Set For Mamelles	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/15-80I18.jpg
+Babies With Husbands	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/16-80G06.jpg
+Poiret Gowns For Mamelles	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/17-80I19.jpg
+Poiret Gowns For Mamelles	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/18-80E34.jpg
+Coats For Mamelles	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/19-80I20.jpg
+After Poiret For Mamalles	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/20-80I23.jpg
+Le Journalist	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/21-80I24.jpg
+Men’s Chorus For Mamelles	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/22-80I22.jpg
+Femele Chorus For Mamelles	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/23-80E32.jpg
+Punchinello With Baby	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/24-80E25.jpg
+Barbed Wire. Prams. Incre. Colle. Pen	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/25-80P31.jpg
+Baby Carriage With Baby	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/26-80I25.jpg
+L’Enfant et les Sortileges	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/lenfant.jpg
+Punchinello Head	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/27-83E04.jpg
+Child With Books, Cup and Teapot	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/36-80G37.jpg
+Teapot	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/37-80B33.jpg
+Punchinellos Changing Blocks	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/28-80F36.jpg
+Punchinello With Applause	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/29-80I17.jpg
+Cubist Punchinella	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/30-80G20.jpg
+Punchinello With Block	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/31-80G05.jpg
+The Room With Singers	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/32-80G02.jpg
+Principal Singers For L’Enfant II	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/33-80C11.jpg
+Principal Singers For L’Enfant	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/34-80G03.jpg
+The Room	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/35-80F34.jpg
+Shepherds and Shepherdesses Dancing Off The Wall	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/38-80G11.jpg
+Princess With Book (2nd Version)	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/39-80F15.jpg
+Princess With Book (1st Version)	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/40-80G12.jpg
+Mr. Arithmetic I	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/41-80B38.jpg
+Child With Large Chair and Fireplace	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/42-80G07.jpg
+Fire and Cinder (1st Version)	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/43-80G08_.jpg
+The Garden With Singers	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/44-80G13.jpg
+The Garden	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/45-80F35.jpg
+Moth	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/46-80G10.jpg
+Three Bats In The Garden	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/47-80G35.jpg
+Two Bats In The Garden	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/48-80G09.jpg
+Dragon Flies (3rd version)	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/49-80G16.jpg
+Frog	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/50-80C30.jpg
+Frogs In The Garden	stage_design	french-triple-bill				https://www.hockney.com/img/gallery/stagedesign/frenchtriplebill/51-80G36.jpg
+Stravinsky Poster Metropolitan Opera	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/lesacre.jpg
+Stravinsky - 81B40	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81B40.jpg
+Set For Sacre	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81B36.jpg
+Superimposed Figures I	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81B38.jpg
+Superimposed Figures VII	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81B39.jpg
+Set With Dancers II	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/DSF0005.jpg
+Study For Costumes On The Stage	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/study_for_costumes.jpg
+Costume Study With Priests	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81B37.jpg
+Primitive Masks	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/primitive_masks_sacre.jpg
+Le Rossignol	stage_design	stravinsky-triple-bill		Designs from Le Rossignol, as performed at the Metropolitan Opera House, 1981. Composer: Igor Stravinsky Libretto: Stepan Mitusov, after Hans Christian Andersen Conductor: James Levine Stage Director: John Dexter Stage Design: David Hockney Choreographer: Frederick Ashton Lighting: Gil Wechsler Fisherman: Anthony Dowell (sung by Philip Creech) Nightingale: Nataila Makarova (sung by Gwendolyn Bradley) Emperor: Morley Meredith		https://www.hockney.com/img/gallery/stagedesign/stravinsky/DSCF0100.jpg
+Nightingale And Fisherman By The Seashore	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81K06.jpg
+Dancing Figures With Mountains And Trees	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81H35.jpg
+Courtiers And Mountains	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81H11.jpg
+Courtiers And Masks	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/courtiers_masks.jpg
+Study Of Courtiers On The Stage	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81H34.jpg
+Set For Le Rossignol	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81D01.jpg
+Emperor And Courtiers	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81H37.jpg
+Forty Chinese Masks	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81H29.jpg
+Costume For Nightingale	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81H22.jpg
+Death II	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81H26.jpg
+Japanese Ambassador	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81H36.jpg
+Emperor’s March	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81H30.jpg
+Represantation Of Real And Mechanical Nightingale	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81H33.jpg
+Studies For Mechanical Nightingale	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81H32.jpg
+Sketch Of Mechanical Nightingale	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81D31.jpg
+Oedipus Rex	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/oedipus_rex.jpg
+Sketch For Oedipus	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81D34.jpg
+Chorus, Principals, Narrator, Orchestra & Masks	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81K12.jpg
+Oedipus On Stage With Mountains Behind	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81K09.jpg
+Study Of Masks II	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81K16A.jpg
+Study Of Masks For Chorus	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81K17-22.jpg
+Mask Studies	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81J24.jpg
+Study For Chorus With Masks	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81K13.jpg
+Three Singers On The Stage	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81D41.jpg
+Chorus With Masks Above Their Heads	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81K14.jpg
+Chorus In Evening Dress On Stage With Masks	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81K10.jpg
+Chorus In Evening Dress On Stage With Masks	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81K10.jpg
+Oedipus. Principal Singers, Chorus And Narrator	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81J16.jpg
+Principals, Singers And Chorus	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81K11.jpg
+Oedipus In The Auditorium	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81J17.jpg
+Raised Stage With Orchestra	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81D39.jpg
+Study Of Masks For Principals	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81K23.jpg
+Seeing And Blind Masks For Oedipus IV	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81J38.jpg
+Sketch For Blind Mask For Oedipus	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81J37.jpg
+Blind Mask For Oedipus	stage_design	stravinsky-triple-bill				https://www.hockney.com/img/gallery/stagedesign/stravinsky/81J39.jpg
+Tristan und Isolde 1	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/01-0101.jpg
+Tristan und Isolde 2	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/02-0111.jpg
+Tristan und Isolde 3	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/03-0116.jpg
+Tristan und Isolde 4	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/04-0117.jpg
+Tristan und Isolde 5	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/05-0128.jpg
+Tristan und Isolde 6	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/06-0138.jpg
+Tristan und Isolde 7	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/07-0144.jpg
+Tristan und Isolde 8	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/08-0201.jpg
+Tristan und Isolde 9	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/09-0203.jpg
+Tristan und Isolde 10	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/10-0213.jpg
+Tristan und Isolde 11	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/11-0223.jpg
+Tristan und Isolde 12	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/12-0245.jpg
+Tristan und Isolde 13	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/13-0255.jpg
+Tristan und Isolde 14	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/14-0261.jpg
+Tristan und Isolde 15	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/15-0006.jpg
+Tristan und Isolde 16	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/16-0010.jpg
+Tristan und Isolde 17	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/17-0011.jpg
+Tristan und Isolde 18	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/18-0021.jpg
+Tristan und Isolde 19	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/19-0034.jpg
+Tristan und Isolde 20	stage_design	tristan-und-isolde				https://www.hockney.com/img/gallery/stagedesign/tristanundisolde/20-0040.jpg
+Turandot 1	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/2.jpg
+Turandot 2	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/3.jpg
+Turandot 3	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/5.jpg
+Turandot 4	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/6.jpg
+Turandot 5	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/7.jpg
+Turandot 6	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/8.jpg
+Turandot 7	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/9.jpg
+Turandot 8	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/DH-turandot326.jpg
+Turandot 9	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/DH-turandot331.jpg
+Turandot 10	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/10.jpg
+Turandot 11	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/DH-turandot362.jpg
+Turandot 12	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/DH-turandot352.jpg
+Turandot 13	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/DH-turandot374.jpg
+Turandot 14	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/DH-turandot377.jpg
+Turandot 15	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/DH-turandot371.jpg
+Turandot 16	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/DH-turandot379.jpg
+Turandot 17	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/DH-turandot381.jpg
+Turandot 18	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/DH-turandot382.jpg
+Turandot 19	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/14.jpg
+Turandot 20	stage_design	turandot				https://www.hockney.com/img/gallery/stagedesign/turandot/15.jpg
+Die Frau Ohne Schatten 1	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0214.jpg
+Die Frau Ohne Schatten 2	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0228.jpg
+Die Frau Ohne Schatten 3	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0255.jpg
+Die Frau Ohne Schatten 4	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0273.jpg
+Die Frau Ohne Schatten 5	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0277.jpg
+Die Frau Ohne Schatten 6	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0294.jpg
+Die Frau Ohne Schatten 7	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0335.jpg
+Die Frau Ohne Schatten 8	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0341.jpg
+Die Frau Ohne Schatten 9	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0349.jpg
+Die Frau Ohne Schatten 10	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0354.jpg
+Die Frau Ohne Schatten 11	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0397.jpg
+Die Frau Ohne Schatten 12	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0404.jpg
+Die Frau Ohne Schatten 13	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0427.jpg
+Die Frau Ohne Schatten 14	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0452.jpg
+Die Frau Ohne Schatten 15	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0470.jpg
+Die Frau Ohne Schatten 16	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0476.jpg
+Die Frau Ohne Schatten 17	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0523.jpg
+Die Frau Ohne Schatten 18	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0533.jpg
+Die Frau Ohne Schatten 19	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0537.jpg
+Die Frau Ohne Schatten 20	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0548.jpg
+Die Frau Ohne Schatten 21	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0569.jpg
+Die Frau Ohne Schatten 22	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0573.jpg
+Die Frau Ohne Schatten 23	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0582.jpg
+Die Frau Ohne Schatten 24	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0621.jpg
+Die Frau Ohne Schatten 25	stage_design	die-frau-ohne-schatten				https://www.hockney.com/img/gallery/stagedesign/diefrau/0627.jpg
+Three-Panel Diving Board (Paper Pool 31)	etcetera	pools	1978	colored and pressed paper pulp	51x96 in.	https://www.hockney.com/img/gallery/etcetera/pools/78G20.jpg
+Piscine de Medianoche (Paper Pool 30)	etcetera	pools	1978	colored and pressed paper pulp	51x96 in.	https://www.hockney.com/img/gallery/etcetera/pools/78G19.jpg
+Autumn Pool (Paper Pool 29)	etcetera	pools	1978	colored and pressed paper pulp Autumn Pool, 1978 colored and pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78G18.jpg
+Fall Pool with Two Flat Blues (Paper Pool 28)	etcetera	pools	1978	colored and pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78G17.jpg
+A Large Diver (Paper Pool 27)	etcetera	pools	1978	colored and pressed paper pulp	72x171 in.	https://www.hockney.com/img/gallery/etcetera/pools/78C35.jpg
+Pool with Cloud Reflections (Paper Pool 26)	etcetera	pools	1978	colored and pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78G16.jpg
+Piscine on Sprayed Blue Paper with Purple Top (Paper Pool 25)	etcetera	pools	1978	colored and pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78G15.jpg
+Piscine on Sprayed Blue Paper with Green Top (Paper Pool 24)	etcetera	pools	1978	colored and pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78G14.jpg
+Oversized Pool (Paper Pool 23)	etcetera	pools	1978	colored and pressed paper pulp	82x92 in.	https://www.hockney.com/img/gallery/etcetera/pools/78G13.jpg
+Pool On a Cloudy Day with Rain (Paper Pool 22)	etcetera	pools	1978	colored and pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78G12.jpg
+Pool On a Cloudy Day (Paper Pool 21)	etcetera	pools	1978	colored and pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78G11.jpg
+Une Autre Piscine a Minuit (Paper Pool 20)	etcetera	pools	1978	colored and pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78G10.jpg
+Piscine a Minuit (Paper Pool 19)	etcetera	pools	1978	colored and pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78G09.jpg
+Swimmer Underwater (Paper Pool 16)	etcetera	pools	1978	colored and pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78G06.jpg
+Diving Board with Shadow (Paper Pool 15)	etcetera	pools	1978	colored and pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78G05.jpg
+Sprungbrett mit Schatten (Paper Pool 14)	etcetera	pools	1978	colored and pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78G04.jpg
+Plengeoir Avec Ombre	etcetera	pools	1978	pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78C31.jpg
+Diving Board with Stillwater on Blue Paper (Paper Pool 12)	etcetera	pools	1978	colored and pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/12_78G02.jpg
+Schwimmbad Mitternacht (Paper Pool 11)	etcetera	pools	1978	colored and pressed paper pulp	72 1/2 x 85 1/2 in	https://www.hockney.com/img/gallery/etcetera/pools/78C34.jpg
+Midnight Pool	etcetera	pools	1978	colored and pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78G01.jpg
+Pool with Reflection and Still Water (Paper Pool 9)	etcetera	pools	1978	colored and pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78C40.jpg
+Pool with Reflection of Trees and Sky (Paper Pool 8)	etcetera	pools	1978	colored and pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78C39.jpg
+Day Pool With Three Blues (Paper Pool 7)	etcetera	pools	1978	pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78C36.jpg
+Swimming Pool with Reflection	etcetera	pools	1978	colored and pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78C38.jpg
+Gregory In The Pool	etcetera	pools	1978	colored and pressed paper pulp	32x50 in.	https://www.hockney.com/img/gallery/etcetera/pools/78C32.jpg
+Green Pool With Diving Board & Shadow	etcetera	pools	1978	pressed paper pulp	50x32 in.	https://www.hockney.com/img/gallery/etcetera/pools/78C29.jpg
+Steps With Shadow	etcetera	pools	1978	colored and pressed paper pulp	50 1/2 x 33 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78G22.jpg
+Steps With Shadow	etcetera	pools	1978	colored and pressed paper pulp	50 1/2 x 33 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78C30.jpg
+Piscine Avec Trois Bleus (Paper Pool 6)	etcetera	pools	1978	colored and pressed paper pulp	72x85 1/2 in.	https://www.hockney.com/img/gallery/etcetera/pools/78C37.jpg
+BMW 850 CSi	etcetera	bmw	1995			https://www.hockney.com/img/gallery/etcetera/bmw/bmw-2.jpg
+BMW 850 CSi	etcetera	bmw	1995			https://www.hockney.com/img/gallery/etcetera/bmw/bmw-3.jpg
+BMW 850 CSi	etcetera	bmw	1995			https://www.hockney.com/img/gallery/etcetera/bmw/bmw-4.jpg
+BMW 850 CSi	etcetera	bmw	1995			https://www.hockney.com/img/gallery/etcetera/bmw/95B39.jpg

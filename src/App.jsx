@@ -23,6 +23,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/works" element={<Works />} />
             <Route path="/works/:category" element={<WorksCategory />} />
+            <Route path="/works/:category/:subcategory" element={<WorksCategory />} />
             <Route path="/exhibitions/:type" element={<Exhibitions />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/press" element={<Navigate to="/press/articles" replace />} />
