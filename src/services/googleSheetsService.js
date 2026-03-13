@@ -283,7 +283,7 @@ class GoogleSheetsService {
   // ==================== RESOURCES METHODS ====================
 
   /**
-   * Obtiene recursos
+   * Obtiene todos los recursos de la hoja Resources
    * @returns {Promise<Array>} Array de recursos
    */
   async getResources() {
@@ -291,14 +291,15 @@ class GoogleSheetsService {
   }
 
   /**
-   * Obtiene recursos filtrados por categoría
-   * @param {string} category - Categoría de recursos
+   * Obtiene recursos filtrados por tipo (columna "type" del sheet)
+   * Tipos válidos: gallery | collection | making-works | publication
+   * @param {string} type - Tipo de recurso
    * @returns {Promise<Array>} Array de recursos filtrados
    */
-  async getResourcesByCategory(category) {
+  async getResourcesByType(type) {
     const resources = await this.getSheetData('Resources');
-    return resources.filter(resource => 
-      resource.category && resource.category.toLowerCase() === category.toLowerCase()
+    return resources.filter(r =>
+      r.type && r.type.toLowerCase() === type.toLowerCase()
     );
   }
 
@@ -307,7 +308,7 @@ class GoogleSheetsService {
    * @returns {Promise<Array>} Array de galerías
    */
   async getGalleries() {
-    return this.getResourcesByCategory('galleries');
+    return this.getResourcesByType('gallery');
   }
 
   /**
@@ -315,7 +316,7 @@ class GoogleSheetsService {
    * @returns {Promise<Array>} Array de publicaciones
    */
   async getPublications() {
-    return this.getResourcesByCategory('publications');
+    return this.getResourcesByType('publication');
   }
 
   /**
@@ -323,7 +324,93 @@ class GoogleSheetsService {
    * @returns {Promise<Array>} Array de colecciones públicas
    */
   async getPublicCollections() {
-    return this.getResourcesByCategory('public_collections');
+    return this.getResourcesByType('collection');
+  }
+
+  /**
+   * Obtiene entradas de Making Works (slideshows y videos)
+   * @returns {Promise<Array>} Array de making-works
+   */
+  async getMakingWorks() {
+    return this.getResourcesByType('making-works');
+  }
+
+  // ==================== CONTACT METHODS ====================
+
+  /**
+   * Obtiene los links de la página de contacto desde la hoja "Contact"
+   * @returns {Promise<Array>} Array de links
+   */
+  async getContactLinks() {
+    return this.getSheetData('Contact');
+  }
+
+  // ==================== PAGE CONFIG METHODS ====================
+
+  /**
+   * Obtiene la configuración de una página desde la hoja "page_config"
+   * Devuelve un objeto { key: value } filtrado por página
+   * @param {string} page - Nombre de la página (ej: 'home', 'works', 'resources/galleries')
+   */
+  async getPageConfig(page) {
+    const rows = await this.getSheetData('page_config');
+    const result = {};
+    rows
+      .filter(r => r.page && r.page.toLowerCase() === page.toLowerCase())
+      .forEach(r => { if (r.key) result[r.key] = r.value || ''; });
+    return result;
+  }
+
+  // ==================== WORKS CATEGORIES METHODS ====================
+
+  /**
+   * Obtiene todas las categorías de obras desde la hoja "works_categories"
+   */
+  async getWorksCategories() {
+    const rows = await this.getSheetData('works_categories');
+    return rows.sort((a, b) => Number(a.order || 0) - Number(b.order || 0));
+  }
+
+  /**
+   * Obtiene las subcategorías desde la hoja "works_subcategories"
+   * @param {string} [category] - Categoría a filtrar (opcional)
+   */
+  async getWorksSubcategories(category = null) {
+    const rows = await this.getSheetData('works_subcategories');
+    const filtered = category
+      ? rows.filter(r => r.category && r.category.toLowerCase() === category.toLowerCase())
+      : rows;
+    return filtered.sort((a, b) => Number(a.order || 0) - Number(b.order || 0));
+  }
+
+  // ==================== CONTACT CONTENT METHODS ====================
+
+  /**
+   * Obtiene el contenido de las subpáginas de contacto desde "contact_content"
+   * @param {string} [section] - Sección a filtrar (ej: 'faqs', 'NFT_report')
+   */
+  async getContactContent(section = null) {
+    const rows = await this.getSheetData('contact_content');
+    const filtered = section
+      ? rows.filter(r => r.section === section)
+      : rows;
+    return filtered.sort((a, b) => Number(a.order || 0) - Number(b.order || 0));
+  }
+
+  // ==================== SITE DATA METHODS ====================
+
+  /**
+   * Obtiene la configuración global del sitio desde la hoja "data"
+   * Devuelve un objeto { key: value } con todas las filas
+   * @returns {Promise<Object>} Objeto con los datos del sitio
+   */
+  async getSiteData() {
+    const rows = await this.getSheetData('data');
+    const result = {};
+    rows.forEach(row => {
+      if (row.key) result[row.key] = row.value || '';
+    });
+    return result;
   }
 }
 

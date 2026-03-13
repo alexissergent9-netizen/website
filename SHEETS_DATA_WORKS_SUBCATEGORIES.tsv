@@ -1,0 +1,40 @@
+category	name	slug	order
+digital	computer drawings	computer-drawings	1
+digital	iPhone	iphone	2
+digital	iPad Selects	ipad	3
+digital	arrival of spring woldgate	arrival-of-spring-woldgate	4
+digital	yosemite suite	yosemite-suite	5
+digital	digital movies	movies	6
+drawings	1950s	1950s	1
+drawings	1960s	1960s	2
+drawings	1970s	1970s	3
+drawings	1980s	1980s	4
+drawings	1990s	1990s	5
+drawings	2000s	2000s	6
+drawings	2010s	2010s	7
+drawings	arrival of spring 2013	arrival-of-spring-2013	8
+paintings	1950s	50s	1
+paintings	1960s	60s	2
+paintings	1970s	70s	3
+paintings	1980s	80s	4
+paintings	1990s	90s	5
+paintings	2000s	00s	6
+paintings	2010s	10s	7
+paintings	82 Portraits	82-portraits	8
+graphics	lithographs	lithographs	1
+graphics	etchings	etchings	2
+graphics	a rake's progress etchings	rakes-progress-etchings	3
+graphics	blue guitar etchings	blue-guitar-etchings	4
+graphics	homemade prints	prints	5
+photos	photographic collages	photographic-collages	1
+photos	composite polaroids	composite-polaroids	2
+photos	photographic drawings	photo_drawings	3
+stage_design	the rake's progress	the-rakes-progress	1
+stage_design	magic flute	magic-flute	2
+stage_design	french triple bill	french-triple-bill	3
+stage_design	stravinsky triple bill	stravinsky-triple-bill	4
+stage_design	tristan und isolde	tristan-und-isolde	5
+stage_design	turandot	turandot	6
+stage_design	die frau ohne schatten	die-frau-ohne-schatten	7
+etcetera	paper pulp	pools	1
+etcetera	BMW art car	bmw	2

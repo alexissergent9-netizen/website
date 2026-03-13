@@ -1,10 +1,12 @@
+import { useSiteData } from '../context/SiteDataContext'
 import './Footer.css'
 
 function Footer() {
+  const { footerCopyright } = useSiteData()
   return (
     <footer className="container">
       <nav className="footer-nav">
-        All Images and Site Content Copyright © 2026 David Hockney - All Rights Reserved
+        {footerCopyright}
       </nav>
     </footer>
   )

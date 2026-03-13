@@ -1,13 +1,157 @@
-title	category	description	url	isExternal
-The David Hockney Foundation	foundation	Official foundation supporting Hockney's legacy and promoting art education	http://www.thedavidhockneyfoundation.org/	true
-Pace Gallery	galleries	Leading contemporary art gallery representing David Hockney	https://www.pacegallery.com/artists/david-hockney/	true
-Annely Juda Fine Art	galleries	London gallery specializing in modern and contemporary art	https://www.annelyjudafineart.co.uk/	true
-LA Louver Gallery	galleries	Venice, California gallery representing Hockney	https://www.lalouver.com/artists/david-hockney	true
-Making 'Works'	making_works	Behind the scenes of Hockney's creative process and techniques	/resources/making_works	false
-David Hockney by David Hockney	publications	Autobiography and retrospective of Hockney's career	/resources/publications	false
-Secret Knowledge	publications	Hockney's investigation into the use of optical devices by Old Masters	/resources/publications	false
-A Bigger Message	publications	Conversations with Hockney about art and life	/resources/publications	false
-Tate Britain	public_collections	Major collection of Hockney's works	https://www.tate.org.uk/	true
-Metropolitan Museum of Art	public_collections	New York museum with significant Hockney holdings	https://www.metmuseum.org/	true
-J. Paul Getty Museum	public_collections	Los Angeles museum featuring Hockney's work	https://www.getty.edu/	true
-Centre Pompidou	public_collections	Paris museum with Hockney collection	https://www.centrepompidou.fr/	true
+type	name	location	address	phone	website	imageUrl	description
+gallery	Annely Juda Fine Art	London, England	23 Dering Street, London W1S 1AW	(44) 20-7629-7578	www.annelyjudafineart.co.uk
+gallery	Gray	Chicago, Illinois	875 N. Michigan Avenue, Chicago, Illinois 60611	312-642-8877	www.richardgraygallery.com
+gallery	Galerie LeLong Paris	Paris, France	13, rue de Téhéran, 75008 Paris, France	+33 1 45631319	galerie-lelong.com
+gallery	L.A. Louver	Venice, California	45 North Venice Boulevard, Venice, CA 90291	310-822-4955	www.lalouver.com
+gallery	Pace Gallery	New York	325 East 57th Street, New York, NY 10022	212-421-3292	www.pacegallery.com
+collection	American Friends of the Israel Museum	Beverly Hills
+collection	The Art Institute of Chicago	Chicago
+collection	Art Gallery of Ontario	Toronto
+collection	Art Gallery of New South Wales	Sydney, Australia
+collection	Astrup Fearnley Museum of Modern Art	Oslo, Norway
+collection	Baltimore Museum of Art	Baltimore
+collection	Bennesse Art Site	Naoshima, Kagawa, Japan
+collection	British Council	London, England
+collection	The British Museum	London, England
+collection	The Brooklyn Museum	Brooklyn, New York
+collection	Carnegie Museum of Art	Pittsburgh, Pennsylvania
+collection	Cartwright Hall Art Gallery, Bradford Museums & Galleries	Bradford, England
+collection	Centre Georges Pompidou	Paris, France
+collection	Contemporary Art Society	Bloomsbury House, London
+collection	Contemporary Museum	Honolulu, Hawaii
+collection	Ferens Art Gallery, Hull Museums & Art Gallery	Kingston Upon Hull, England
+collection	National Galleries of Scotland	Edinburgh, Scotland
+collection	Hamburger Kunsthalle	Hamburg, Germany
+collection	Hayward Gallery: Arts Council Collection	London, England
+collection	Hirshhorn Museum and Sculpture Garden, Smithsonian Institution	Washington, D.C.
+collection	J. Paul Getty Museum	Los Angeles, California
+collection	Kansas City Art Institute	Kansas City, Missouri
+collection	Kunstmuseum, Stiftung Museum Kunstpalast	Düsseldorf, Germany
+collection	Kunstmuseum	Basel, Switzerland
+collection	Los Angeles County Museum of Art	Los Angeles, California
+collection	Louisiana Museum of Art	Humlebaek, Denmark
+collection	Ludwig Museum	Budapest, Hungary
+collection	Ludwig Museum	Cologne, Germany
+collection	Metropolitan Museum of Art	New York
+collection	Museum of Modern Art (MoMA)	New York
+collection	National Gallery of Australia	Canberra, Australia
+collection	National Museum of Wales	Cardiff, Wales
+collection	National Portrait Gallery	London, England
+collection	Norton Simon Museum	Pasadena, California
+collection	Philadelphia Museum of Art	Philadelphia, Pennsylvania
+collection	Royal Academy of Arts	London, England
+collection	Sainsbury Centre for Visual Arts	Norwich, England
+collection	San Francisco Museum of Modern Art	San Francisco, California
+collection	Seattle Art Museum	Seattle, Washington
+collection	Stedelijk Museum	Amsterdam, Netherlands
+collection	Tate Gallery	London, England
+collection	UCLA Hammer Museum	Los Angeles, California
+collection	Victoria and Albert Museum	London, England
+collection	Walker Art Center	Minneapolis, Minnesota
+collection	Whitney Museum of American Art	New York
+collection	Yale Center for British Art	New Haven, Connecticut
+making-works	Winter Tunnel with Snow			https://www.hockney.com/img/publications/slideshows/_thumbs/wintertunnel06.jpg		slideshow
+making-works	The Road to Thwing			https://www.hockney.com/img/publications/slideshows/_thumbs/roadtothwing06.jpg		slideshow
+making-works	Woldgate Woods lll			https://www.hockney.com/img/publications/slideshows/_thumbs/woldgatemay06.jpg		slideshow
+making-works	Woldgate before Kilham			https://www.hockney.com/img/publications/slideshows/_thumbs/beforekilham07.jpg		slideshow
+making-works	Three Trees near Thixendale			https://www.hockney.com/img/publications/slideshows/_thumbs/threetrees07.jpg		slideshow
+making-works	Bigger Trees Nearer Warter			https://www.hockney.com/img/publications/slideshows/_thumbs/biggertrees08.jpg		slideshow
+making-works	Felled Trees on Woldgate			https://www.hockney.com/img/publications/slideshows/_thumbs/felledtrees08.jpg		slideshow
+making-works	Making of Bigger Trees Near Warter			https://www.hockney.com/img/gallery/digital/movies/_thumbs/biggertrees_thumb_v1.jpg		video
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0029.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-early.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0131.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0122.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0112.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0102.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0006.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0105.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-cmrawrks08.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-china.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0040.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0118.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0127.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0083.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-sketch.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0053.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0109.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0111.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0116.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0055.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0084.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0016.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-retro.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0025.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0028.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0042.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0043.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0087.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0088.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0125.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0012.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0013.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0091.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0036.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0048.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0094.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0097.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-seeit.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0093.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0101.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-davidhockney.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0060.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0045.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0023.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-drawing.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0058.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0062.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0072.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0074.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0069.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0068.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0066.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-dogdays.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0120.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0007.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0128.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0075.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0050.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0064.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0022.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-scrtknow.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0033.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-people.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0079.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-hockpics.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0080.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0003.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0002.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF00162.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/louver0002.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0006_1.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dhwesch_004.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0007_1.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/_DSF0010.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0011.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/DSF0014.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-ra.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-dyoung.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-pace-arr2016.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-pace-pntg2016.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-erly-kas2016.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-pntgphot2015.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-lelong2015.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-Pace2016.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-arles2015.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-82por2016.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-mghist16.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/dh-ngv16.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/tate-2017.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/lelong2017.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/pomp2017.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/IMG_1856.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/IMG_1861.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/IMG_1854.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/cour-pace_3362.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/nPg_3448.jpg
+publication				https://www.hockney.com/img/publications/books/_thumbs/juda_3446.jpg

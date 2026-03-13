@@ -4,29 +4,20 @@ import googleSheetsService from '../services/googleSheetsService'
 import Loading from '../components/Loading'
 import './WorksCategory.css'
 
-const CATEGORY_LABELS = {
-  digital: 'Digital Works',
-  drawings: 'Drawings',
-  graphics: 'Graphics',
-  paintings: 'Paintings',
-  photos: 'Photographs',
-  sketchbooks: 'Sketchbooks',
-  stage_design: 'Stage Design',
-  etcetera: 'Etcetera',
+/* ─── Fallback estático ─── */
+
+const FALLBACK_CATEGORIES = {
+  digital: { label: 'Digital Works', description: 'The computer is a useful tool. Photoshop is a computer tool for picture making. It in effect allows you to draw directly in a printing machine, one of its many uses. These prints are made by drawing and collage, they exist either in the computer or on a piece of paper.\n\nDavid Hockney, November 2008' },
+  drawings: { label: 'Drawings', description: '' },
+  graphics: { label: 'Graphics', description: '' },
+  paintings: { label: 'Paintings', description: '' },
+  photos: { label: 'Photographs', description: '' },
+  sketchbooks: { label: 'Sketchbooks', description: '' },
+  stage_design: { label: 'Stage Design', description: '' },
+  etcetera: { label: 'Etcetera', description: '' },
 }
 
-const CATEGORY_DESCRIPTIONS = {
-  digital: 'The computer is a useful tool. Photoshop is a computer tool for picture making. It in effect allows you to draw directly in a printing machine, one of its many uses. These prints are made by drawing and collage, they exist either in the computer or on a piece of paper.\n\nDavid Hockney, November 2008',
-  drawings: '',
-  graphics: '',
-  paintings: '',
-  photos: '',
-  sketchbooks: '',
-  stage_design: '',
-  etcetera: '',
-}
-
-const SUBCATEGORIES = {
+const FALLBACK_SUBCATEGORIES = {
   digital: [
     { name: 'computer drawings', slug: 'computer-drawings' },
     { name: 'iPhone', slug: 'iphone' },
@@ -36,28 +27,19 @@ const SUBCATEGORIES = {
     { name: 'digital movies', slug: 'movies' },
   ],
   drawings: [
-    { name: '1950s', slug: '1950s' },
-    { name: '1960s', slug: '1960s' },
-    { name: '1970s', slug: '1970s' },
-    { name: '1980s', slug: '1980s' },
-    { name: '1990s', slug: '1990s' },
-    { name: '2000s', slug: '2000s' },
-    { name: '2010s', slug: '2010s' },
-    { name: 'arrival of spring 2013', slug: 'arrival-of-spring-2013' },
+    { name: '1950s', slug: '1950s' }, { name: '1960s', slug: '1960s' },
+    { name: '1970s', slug: '1970s' }, { name: '1980s', slug: '1980s' },
+    { name: '1990s', slug: '1990s' }, { name: '2000s', slug: '2000s' },
+    { name: '2010s', slug: '2010s' }, { name: 'arrival of spring 2013', slug: 'arrival-of-spring-2013' },
   ],
   paintings: [
-    { name: '1950s', slug: '50s' },
-    { name: '1960s', slug: '60s' },
-    { name: '1970s', slug: '70s' },
-    { name: '1980s', slug: '80s' },
-    { name: '1990s', slug: '90s' },
-    { name: '2000s', slug: '00s' },
-    { name: '2010s', slug: '10s' },
-    { name: '82 Portraits', slug: '82-portraits' },
+    { name: '1950s', slug: '50s' }, { name: '1960s', slug: '60s' },
+    { name: '1970s', slug: '70s' }, { name: '1980s', slug: '80s' },
+    { name: '1990s', slug: '90s' }, { name: '2000s', slug: '00s' },
+    { name: '2010s', slug: '10s' }, { name: '82 Portraits', slug: '82-portraits' },
   ],
   graphics: [
-    { name: 'lithographs', slug: 'lithographs' },
-    { name: 'etchings', slug: 'etchings' },
+    { name: 'lithographs', slug: 'lithographs' }, { name: 'etchings', slug: 'etchings' },
     { name: "a rake's progress etchings", slug: 'rakes-progress-etchings' },
     { name: 'blue guitar etchings', slug: 'blue-guitar-etchings' },
     { name: 'homemade prints', slug: 'prints' },
@@ -82,11 +64,41 @@ const SUBCATEGORIES = {
   ],
 }
 
+/* ─── Componente ─── */
+
 function WorksCategory() {
   const { category, subcategory } = useParams()
   const [works, setWorks] = useState([])
   const [loading, setLoading] = useState(true)
   const [featuredIndex, setFeaturedIndex] = useState(0)
+
+  const [categoriesMap, setCategoriesMap] = useState(FALLBACK_CATEGORIES)
+  const [subcategoriesMap, setSubcategoriesMap] = useState(FALLBACK_SUBCATEGORIES)
+
+  useEffect(() => {
+    googleSheetsService.getWorksCategories()
+      .then(data => {
+        if (data.length > 0) {
+          const map = {}
+          data.forEach(c => { map[c.slug] = { label: c.label, description: c.description || '' } })
+          setCategoriesMap(map)
+        }
+      })
+      .catch(() => {})
+
+    googleSheetsService.getWorksSubcategories()
+      .then(data => {
+        if (data.length > 0) {
+          const map = {}
+          data.forEach(s => {
+            if (!map[s.category]) map[s.category] = []
+            map[s.category].push({ name: s.name, slug: s.slug })
+          })
+          setSubcategoriesMap(map)
+        }
+      })
+      .catch(() => {})
+  }, [])
 
   useEffect(() => {
     setFeaturedIndex(0)
@@ -111,12 +123,13 @@ function WorksCategory() {
     }
   }
 
-  const categoryLabel = CATEGORY_LABELS[category] || category
+  const categoryInfo = categoriesMap[category] || { label: category, description: '' }
+  const categoryLabel = categoryInfo.label
+  const description = categoryInfo.description
+  const subcategories = subcategoriesMap[category] || []
   const subcategoryLabel = subcategory
-    ? SUBCATEGORIES[category]?.find(s => s.slug === subcategory)?.name || subcategory
+    ? subcategories.find(s => s.slug === subcategory)?.name || subcategory
     : null
-  const subcategories = SUBCATEGORIES[category] || []
-  const description = CATEGORY_DESCRIPTIONS[category] || ''
 
   const featuredWork = works[featuredIndex] || null
   const thumbnails = works.filter((_, i) => i !== featuredIndex)
@@ -165,10 +178,8 @@ function WorksCategory() {
 
       <hr className="wc-divider" />
 
-      {/* Layout principal */}
       <div className="wc-layout">
 
-        {/* Columna izquierda: fondo rosa + imagen grande */}
         <aside className="wc-image-column">
           {featuredWork ? (
             <>
@@ -196,10 +207,8 @@ function WorksCategory() {
           )}
         </aside>
 
-        {/* Columna derecha: fondo gris + thumbnails o descripción */}
         <main className="wc-main-content">
 
-          {/* Sin obras: mostrar descripción */}
           {works.length === 0 && (
             <>
               {description ? (
@@ -211,16 +220,11 @@ function WorksCategory() {
               ) : (
                 <div className="wc-empty">
                   <p>No works available in this category yet.</p>
-                  <p className="wc-hint">
-                    Add works to Google Sheets under category: <em>{category}</em>
-                    {subcategory && <> / subcategory: <em>{subcategory}</em></>}
-                  </p>
                 </div>
               )}
             </>
           )}
 
-          {/* Con obras: si es página de categoría y tiene descripción, mostrar descripción */}
           {works.length > 0 && !subcategory && description && (
             <div className="wc-description">
               {description.split('\n\n').map((para, i) => (
@@ -229,7 +233,6 @@ function WorksCategory() {
             </div>
           )}
 
-          {/* Con obras: thumbnails (solo si hay subcategoría o no hay descripción) */}
           {works.length > 0 && (subcategory || !description) && thumbnails.length > 0 && (
             <div className="wc-thumbnails">
               {thumbnails.map((work, index) => (

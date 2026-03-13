@@ -1,0 +1,150 @@
+/* ===================== CONTACT SUBPAGE ===================== */
+
+.csub-container {
+  padding: 0 30px 60px;
+}
+
+/* Breadcrumb */
+.csub-breadcrumb-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 14px 0 6px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  flex-wrap: wrap;
+}
+
+.csub-breadcrumb-link {
+  color: #ae2a5e;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.csub-breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+.csub-breadcrumb-sep {
+  color: #999;
+  margin: 0 2px;
+}
+
+.csub-breadcrumb-active {
+  color: #333;
+  letter-spacing: 1px;
+}
+
+/* Subnav */
+.csub-subnav-row {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  padding: 4px 0 6px;
+  font-size: 12px;
+  color: #666;
+  gap: 0;
+}
+
+.csub-subnav-sep {
+  color: #999;
+}
+
+.csub-subnav-link {
+  color: #666;
+  text-decoration: none;
+}
+
+.csub-subnav-link:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+.csub-subnav-link.active {
+  color: #ae2a5e;
+  font-weight: bold;
+}
+
+/* Divider */
+.csub-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 0;
+}
+
+/* Content area */
+.csub-content {
+  background-color: #f0f0f0;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  min-height: 400px;
+}
+
+.csub-title {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: #333;
+  margin: 0 0 24px 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 12px;
+}
+
+.csub-para {
+  font-size: 13px;
+  color: #444;
+  line-height: 1.8;
+  margin: 0 0 16px 0;
+  white-space: pre-line;
+}
+
+/* FAQs */
+.csub-faqs {}
+
+.csub-faq-item {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ddd;
+}
+
+.csub-faq-item:last-child {
+  border-bottom: none;
+}
+
+.csub-faq-q {
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 8px 0;
+  line-height: 1.6;
+}
+
+.csub-faq-a {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.csub-not-found {
+  color: #999;
+  font-size: 14px;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+@media (max-width: 767px) {
+  .csub-container {
+    padding: 0 15px 40px;
+  }
+
+  .csub-breadcrumb-row,
+  .csub-subnav-row {
+    justify-content: flex-start;
+  }
+
+  .csub-content {
+    padding: 20px;
+  }
+}

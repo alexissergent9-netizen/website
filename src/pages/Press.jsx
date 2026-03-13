@@ -4,14 +4,26 @@ import googleSheetsService from '../services/googleSheetsService'
 import Loading from '../components/Loading'
 import './Press.css'
 
+const DEFAULT_CONFIG = {
+  featuredImageUrl: 'https://www.hockney.com/img/gallery/resources/IMG_1804_295px.jpg',
+  featuredImageAlt: 'David Hockney in his studio',
+  featuredCaption: 'David Hockney in his Normandy studio, 24th February 2021 — © David Hockney Photo credit: Jonathan Wilkinson',
+}
+
 function Press() {
   const [articles, setArticles] = useState([])
   const [loading, setLoading] = useState(true)
+  const [pressConfig, setPressConfig] = useState(DEFAULT_CONFIG)
   const location = useLocation()
-  
-  // Determinar si estamos en current o past
+
   const isPast = location.pathname.includes('/past')
   const type = isPast ? 'past' : 'current'
+
+  useEffect(() => {
+    googleSheetsService.getPageConfig('press')
+      .then(data => { if (Object.keys(data).length > 0) setPressConfig({ ...DEFAULT_CONFIG, ...data }) })
+      .catch(() => {})
+  }, [])
 
   useEffect(() => {
     loadPress()
@@ -21,7 +33,6 @@ function Press() {
     setLoading(true)
     try {
       const data = await googleSheetsService.getPressByType(type)
-      // Ordenar por año y fecha descendente
       const sorted = data.sort((a, b) => {
         const yearDiff = b.year - a.year
         if (yearDiff !== 0) return yearDiff
@@ -35,22 +46,17 @@ function Press() {
     }
   }
 
-  // Agrupar artículos por año
   const groupByYear = (articles) => {
     const grouped = {}
     articles.forEach(article => {
       const year = article.year || new Date(article.date).getFullYear()
-      if (!grouped[year]) {
-        grouped[year] = []
-      }
+      if (!grouped[year]) grouped[year] = []
       grouped[year].push(article)
     })
     return grouped
   }
 
-  if (loading) {
-    return <Loading />
-  }
+  if (loading) return <Loading />
 
   const articlesByYear = groupByYear(articles)
   const years = Object.keys(articlesByYear).sort((a, b) => b - a)
@@ -71,14 +77,12 @@ function Press() {
         {/* Columna izquierda - Imagen */}
         <main className="press-main">
           <article className="press-main-content">
-            <img 
-              src="https://www.hockney.com/img/gallery/resources/IMG_1804_295px.jpg" 
-              alt="David Hockney in his studio"
+            <img
+              src={pressConfig.featuredImageUrl}
+              alt={pressConfig.featuredImageAlt}
+              onError={(e) => { e.target.style.display = 'none' }}
             />
-            <figure>
-              David Hockney in his Normandy studio, 24th February 2021<br />
-              © David Hockney Photo credit: Jonathan Wilkinson
-            </figure>
+            <figure>{pressConfig.featuredCaption}</figure>
           </article>
         </main>
 
@@ -86,23 +90,13 @@ function Press() {
         <aside className="press-aside">
           <div className="press-aside-content">
             <h2>Articles</h2>
-            
+
             <ul className="pagination-list">
               <li>
-                <Link 
-                  to="/press/articles" 
-                  className={!isPast ? 'active' : ''}
-                >
-                  CURRENT
-                </Link>
+                <Link to="/press/articles" className={!isPast ? 'active' : ''}>CURRENT</Link>
               </li>
               <li>
-                <Link 
-                  to="/press/articles/past" 
-                  className={isPast ? 'active' : ''}
-                >
-                  PAST
-                </Link>
+                <Link to="/press/articles/past" className={isPast ? 'active' : ''}>PAST</Link>
               </li>
             </ul>
 
@@ -121,11 +115,7 @@ function Press() {
                           <h4>{article.title}</h4>
                           {article.linkText && article.url && (
                             <p>
-                              <a 
-                                href={article.url} 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                              >
+                              <a href={article.url} target="_blank" rel="noopener noreferrer">
                                 {article.linkText}
                               </a>
                             </p>
@@ -139,9 +129,7 @@ function Press() {
                               {article.date && (
                                 <span>
                                   {new Date(article.date).toLocaleDateString('en-US', {
-                                    day: 'numeric',
-                                    month: 'long',
-                                    year: 'numeric'
+                                    day: 'numeric', month: 'long', year: 'numeric'
                                   })}
                                 </span>
                               )}

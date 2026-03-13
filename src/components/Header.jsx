@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
 import { useState, useRef, useEffect } from 'react'
+import { useSiteData } from '../context/SiteDataContext'
 import './Header.css'
 
 function Header() {
+  const { siteNameFirst, siteNameSecond } = useSiteData()
   const [activeDropdown, setActiveDropdown] = useState(null)
   const closeTimerRef = useRef(null)
 
@@ -37,7 +39,7 @@ function Header() {
       <div className="header-content">
         <Link to="/home" className="logo">
           <div className="logo-text">
-            <span className="logo-first">DAVID</span>HOCKNEY
+            <span className="logo-first">{siteNameFirst}</span>{siteNameSecond}
           </div>
         </Link>
         <nav className="main-nav">
