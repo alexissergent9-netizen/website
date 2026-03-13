@@ -32,20 +32,30 @@
   text-transform: uppercase;
 }
 
+.guide-lang-switcher {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
 .guide-lang-btn {
-  background: #ae2a5e;
-  color: #fff;
+  background: #e8c4d4;
+  color: #ae2a5e;
   border: none;
-  padding: 6px 16px;
+  padding: 6px 14px;
   font-size: 12px;
   letter-spacing: 2px;
   cursor: pointer;
-  flex-shrink: 0;
-  transition: background 0.2s;
+  transition: background 0.15s, color 0.15s;
 }
 
 .guide-lang-btn:hover {
-  background: #8e1f4a;
+  background: #d4a0bc;
+}
+
+.guide-lang-btn.active {
+  background: #ae2a5e;
+  color: #fff;
 }
 
 .guide-subtitle {
@@ -180,6 +190,13 @@
   font-size: 12px;
   color: #333;
   white-space: pre;
+}
+
+.guide-example-label {
+  margin: 6px 0 0 0;
+  font-size: 12px;
+  color: #ae2a5e;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /* Note */

@@ -1,10 +1,41 @@
 import { useState } from 'react'
 import './SetupGuide.css'
 
+const SHEETS = [
+  { name: 'data',                 columns: 'key\tvalue' },
+  { name: 'page_config',          columns: 'page\tkey\tvalue' },
+  { name: 'Works',                columns: 'title\tcategory\tsubcategory\tyear\tmedium\tdimensions\timageUrl' },
+  { name: 'works_categories',     columns: 'slug\tlabel\tdescription\torder' },
+  { name: 'works_subcategories',  columns: 'category\tname\tslug\torder' },
+  { name: 'Exhibitions',          columns: 'title\tlocation\tstartDate\tendDate\ttype\tdescription\timageUrl\turl' },
+  { name: 'Press',                columns: 'title\tauthor\tsource\tdate\tyear\ttype\turltext\turl' },
+  { name: 'Resources',            columns: 'type\tname\tlocation\taddress\tphone\twebsite\timageUrl\tdescription' },
+  { name: 'Contact',              columns: 'label\thref\texternal' },
+  { name: 'contact_content',      columns: 'section\ttype\torder\tquestion\tcontent' },
+]
+
+const FILES = [
+  { file: 'SHEETS_DATA_DATA.tsv',                 sheet: 'data' },
+  { file: 'SHEETS_DATA_PAGE_CONFIG.tsv',          sheet: 'page_config' },
+  { file: 'SHEETS_DATA_WORKS.tsv',                sheet: 'Works' },
+  { file: 'SHEETS_DATA_WORKS_CATEGORIES.tsv',     sheet: 'works_categories' },
+  { file: 'SHEETS_DATA_WORKS_SUBCATEGORIES.tsv',  sheet: 'works_subcategories' },
+  { file: 'SHEETS_DATA_EXHIBITIONS.tsv',          sheet: 'Exhibitions' },
+  { file: 'SHEETS_DATA_PRESS.tsv',                sheet: 'Press' },
+  { file: 'SHEETS_DATA_RESOURCES.tsv',            sheet: 'Resources' },
+  { file: 'SHEETS_DATA_CONTACT.tsv',              sheet: 'Contact' },
+  { file: 'SHEETS_DATA_CONTACT_CONTENT.tsv',      sheet: 'contact_content' },
+]
+
+const VARS = [
+  { key: 'VITE_GOOGLE_SHEETS_API_KEY' },
+  { key: 'VITE_GOOGLE_SPREADSHEET_ID' },
+]
+
+const SPREADSHEET_EXAMPLE = 'https://docs.google.com/spreadsheets/d/\u00A0\u00A01AbCdEfGhIjKlMnOpQrStUv\u00A0\u00A0/edit'
+
 const CONTENT = {
   en: {
-    lang: 'EN',
-    otherLang: 'FR',
     title: 'Site Configuration Guide',
     subtitle: 'How to connect Google Sheets to the website — step by step',
     intro: 'This guide will walk you through the complete setup process. No programming experience required. Follow each step carefully and the website will automatically display the content you manage in Google Sheets.',
@@ -16,6 +47,19 @@ const CONTENT = {
         'Two environment variables in Netlify',
       ],
     },
+    tableHeaders: { tab: 'Tab name', columns: 'Columns (first row)', purpose: 'Purpose', file: 'TSV file', paste: '→ Paste into sheet' },
+    sheetNotes: [
+      'Site name, page title, footer copyright',
+      'Featured images and texts for all pages',
+      'All artworks',
+      'Works category labels and descriptions',
+      'Works subcategory lists',
+      'Current, past and upcoming exhibitions',
+      'Press articles',
+      'Galleries, collections, publications, making works',
+      'Contact page links',
+      'FAQ and subpage texts',
+    ],
     steps: [
       {
         number: '01',
@@ -63,7 +107,7 @@ const CONTENT = {
           { text: 'Name it anything you like, for example: David Hockney - Site Data.' },
           { text: 'Look at the URL in your browser. Copy the long ID between /d/ and /edit. This is your Spreadsheet ID.' },
         ],
-        example: 'https://docs.google.com/spreadsheets/d/\u00A0\u00A01AbCdEfGhIjKlMnOpQrStUv\u00A0\u00A0/edit\n                                             ↑ this is your Spreadsheet ID',
+        exampleLabel: '↑ this is your Spreadsheet ID',
       },
       {
         number: '05',
@@ -80,18 +124,7 @@ const CONTENT = {
         number: '06',
         title: 'Create the sheets (tabs)',
         description: 'For each sheet below, click the + button at the bottom of the spreadsheet to add a new tab. The tab name must be exactly as shown. Then add the column headers in the first row.',
-        sheets: [
-          { name: 'data', columns: 'key\tvalue', note: 'Site name, page title, footer copyright' },
-          { name: 'page_config', columns: 'page\tkey\tvalue', note: 'Featured images and texts for all pages' },
-          { name: 'Works', columns: 'title\tcategory\tsubcategory\tyear\tmedium\tdimensions\timageUrl', note: 'All artworks' },
-          { name: 'works_categories', columns: 'slug\tlabel\tdescription\torder', note: 'Works category labels and descriptions' },
-          { name: 'works_subcategories', columns: 'category\tname\tslug\torder', note: 'Works subcategory lists' },
-          { name: 'Exhibitions', columns: 'title\tlocation\tstartDate\tendDate\ttype\tdescription\timageUrl\turl', note: 'Current, past and upcoming exhibitions' },
-          { name: 'Press', columns: 'title\tauthor\tsource\tdate\tyear\ttype\turltext\turl', note: 'Press articles' },
-          { name: 'Resources', columns: 'type\tname\tlocation\taddress\tphone\twebsite\timageUrl\tdescription', note: 'Galleries, collections, publications, making works' },
-          { name: 'Contact', columns: 'label\thref\texternal', note: 'Contact page links' },
-          { name: 'contact_content', columns: 'section\ttype\torder\tquestion\tcontent', note: 'FAQ and subpage texts' },
-        ],
+        showSheets: true,
       },
       {
         number: '07',
@@ -103,18 +136,7 @@ const CONTENT = {
           { text: 'Go to the corresponding sheet tab in Google Sheets.' },
           { text: 'Click on cell A1 and paste (Ctrl+V or Cmd+V). The data will fill in automatically.' },
         ],
-        files: [
-          { file: 'SHEETS_DATA_DATA.tsv', sheet: 'data' },
-          { file: 'SHEETS_DATA_PAGE_CONFIG.tsv', sheet: 'page_config' },
-          { file: 'SHEETS_DATA_WORKS.tsv', sheet: 'Works' },
-          { file: 'SHEETS_DATA_WORKS_CATEGORIES.tsv', sheet: 'works_categories' },
-          { file: 'SHEETS_DATA_WORKS_SUBCATEGORIES.tsv', sheet: 'works_subcategories' },
-          { file: 'SHEETS_DATA_EXHIBITIONS.tsv', sheet: 'Exhibitions' },
-          { file: 'SHEETS_DATA_PRESS.tsv', sheet: 'Press' },
-          { file: 'SHEETS_DATA_RESOURCES.tsv', sheet: 'Resources' },
-          { file: 'SHEETS_DATA_CONTACT.tsv', sheet: 'Contact' },
-          { file: 'SHEETS_DATA_CONTACT_CONTENT.tsv', sheet: 'contact_content' },
-        ],
+        showFiles: true,
       },
       {
         number: '08',
@@ -130,10 +152,8 @@ const CONTENT = {
           { text: 'Repeat and add the second variable:' },
           { text: 'Click Save after each one.' },
         ],
-        vars: [
-          { key: 'VITE_GOOGLE_SHEETS_API_KEY', value: 'Paste your API key from Step 03 here' },
-          { key: 'VITE_GOOGLE_SPREADSHEET_ID', value: 'Paste your Spreadsheet ID from Step 04 here' },
-        ],
+        varLabels: ['Paste your API key from Step 03 here', 'Paste your Spreadsheet ID from Step 04 here'],
+        showVars: true,
       },
       {
         number: '09',
@@ -160,9 +180,152 @@ const CONTENT = {
     done: 'Setup complete! If anything does not work, double-check that the tab names are spelled exactly as listed in Step 06, and that the spreadsheet is set to public (Step 05).',
   },
 
+  es: {
+    title: 'Guía de configuración del sitio',
+    subtitle: 'Cómo conectar Google Sheets al sitio web — paso a paso',
+    intro: 'Esta guía te acompañará en todo el proceso de configuración. No se requiere experiencia en programación. Sigue cada paso con atención y el sitio web mostrará automáticamente el contenido que gestiones en Google Sheets.',
+    overview: {
+      title: 'Qué vas a configurar',
+      items: [
+        'Un proyecto en Google Cloud con una clave API',
+        'Una hoja de cálculo de Google con todos los datos del sitio',
+        'Dos variables de entorno en Netlify',
+      ],
+    },
+    tableHeaders: { tab: 'Nombre de pestaña', columns: 'Columnas (primera fila)', purpose: 'Contenido', file: 'Archivo TSV', paste: '→ Pegar en la hoja' },
+    sheetNotes: [
+      'Nombre del sitio, título de página, copyright del pie de página',
+      'Imágenes y textos de todas las páginas',
+      'Todas las obras',
+      'Etiquetas y descripciones de categorías de obras',
+      'Listas de subcategorías de obras',
+      'Exposiciones actuales, pasadas y próximas',
+      'Artículos de prensa',
+      'Galerías, colecciones, publicaciones, making works',
+      'Links de la página de contacto',
+      'FAQ y textos de las subpáginas de contacto',
+    ],
+    steps: [
+      {
+        number: '01',
+        title: 'Crear un proyecto en Google Cloud',
+        items: [
+          { text: 'Ve a', link: 'https://console.cloud.google.com', linkText: 'console.cloud.google.com' },
+          { text: 'Inicia sesión con una cuenta de Google.' },
+          { text: 'Haz clic en el selector de proyectos en la parte superior (puede decir "Seleccionar un proyecto") y luego en Nuevo proyecto.' },
+          { text: 'Dale cualquier nombre, por ejemplo: hockney-site. Haz clic en Crear.' },
+          { text: 'Espera unos segundos a que se cree el proyecto y asegúrate de que quede seleccionado.' },
+        ],
+      },
+      {
+        number: '02',
+        title: 'Activar la API de Google Sheets',
+        items: [
+          { text: 'En el menú de la izquierda, haz clic en APIs y servicios → Biblioteca.' },
+          { text: 'En la barra de búsqueda, escribe Google Sheets API y presiona Enter.' },
+          { text: 'Haz clic en el resultado llamado Google Sheets API.' },
+          { text: 'Haz clic en el botón azul Habilitar.' },
+        ],
+      },
+      {
+        number: '03',
+        title: 'Crear una clave API',
+        items: [
+          { text: 'En el menú de la izquierda, haz clic en APIs y servicios → Credenciales.' },
+          { text: 'Haz clic en + Crear credenciales en la parte superior y elige Clave de API.' },
+          { text: 'Aparecerá una ventana con tu nueva clave API. Cópiala y guárdala en un lugar seguro — la necesitarás más adelante.' },
+          { text: 'Haz clic en Editar clave de API (el ícono de lápiz) para restringirla:' },
+        ],
+        sub: [
+          'En Restricciones de API, selecciona Restringir clave.',
+          'En el menú desplegable, marca Google Sheets API.',
+          'Haz clic en Guardar.',
+        ],
+        note: 'Restringir la clave es opcional pero recomendado por seguridad.',
+      },
+      {
+        number: '04',
+        title: 'Crear la hoja de cálculo de Google',
+        items: [
+          { text: 'Ve a', link: 'https://sheets.google.com', linkText: 'sheets.google.com' },
+          { text: 'Haz clic en el botón + para crear una nueva hoja de cálculo en blanco.' },
+          { text: 'Ponle el nombre que quieras, por ejemplo: David Hockney - Datos del sitio.' },
+          { text: 'Mira la URL en tu navegador. Copia el ID largo que aparece entre /d/ y /edit. Ese es tu ID de hoja de cálculo.' },
+        ],
+        exampleLabel: '↑ este es tu ID de hoja de cálculo',
+      },
+      {
+        number: '05',
+        title: 'Hacer pública la hoja de cálculo',
+        items: [
+          { text: 'En la hoja de cálculo, haz clic en el botón Compartir (arriba a la derecha, botón azul).' },
+          { text: 'Haz clic en Cambiar a cualquier persona con el enlace.' },
+          { text: 'Asegúrate de que el rol sea Lector.' },
+          { text: 'Haz clic en Listo.' },
+        ],
+        note: 'Esto permite que la API lea los datos sin necesidad de iniciar sesión.',
+      },
+      {
+        number: '06',
+        title: 'Crear las hojas (pestañas)',
+        description: 'Para cada hoja de la lista, haz clic en el botón + en la parte inferior de la hoja de cálculo para añadir una nueva pestaña. El nombre de la pestaña debe ser exactamente como se indica. Luego agrega los encabezados de columnas en la primera fila.',
+        showSheets: true,
+      },
+      {
+        number: '07',
+        title: 'Subir los datos',
+        items: [
+          { text: 'En los archivos del proyecto encontrarás archivos TSV (archivos que terminan en .tsv) para cada hoja.' },
+          { text: 'Abre cada archivo TSV en un editor de texto (como Notepad o TextEdit).' },
+          { text: 'Selecciona todo el texto (Ctrl+A o Cmd+A) y cópialo.' },
+          { text: 'Ve a la pestaña correspondiente en Google Sheets.' },
+          { text: 'Haz clic en la celda A1 y pega (Ctrl+V o Cmd+V). Los datos se completarán automáticamente.' },
+        ],
+        showFiles: true,
+      },
+      {
+        number: '08',
+        title: 'Agregar las variables de entorno en Netlify',
+        description: 'Las variables de entorno son configuraciones que le indican al sitio web qué proyecto de Google y qué hoja de cálculo usar. Se guardan de forma segura en Netlify, no en el código.',
+        items: [
+          { text: 'Inicia sesión en tu cuenta de Netlify en', link: 'https://app.netlify.com', linkText: 'app.netlify.com' },
+          { text: 'Haz clic en tu sitio.' },
+          { text: 'En el menú superior, haz clic en Site configuration.' },
+          { text: 'En el menú de la izquierda, haz clic en Environment variables.' },
+          { text: 'Haz clic en Add a variable → Add a single variable.' },
+          { text: 'Agrega la primera variable:' },
+          { text: 'Repite y agrega la segunda variable:' },
+          { text: 'Haz clic en Save después de cada una.' },
+        ],
+        varLabels: ['Pega aquí tu clave API del Paso 03', 'Pega aquí el ID de tu hoja de cálculo del Paso 04'],
+        showVars: true,
+      },
+      {
+        number: '09',
+        title: 'Volver a publicar el sitio',
+        items: [
+          { text: 'En Netlify, ve a tu sitio y haz clic en la pestaña Deploys.' },
+          { text: 'Haz clic en Trigger deploy → Deploy site.' },
+          { text: 'Espera a que termine la publicación (normalmente 1–2 minutos).' },
+          { text: 'Visita tu sitio web — ahora mostrará el contenido desde Google Sheets.' },
+        ],
+        note: 'Después del primer despliegue, los cambios de contenido en Google Sheets aparecerán en el sitio automáticamente sin necesidad de volver a publicar.',
+      },
+    ],
+    managingContent: {
+      title: 'Gestionar el contenido en el futuro',
+      items: [
+        'Para actualizar textos, imágenes o enlaces — edita la fila correspondiente en Google Sheets. Los cambios aparecen en el sitio en minutos.',
+        'Para agregar una nueva exposición — añade una fila en la hoja Exhibitions con type igual a current, past o upcoming.',
+        'Para agregar nuevas obras — añade filas en la hoja Works con los slugs de categoría y subcategoría correctos.',
+        'Para agregar un artículo de prensa — añade una fila en la hoja Press con type igual a current o past.',
+        'No cambies los encabezados de columnas ni los nombres de las pestañas — el sitio los lee exactamente como están indicados.',
+      ],
+    },
+    done: '¡Configuración completada! Si algo no funciona, verifica que los nombres de las pestañas estén escritos exactamente como se indica en el Paso 06, y que la hoja de cálculo esté configurada como pública (Paso 05).',
+  },
+
   fr: {
-    lang: 'FR',
-    otherLang: 'EN',
     title: 'Guide de configuration du site',
     subtitle: 'Comment connecter Google Sheets au site web — étape par étape',
     intro: "Ce guide vous accompagne tout au long du processus de configuration. Aucune expérience en programmation n'est requise. Suivez chaque étape attentivement et le site web affichera automatiquement le contenu que vous gérez dans Google Sheets.",
@@ -171,9 +334,22 @@ const CONTENT = {
       items: [
         'Un projet Google Cloud avec une clé API',
         'Une feuille de calcul Google avec toutes les données du site',
-        'Deux variables d\'environnement dans Netlify',
+        "Deux variables d'environnement dans Netlify",
       ],
     },
+    tableHeaders: { tab: 'Nom de l\'onglet', columns: 'Colonnes (première ligne)', purpose: 'Contenu', file: 'Fichier TSV', paste: '→ Coller dans la feuille' },
+    sheetNotes: [
+      'Nom du site, titre de page, copyright du pied de page',
+      'Images et textes de toutes les pages',
+      'Toutes les œuvres',
+      "Labels et descriptions des catégories d'œuvres",
+      'Listes de sous-catégories',
+      'Expositions actuelles, passées et à venir',
+      'Articles de presse',
+      'Galeries, collections, publications, making works',
+      'Liens de la page contact',
+      'FAQ et textes des sous-pages',
+    ],
     steps: [
       {
         number: '01',
@@ -183,12 +359,12 @@ const CONTENT = {
           { text: 'Connectez-vous avec un compte Google.' },
           { text: 'Cliquez sur le sélecteur de projet en haut (il peut indiquer « Sélectionner un projet ») puis sur Nouveau projet.' },
           { text: 'Donnez-lui un nom quelconque, par exemple : hockney-site. Cliquez sur Créer.' },
-          { text: 'Attendez quelques secondes que le projet soit créé, puis assurez-vous qu\'il est bien sélectionné.' },
+          { text: "Attendez quelques secondes que le projet soit créé, puis assurez-vous qu'il est bien sélectionné." },
         ],
       },
       {
         number: '02',
-        title: 'Activer l\'API Google Sheets',
+        title: "Activer l'API Google Sheets",
         items: [
           { text: 'Dans le menu de gauche, cliquez sur APIs et services → Bibliothèque.' },
           { text: 'Dans la barre de recherche, tapez Google Sheets API et appuyez sur Entrée.' },
@@ -203,7 +379,7 @@ const CONTENT = {
           { text: 'Dans le menu de gauche, cliquez sur APIs et services → Identifiants.' },
           { text: 'Cliquez sur + Créer des identifiants en haut et choisissez Clé API.' },
           { text: 'Une fenêtre apparaîtra avec votre nouvelle clé API. Copiez-la et conservez-la en lieu sûr — vous en aurez besoin plus tard.' },
-          { text: 'Cliquez sur Modifier la clé API (l\'icône crayon) pour la restreindre :' },
+          { text: "Cliquez sur Modifier la clé API (l'icône crayon) pour la restreindre :" },
         ],
         sub: [
           'Sous Restrictions relatives aux API, sélectionnez Restreindre la clé.',
@@ -219,9 +395,9 @@ const CONTENT = {
           { text: 'Rendez-vous sur', link: 'https://sheets.google.com', linkText: 'sheets.google.com' },
           { text: 'Cliquez sur le bouton + pour créer une nouvelle feuille de calcul vierge.' },
           { text: 'Donnez-lui le nom de votre choix, par exemple : David Hockney - Données du site.' },
-          { text: 'Regardez l\'URL dans votre navigateur. Copiez le long identifiant situé entre /d/ et /edit. C\'est votre Identifiant de feuille de calcul.' },
+          { text: "Regardez l'URL dans votre navigateur. Copiez le long identifiant situé entre /d/ et /edit. C'est votre Identifiant de feuille de calcul." },
         ],
-        example: 'https://docs.google.com/spreadsheets/d/\u00A0\u00A01AbCdEfGhIjKlMnOpQrStUv\u00A0\u00A0/edit\n                                             ↑ c\'est votre Identifiant de feuille de calcul',
+        exampleLabel: "↑ c'est votre Identifiant de feuille de calcul",
       },
       {
         number: '05',
@@ -232,24 +408,13 @@ const CONTENT = {
           { text: 'Assurez-vous que le rôle est défini sur Lecteur.' },
           { text: 'Cliquez sur Terminé.' },
         ],
-        note: 'Cela permet à l\'API de lire les données sans nécessiter de connexion.',
+        note: "Cela permet à l'API de lire les données sans nécessiter de connexion.",
       },
       {
         number: '06',
         title: 'Créer les feuilles (onglets)',
-        description: 'Pour chaque feuille ci-dessous, cliquez sur le bouton + en bas de la feuille de calcul pour ajouter un nouvel onglet. Le nom de l\'onglet doit être exactement tel qu\'indiqué. Ajoutez ensuite les en-têtes de colonnes dans la première ligne.',
-        sheets: [
-          { name: 'data', columns: 'key\tvalue', note: 'Nom du site, titre de page, copyright du pied de page' },
-          { name: 'page_config', columns: 'page\tkey\tvalue', note: 'Images et textes de toutes les pages' },
-          { name: 'Works', columns: 'title\tcategory\tsubcategory\tyear\tmedium\tdimensions\timageUrl', note: 'Toutes les œuvres' },
-          { name: 'works_categories', columns: 'slug\tlabel\tdescription\torder', note: 'Labels et descriptions des catégories d\'œuvres' },
-          { name: 'works_subcategories', columns: 'category\tname\tslug\torder', note: 'Listes de sous-catégories' },
-          { name: 'Exhibitions', columns: 'title\tlocation\tstartDate\tendDate\ttype\tdescription\timageUrl\turl', note: 'Expositions actuelles, passées et à venir' },
-          { name: 'Press', columns: 'title\tauthor\tsource\tdate\tyear\ttype\turltext\turl', note: 'Articles de presse' },
-          { name: 'Resources', columns: 'type\tname\tlocation\taddress\tphone\twebsite\timageUrl\tdescription', note: 'Galeries, collections, publications, making works' },
-          { name: 'Contact', columns: 'label\thref\texternal', note: 'Liens de la page contact' },
-          { name: 'contact_content', columns: 'section\ttype\torder\tquestion\tcontent', note: 'FAQ et textes des sous-pages' },
-        ],
+        description: "Pour chaque feuille ci-dessous, cliquez sur le bouton + en bas de la feuille de calcul pour ajouter un nouvel onglet. Le nom de l'onglet doit être exactement tel qu'indiqué. Ajoutez ensuite les en-têtes de colonnes dans la première ligne.",
+        showSheets: true,
       },
       {
         number: '07',
@@ -258,46 +423,33 @@ const CONTENT = {
           { text: 'Dans les fichiers du projet, vous trouverez des fichiers TSV (fichiers se terminant par .tsv) pour chaque feuille.' },
           { text: 'Ouvrez chaque fichier TSV dans un éditeur de texte (comme Notepad ou TextEdit).' },
           { text: 'Sélectionnez tout le texte (Ctrl+A ou Cmd+A) et copiez-le.' },
-          { text: 'Allez dans l\'onglet correspondant dans Google Sheets.' },
+          { text: "Allez dans l'onglet correspondant dans Google Sheets." },
           { text: 'Cliquez sur la cellule A1 et collez (Ctrl+V ou Cmd+V). Les données se rempliront automatiquement.' },
         ],
-        files: [
-          { file: 'SHEETS_DATA_DATA.tsv', sheet: 'data' },
-          { file: 'SHEETS_DATA_PAGE_CONFIG.tsv', sheet: 'page_config' },
-          { file: 'SHEETS_DATA_WORKS.tsv', sheet: 'Works' },
-          { file: 'SHEETS_DATA_WORKS_CATEGORIES.tsv', sheet: 'works_categories' },
-          { file: 'SHEETS_DATA_WORKS_SUBCATEGORIES.tsv', sheet: 'works_subcategories' },
-          { file: 'SHEETS_DATA_EXHIBITIONS.tsv', sheet: 'Exhibitions' },
-          { file: 'SHEETS_DATA_PRESS.tsv', sheet: 'Press' },
-          { file: 'SHEETS_DATA_RESOURCES.tsv', sheet: 'Resources' },
-          { file: 'SHEETS_DATA_CONTACT.tsv', sheet: 'Contact' },
-          { file: 'SHEETS_DATA_CONTACT_CONTENT.tsv', sheet: 'contact_content' },
-        ],
+        showFiles: true,
       },
       {
         number: '08',
-        title: 'Ajouter les variables d\'environnement dans Netlify',
-        description: 'Les variables d\'environnement sont des paramètres qui indiquent au site web quel projet Google et quelle feuille de calcul utiliser. Elles sont stockées de manière sécurisée dans Netlify, pas dans le code.',
+        title: "Ajouter les variables d'environnement dans Netlify",
+        description: "Les variables d'environnement sont des paramètres qui indiquent au site web quel projet Google et quelle feuille de calcul utiliser. Elles sont stockées de manière sécurisée dans Netlify, pas dans le code.",
         items: [
           { text: 'Connectez-vous à votre compte Netlify sur', link: 'https://app.netlify.com', linkText: 'app.netlify.com' },
           { text: 'Cliquez sur votre site.' },
           { text: 'Dans le menu du haut, cliquez sur Site configuration.' },
-          { text: 'Dans le menu de gauche, cliquez sur Environment variables.' },
+          { text: "Dans le menu de gauche, cliquez sur Environment variables." },
           { text: 'Cliquez sur Add a variable → Add a single variable.' },
           { text: 'Ajoutez la première variable :' },
           { text: 'Recommencez et ajoutez la deuxième variable :' },
           { text: 'Cliquez sur Save après chacune.' },
         ],
-        vars: [
-          { key: 'VITE_GOOGLE_SHEETS_API_KEY', value: 'Collez votre clé API de l\'Étape 03 ici' },
-          { key: 'VITE_GOOGLE_SPREADSHEET_ID', value: 'Collez l\'identifiant de votre feuille de calcul de l\'Étape 04 ici' },
-        ],
+        varLabels: ["Collez votre clé API de l'Étape 03 ici", "Collez l'identifiant de votre feuille de calcul de l'Étape 04 ici"],
+        showVars: true,
       },
       {
         number: '09',
         title: 'Redéployer le site',
         items: [
-          { text: 'Dans Netlify, allez sur votre site et cliquez sur l\'onglet Deploys.' },
+          { text: "Dans Netlify, allez sur votre site et cliquez sur l'onglet Deploys." },
           { text: 'Cliquez sur Trigger deploy → Deploy site.' },
           { text: 'Attendez que le déploiement se termine (généralement 1 à 2 minutes).' },
           { text: 'Visitez votre site web — il affichera désormais le contenu depuis Google Sheets.' },
@@ -309,15 +461,18 @@ const CONTENT = {
       title: 'Gérer le contenu par la suite',
       items: [
         'Pour mettre à jour des textes, images ou liens — modifiez la ligne correspondante dans Google Sheets. Les changements apparaissent sur le site en quelques minutes.',
-        'Pour ajouter une nouvelle exposition — ajoutez une ligne dans la feuille Exhibitions avec type défini sur current, past ou upcoming.',
-        'Pour ajouter de nouvelles œuvres — ajoutez des lignes dans la feuille Works avec les bons slugs de catégorie et sous-catégorie.',
-        'Pour ajouter un article de presse — ajoutez une ligne dans la feuille Press avec type défini sur current ou past.',
-        'Ne modifiez pas les en-têtes de colonnes ni les noms des onglets — le site les lit exactement tels qu\'ils sont indiqués.',
+        "Pour ajouter une nouvelle exposition — ajoutez une ligne dans la feuille Exhibitions avec type défini sur current, past ou upcoming.",
+        "Pour ajouter de nouvelles œuvres — ajoutez des lignes dans la feuille Works avec les bons slugs de catégorie et sous-catégorie.",
+        "Pour ajouter un article de presse — ajoutez une ligne dans la feuille Press avec type défini sur current ou past.",
+        "Ne modifiez pas les en-têtes de colonnes ni les noms des onglets — le site les lit exactement tels qu'ils sont indiqués.",
       ],
     },
-    done: 'Configuration terminée ! Si quelque chose ne fonctionne pas, vérifiez que les noms des onglets sont orthographiés exactement comme indiqué à l\'Étape 06, et que la feuille de calcul est définie comme publique (Étape 05).',
+    done: "Configuration terminée ! Si quelque chose ne fonctionne pas, vérifiez que les noms des onglets sont orthographiés exactement comme indiqué à l'Étape 06, et que la feuille de calcul est définie comme publique (Étape 05).",
   },
 }
+
+const LANGS = ['en', 'es', 'fr']
+const LANG_LABELS = { en: 'EN', es: 'ES', fr: 'FR' }
 
 function SetupGuide() {
   const [lang, setLang] = useState('en')
@@ -330,12 +485,17 @@ function SetupGuide() {
       <div className="guide-header">
         <div className="guide-header-top">
           <h1 className="guide-title">{t.title}</h1>
-          <button
-            className="guide-lang-btn"
-            onClick={() => setLang(lang === 'en' ? 'fr' : 'en')}
-          >
-            {t.otherLang}
-          </button>
+          <div className="guide-lang-switcher">
+            {LANGS.map(l => (
+              <button
+                key={l}
+                className={`guide-lang-btn ${lang === l ? 'active' : ''}`}
+                onClick={() => setLang(l)}
+              >
+                {LANG_LABELS[l]}
+              </button>
+            ))}
+          </div>
         </div>
         <p className="guide-subtitle">{t.subtitle}</p>
         <p className="guide-intro">{t.intro}</p>
@@ -345,9 +505,7 @@ function SetupGuide() {
       <div className="guide-overview">
         <h2 className="guide-overview-title">{t.overview.title}</h2>
         <ul className="guide-overview-list">
-          {t.overview.items.map((item, i) => (
-            <li key={i}>{item}</li>
-          ))}
+          {t.overview.items.map((item, i) => <li key={i}>{item}</li>)}
         </ul>
       </div>
 
@@ -361,9 +519,7 @@ function SetupGuide() {
             </div>
 
             <div className="guide-step-body">
-              {step.description && (
-                <p className="guide-step-desc">{step.description}</p>
-              )}
+              {step.description && <p className="guide-step-desc">{step.description}</p>}
 
               {step.items && (
                 <ol className="guide-step-list">
@@ -386,33 +542,31 @@ function SetupGuide() {
                 </ul>
               )}
 
-              {step.example && (
+              {step.exampleLabel && (
                 <div className="guide-code-block">
-                  <pre>{step.example}</pre>
+                  <pre>{SPREADSHEET_EXAMPLE}</pre>
+                  <p className="guide-example-label">{step.exampleLabel}</p>
                 </div>
               )}
 
-              {step.note && (
-                <p className="guide-note">💡 {step.note}</p>
-              )}
+              {step.note && <p className="guide-note">💡 {step.note}</p>}
 
-              {/* Sheets table */}
-              {step.sheets && (
+              {step.showSheets && (
                 <div className="guide-sheets-table">
                   <table>
                     <thead>
                       <tr>
-                        <th>Tab name</th>
-                        <th>Columns (first row)</th>
-                        <th>Purpose</th>
+                        <th>{t.tableHeaders.tab}</th>
+                        <th>{t.tableHeaders.columns}</th>
+                        <th>{t.tableHeaders.purpose}</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {step.sheets.map((s, i) => (
+                      {SHEETS.map((s, i) => (
                         <tr key={i}>
                           <td><code className="guide-tab-name">{s.name}</code></td>
                           <td><code className="guide-columns">{s.columns.replace(/\t/g, '  |  ')}</code></td>
-                          <td className="guide-sheet-note">{s.note}</td>
+                          <td className="guide-sheet-note">{t.sheetNotes[i]}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -420,18 +574,17 @@ function SetupGuide() {
                 </div>
               )}
 
-              {/* Files table */}
-              {step.files && (
+              {step.showFiles && (
                 <div className="guide-files-table">
                   <table>
                     <thead>
                       <tr>
-                        <th>TSV file</th>
-                        <th>→ Paste into sheet</th>
+                        <th>{t.tableHeaders.file}</th>
+                        <th>{t.tableHeaders.paste}</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {step.files.map((f, i) => (
+                      {FILES.map((f, i) => (
                         <tr key={i}>
                           <td><code>{f.file}</code></td>
                           <td><code className="guide-tab-name">{f.sheet}</code></td>
@@ -442,14 +595,13 @@ function SetupGuide() {
                 </div>
               )}
 
-              {/* Env vars */}
-              {step.vars && (
+              {step.showVars && (
                 <div className="guide-vars">
-                  {step.vars.map((v, i) => (
+                  {VARS.map((v, i) => (
                     <div key={i} className="guide-var-row">
                       <span className="guide-var-key">{v.key}</span>
                       <span className="guide-var-sep">=</span>
-                      <span className="guide-var-value">{v.value}</span>
+                      <span className="guide-var-value">{step.varLabels[i]}</span>
                     </div>
                   ))}
                 </div>
@@ -463,9 +615,7 @@ function SetupGuide() {
       <div className="guide-managing">
         <h2 className="guide-managing-title">{t.managingContent.title}</h2>
         <ul className="guide-managing-list">
-          {t.managingContent.items.map((item, i) => (
-            <li key={i}>{item}</li>
-          ))}
+          {t.managingContent.items.map((item, i) => <li key={i}>{item}</li>)}
         </ul>
       </div>
 
