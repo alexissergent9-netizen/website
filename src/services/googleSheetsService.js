@@ -1,9 +1,5 @@
 import axios from 'axios';
 
-const API_KEY = import.meta.env.VITE_GOOGLE_SHEETS_API_KEY;
-const SPREADSHEET_ID = import.meta.env.VITE_GOOGLE_SPREADSHEET_ID;
-const BASE_URL = 'https://sheets.googleapis.com/v4/spreadsheets';
-
 class GoogleSheetsService {
   /**
    * Obtiene datos de una hoja específica
@@ -12,16 +8,28 @@ class GoogleSheetsService {
    */
   async getSheetData(sheetName) {
     try {
-      const url = `${BASE_URL}/${SPREADSHEET_ID}/values/${sheetName}?key=${API_KEY}`;
-      const response = await axios.get(url);
-      
-      if (!response.data.values || response.data.values.length === 0) {
+      let responseData;
+
+      if (import.meta.env.DEV) {
+        // Development: call Google Sheets API directly
+        const apiKey = import.meta.env.VITE_GOOGLE_SHEETS_API_KEY;
+        const spreadsheetId = import.meta.env.VITE_GOOGLE_SPREADSHEET_ID;
+        const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${encodeURIComponent(sheetName)}?key=${apiKey}`;
+        const response = await axios.get(url);
+        responseData = response.data;
+      } else {
+        // Production: use Netlify Function proxy (API key stays server-side)
+        const response = await axios.get(`/.netlify/functions/sheets?sheetName=${encodeURIComponent(sheetName)}`);
+        responseData = response.data;
+      }
+
+      if (!responseData.values || responseData.values.length === 0) {
         return [];
       }
 
       // Primera fila contiene los headers
-      const headers = response.data.values[0];
-      const rows = response.data.values.slice(1);
+      const headers = responseData.values[0];
+      const rows = responseData.values.slice(1);
 
       // Convertir cada fila en un objeto usando los headers como keys
       return rows.map(row => {
