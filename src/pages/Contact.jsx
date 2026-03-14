@@ -69,15 +69,17 @@ function Contact() {
           <ul className="contact-links-list">
             {displayLinks.map((item, i) => (
               <li key={i}>
-                {(item.external === 'true' || item.external === true) ? (
-                  <a href={item.href} target="_blank" rel="noopener noreferrer" className="contact-link">
-                    {item.label}
-                  </a>
-                ) : (
-                  <Link to={item.href} className="contact-link">
-                    {item.label}
-                  </Link>
-                )}
+                <h3>
+                  {(item.external === 'true' || item.external === true) ? (
+                    <a href={item.href} target="_blank" rel="noopener noreferrer" className="contact-link">
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link to={item.href} className="contact-link">
+                      {item.label}
+                    </Link>
+                  )}
+                </h3>
               </li>
             ))}
           </ul>

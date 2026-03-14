@@ -1,68 +1,27 @@
 /* ===================== CONTACT SUBPAGE ===================== */
 
 .csub-container {
-  padding: 0 30px 60px;
+  padding: 0 0 60px;
 }
 
-/* Breadcrumb */
+/* Breadcrumb — left-aligned, just CONTACTS */
 .csub-breadcrumb-row {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   padding: 14px 0 6px;
-  font-size: 13px;
-  letter-spacing: 0.5px;
-  flex-wrap: wrap;
 }
 
 .csub-breadcrumb-link {
   color: #ae2a5e;
   text-decoration: none;
   letter-spacing: 1px;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .csub-breadcrumb-link:hover {
   text-decoration: underline;
-}
-
-.csub-breadcrumb-sep {
-  color: #999;
-  margin: 0 2px;
-}
-
-.csub-breadcrumb-active {
-  color: #333;
-  letter-spacing: 1px;
-}
-
-/* Subnav */
-.csub-subnav-row {
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  padding: 4px 0 6px;
-  font-size: 12px;
-  color: #666;
-  gap: 0;
-}
-
-.csub-subnav-sep {
-  color: #999;
-}
-
-.csub-subnav-link {
-  color: #666;
-  text-decoration: none;
-}
-
-.csub-subnav-link:hover {
-  color: #333;
-  text-decoration: underline;
-}
-
-.csub-subnav-link.active {
-  color: #ae2a5e;
-  font-weight: bold;
 }
 
 /* Divider */
@@ -72,79 +31,146 @@
   margin: 0;
 }
 
-/* Content area */
-.csub-content {
-  background-color: #f0f0f0;
-  padding: 30px 40px;
-  box-sizing: border-box;
+/* Two-column layout — col-sm-9 / col-sm-3 */
+.csub-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
   min-height: 400px;
 }
 
+/* Main content (75%) */
+.csub-main {
+  flex: 0 0 75%;
+  max-width: 75%;
+  background-color: #f9d8e5;
+  box-shadow: inset 0 1px 1px #f9d8e5, 0 0 8px #f9d8e5;
+  padding: 24px 32px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
 .csub-title {
-  font-size: 16px;
+  font-size: 30px;
   font-weight: normal;
-  letter-spacing: 1px;
-  color: #333;
-  margin: 0 0 24px 0;
-  text-transform: uppercase;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 12px;
-}
-
-.csub-para {
-  font-size: 13px;
-  color: #444;
-  line-height: 1.8;
+  color: #000;
   margin: 0 0 16px 0;
-  white-space: pre-line;
 }
 
-/* FAQs */
-.csub-faqs {}
-
-.csub-faq-item {
-  margin-bottom: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #ddd;
-}
-
-.csub-faq-item:last-child {
-  border-bottom: none;
-}
-
-.csub-faq-q {
-  font-size: 13px;
-  font-weight: bold;
-  color: #333;
+/* Section headers (h2.heading-tertiary) */
+.csub-section-header {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
   margin: 0 0 8px 0;
-  line-height: 1.6;
+  padding-top: 15px;
 }
 
-.csub-faq-a {
-  font-size: 13px;
-  color: #555;
-  line-height: 1.8;
-  margin: 0;
+/* Note paragraph */
+.csub-note {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.7;
+  margin: 0 0 12px 0;
 }
 
-.csub-not-found {
+/* Regular paragraphs */
+.csub-para {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.7;
+  margin: 0 0 12px 0;
+}
+
+/* Label (strong) paragraphs */
+.csub-main p strong {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Links within content */
+.csub-main a {
+  color: #ae2a5e;
+  text-decoration: underline;
+}
+
+.csub-main a:hover {
+  color: #8e1f4a;
+}
+
+.csub-empty {
   color: #999;
   font-size: 14px;
+}
+
+/* Sidebar (25%) — aside-content page-col */
+.csub-sidebar {
+  flex: 1;
+  background-color: #f9d8e5;
+  box-shadow: inset 0 1px 1px #f9d8e5, 0 0 8px #f9d8e5;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-left: 2px;
+}
+
+/* Bulleted list matching .aside-content ul.bulleted-list */
+.csub-sidebar-list {
+  list-style-type: square;
+  margin: 0;
+  padding-left: 13px;
+}
+
+.csub-sidebar-item {
+  margin-bottom: 18px;
+}
+
+.csub-sidebar-item h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.csub-sidebar-link {
+  color: #ae2a5e;
+  text-decoration: none;
+}
+
+.csub-sidebar-link:hover {
+  color: #8e1f4a;
+  text-decoration: underline;
+}
+
+.csub-sidebar-link.active {
+  font-weight: bold;
 }
 
 /* ===================== RESPONSIVE ===================== */
 
 @media (max-width: 767px) {
   .csub-container {
-    padding: 0 15px 40px;
+    padding: 0 0 40px;
   }
 
-  .csub-breadcrumb-row,
-  .csub-subnav-row {
-    justify-content: flex-start;
+  .csub-layout {
+    flex-direction: column;
+    min-height: auto;
   }
 
-  .csub-content {
+  .csub-main {
+    flex: none;
+    max-width: 100%;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .csub-title {
+    font-size: 22px;
+  }
+
+  .csub-sidebar {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2px;
     padding: 20px;
   }
 }

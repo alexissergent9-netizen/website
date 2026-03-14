@@ -1,24 +1,28 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useState, useRef, useEffect } from 'react'
 import { useSiteData } from '../context/SiteDataContext'
 import './Header.css'
 
 function Header() {
   const { siteNameFirst, siteNameSecond } = useSiteData()
+  const navigate = useNavigate()
+
+  // Desktop hover state
   const [activeDropdown, setActiveDropdown] = useState(null)
   const closeTimerRef = useRef(null)
 
-  // Limpiar el timer al desmontar el componente
+  // Mobile state
+  const [mobileOpen, setMobileOpen] = useState(false)
+  const [mobileExpanded, setMobileExpanded] = useState(null)
+  const [mobileSubExpanded, setMobileSubExpanded] = useState(null)
+
   useEffect(() => {
     return () => {
-      if (closeTimerRef.current) {
-        clearTimeout(closeTimerRef.current)
-      }
+      if (closeTimerRef.current) clearTimeout(closeTimerRef.current)
     }
   }, [])
 
   const handleMouseEnter = (dropdown) => {
-    // Cancelar cualquier temporizador de cierre pendiente
     if (closeTimerRef.current) {
       clearTimeout(closeTimerRef.current)
       closeTimerRef.current = null
@@ -27,24 +31,57 @@ function Header() {
   }
 
   const handleMouseLeave = () => {
-    // Agregar un pequeño delay antes de cerrar para permitir que el usuario
-    // mueva el cursor al dropdown sin que se cierre
     closeTimerRef.current = setTimeout(() => {
       setActiveDropdown(null)
-    }, 100) // 100ms de delay
+    }, 100)
+  }
+
+  const toggleMobile = () => {
+    setMobileOpen(o => !o)
+    setMobileExpanded(null)
+    setMobileSubExpanded(null)
+  }
+
+  const toggleMobileSection = (key) => {
+    setMobileExpanded(prev => prev === key ? null : key)
+    setMobileSubExpanded(null)
+  }
+
+  const toggleMobileSub = (key) => {
+    setMobileSubExpanded(prev => prev === key ? null : key)
+  }
+
+  const handleMobileNav = (path) => {
+    navigate(path)
+    setMobileOpen(false)
+    setMobileExpanded(null)
+    setMobileSubExpanded(null)
   }
 
   return (
     <header className="header">
       <div className="header-content">
-        <Link to="/home" className="logo">
+        <Link to="/home" className="logo" onClick={() => setMobileOpen(false)}>
           <div className="logo-text">
             <span className="logo-first">{siteNameFirst}</span>{siteNameSecond}
           </div>
         </Link>
+
+        {/* Hamburger button — mobile only */}
+        <button
+          className={`hamburger${mobileOpen ? ' is-open' : ''}`}
+          onClick={toggleMobile}
+          aria-label="Toggle navigation"
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+
+        {/* Desktop nav */}
         <nav className="main-nav">
           {/* Press */}
-          <div 
+          <div
             className="nav-item dropdown"
             onMouseEnter={() => handleMouseEnter('press')}
             onMouseLeave={handleMouseLeave}
@@ -54,7 +91,7 @@ function Header() {
               <div className="dropdown-menu">
                 <div className="dropdown-item has-submenu">
                   <Link to="/press/articles" className="dropdown-link">articles</Link>
-                  <div className="sub-menu">{/* current */}
+                  <div className="sub-menu">
                     <Link to="/press/articles" className="sub-link">current</Link>
                     <Link to="/press/articles/past" className="sub-link">past</Link>
                   </div>
@@ -64,7 +101,7 @@ function Header() {
           </div>
 
           {/* Exhibitions */}
-          <div 
+          <div
             className="nav-item dropdown"
             onMouseEnter={() => handleMouseEnter('exhibitions')}
             onMouseLeave={handleMouseLeave}
@@ -80,7 +117,7 @@ function Header() {
           </div>
 
           {/* Works */}
-          <div 
+          <div
             className="nav-item dropdown"
             onMouseEnter={() => handleMouseEnter('works')}
             onMouseLeave={handleMouseLeave}
@@ -144,7 +181,7 @@ function Header() {
           </div>
 
           {/* Resources */}
-          <div 
+          <div
             className="nav-item dropdown"
             onMouseEnter={() => handleMouseEnter('resources')}
             onMouseLeave={handleMouseLeave}
@@ -167,6 +204,140 @@ function Header() {
           </div>
         </nav>
       </div>
+
+      {/* Mobile nav panel */}
+      {mobileOpen && (
+        <nav className="mobile-nav">
+          {/* Press */}
+          <div className="mobile-nav-item">
+            <button className="mobile-nav-btn" onClick={() => toggleMobileSection('press')}>
+              Press <span className="mobile-chevron">{mobileExpanded === 'press' ? '▲' : '▼'}</span>
+            </button>
+            {mobileExpanded === 'press' && (
+              <div className="mobile-dropdown">
+                <button className="mobile-sub-btn" onClick={() => toggleMobileSub('press-articles')}>
+                  articles <span className="mobile-chevron">{mobileSubExpanded === 'press-articles' ? '▲' : '▼'}</span>
+                </button>
+                {mobileSubExpanded === 'press-articles' && (
+                  <div className="mobile-sub">
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/press/articles')}>current</button>
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/press/articles/past')}>past</button>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+
+          {/* Exhibitions */}
+          <div className="mobile-nav-item">
+            <button className="mobile-nav-btn" onClick={() => toggleMobileSection('exhibitions')}>
+              Exhibitions <span className="mobile-chevron">{mobileExpanded === 'exhibitions' ? '▲' : '▼'}</span>
+            </button>
+            {mobileExpanded === 'exhibitions' && (
+              <div className="mobile-dropdown">
+                <button className="mobile-leaf" onClick={() => handleMobileNav('/exhibitions/current')}>current</button>
+                <button className="mobile-leaf" onClick={() => handleMobileNav('/exhibitions/past')}>past</button>
+                <button className="mobile-leaf" onClick={() => handleMobileNav('/exhibitions/upcoming')}>upcoming</button>
+              </div>
+            )}
+          </div>
+
+          {/* Works */}
+          <div className="mobile-nav-item">
+            <button className="mobile-nav-btn" onClick={() => toggleMobileSection('works')}>
+              Works <span className="mobile-chevron">{mobileExpanded === 'works' ? '▲' : '▼'}</span>
+            </button>
+            {mobileExpanded === 'works' && (
+              <div className="mobile-dropdown">
+                <button className="mobile-sub-btn" onClick={() => toggleMobileSub('digital')}>
+                  digital works <span className="mobile-chevron">{mobileSubExpanded === 'digital' ? '▲' : '▼'}</span>
+                </button>
+                {mobileSubExpanded === 'digital' && (
+                  <div className="mobile-sub">
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/digital/computer-drawings')}>computer drawings</button>
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/digital/iphone')}>iPhone</button>
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/digital/ipad')}>iPad Selects</button>
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/digital/arrival-of-spring-woldgate')}>arrival of spring woldgate</button>
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/digital/yosemite-suite')}>yosemite suite</button>
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/digital/movies')}>digital movies</button>
+                  </div>
+                )}
+                <button className="mobile-leaf" onClick={() => handleMobileNav('/works/drawings')}>drawings</button>
+                <button className="mobile-sub-btn" onClick={() => toggleMobileSub('graphics')}>
+                  graphics <span className="mobile-chevron">{mobileSubExpanded === 'graphics' ? '▲' : '▼'}</span>
+                </button>
+                {mobileSubExpanded === 'graphics' && (
+                  <div className="mobile-sub">
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/graphics/lithographs')}>lithographs</button>
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/graphics/etchings')}>etchings</button>
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/graphics/rakes-progress-etchings')}>a rake's progress etchings</button>
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/graphics/blue-guitar-etchings')}>blue guitar etchings</button>
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/graphics/prints')}>homemade prints</button>
+                  </div>
+                )}
+                <button className="mobile-leaf" onClick={() => handleMobileNav('/works/paintings')}>paintings</button>
+                <button className="mobile-sub-btn" onClick={() => toggleMobileSub('photos')}>
+                  photographs <span className="mobile-chevron">{mobileSubExpanded === 'photos' ? '▲' : '▼'}</span>
+                </button>
+                {mobileSubExpanded === 'photos' && (
+                  <div className="mobile-sub">
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/photos/photographic-collages')}>photographic collages</button>
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/photos/composite-polaroids')}>composite polaroids</button>
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/photos/photo_drawings')}>photographic drawings</button>
+                  </div>
+                )}
+                <button className="mobile-leaf" onClick={() => handleMobileNav('/works/sketchbooks')}>sketchbooks</button>
+                <button className="mobile-sub-btn" onClick={() => toggleMobileSub('stage')}>
+                  stage design <span className="mobile-chevron">{mobileSubExpanded === 'stage' ? '▲' : '▼'}</span>
+                </button>
+                {mobileSubExpanded === 'stage' && (
+                  <div className="mobile-sub">
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/stage_design/the-rakes-progress')}>The Rake's Progress</button>
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/stage_design/magic-flute')}>Magic Flute</button>
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/stage_design/french-triple-bill')}>French Triple Bill</button>
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/stage_design/stravinsky-triple-bill')}>Stravinsky Triple Bill</button>
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/stage_design/tristan-und-isolde')}>Tristan und Isolde</button>
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/stage_design/turandot')}>Turandot</button>
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/stage_design/die-frau-ohne-schatten')}>Die Frau Ohne Schatten</button>
+                  </div>
+                )}
+                <button className="mobile-sub-btn" onClick={() => toggleMobileSub('etcetera')}>
+                  etcetera <span className="mobile-chevron">{mobileSubExpanded === 'etcetera' ? '▲' : '▼'}</span>
+                </button>
+                {mobileSubExpanded === 'etcetera' && (
+                  <div className="mobile-sub">
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/etcetera/pools')}>paper pulp</button>
+                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/etcetera/bmw')}>BMW art car</button>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+
+          {/* Resources */}
+          <div className="mobile-nav-item">
+            <button className="mobile-nav-btn" onClick={() => toggleMobileSection('resources')}>
+              Resources <span className="mobile-chevron">{mobileExpanded === 'resources' ? '▲' : '▼'}</span>
+            </button>
+            {mobileExpanded === 'resources' && (
+              <div className="mobile-dropdown">
+                <a href="http://www.thedavidhockneyfoundation.org/" target="_blank" rel="noopener noreferrer" className="mobile-leaf-a">the david hockney foundation</a>
+                <button className="mobile-leaf" onClick={() => handleMobileNav('/resources/galleries')}>galleries</button>
+                <button className="mobile-leaf" onClick={() => handleMobileNav('/resources/making_works')}>making 'works'</button>
+                <button className="mobile-leaf" onClick={() => handleMobileNav('/resources/publications')}>publications</button>
+                <button className="mobile-leaf" onClick={() => handleMobileNav('/resources/public_collections')}>works in public collections</button>
+              </div>
+            )}
+          </div>
+
+          {/* Contacts */}
+          <div className="mobile-nav-item">
+            <button className="mobile-nav-btn mobile-nav-leaf" onClick={() => handleMobileNav('/contact')}>
+              Contacts
+            </button>
+          </div>
+        </nav>
+      )}
     </header>
   )
 }

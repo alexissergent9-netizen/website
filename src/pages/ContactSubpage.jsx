@@ -4,72 +4,132 @@ import googleSheetsService from '../services/googleSheetsService'
 import Loading from '../components/Loading'
 import './ContactSubpage.css'
 
-const SECTIONS = [
-  { slug: 'faqs', label: 'Frequently Asked Questions' },
-  { slug: 'NFT_report', label: 'A Word of Warning Concerning NFTs' },
-  { slug: 'information_request', label: 'Information Requests' },
-  { slug: 'repro_request', label: 'Reproduction Requests' },
-  { slug: 'privacy_notice', label: 'Privacy Notice' },
+/* ─── Sidebar links (same as Contact page) ─── */
+const SIDEBAR_LINKS = [
+  { label: 'Frequently Asked Questions', href: '/contact/faqs', external: false },
+  { label: 'A Word of Warning Concerning NFTs', href: '/contact/NFT_report', external: false },
+  { label: 'Galleries', href: '/resources/galleries', external: false },
+  { label: 'Information Requests', href: '/contact/information_request', external: false },
+  { label: 'Reproduction Requests', href: '/contact/repro_request', external: false },
+  { label: 'Privacy Notice', href: '/contact/privacy_notice', external: false },
 ]
 
+/* ─── Static fallback content (matches real hockney.com) ─── */
 const STATIC_CONTENT = {
   faqs: {
     title: 'Frequently Asked Questions',
     items: [
-      { type: 'faq', question: 'How can I purchase a work by David Hockney?', content: 'Works by David Hockney are available through his representing galleries. Please visit the Galleries section for contact details.' },
-      { type: 'faq', question: 'Can I use images of David Hockney\'s work in my publication or project?', content: 'All works by David Hockney are protected by copyright. For reproduction requests, please use the Reproduction Requests form.' },
-      { type: 'faq', question: 'Does David Hockney accept commissions?', content: 'David Hockney does not currently accept commissions. All enquiries should be directed through his galleries.' },
-      { type: 'faq', question: 'Where can I see David Hockney\'s work in person?', content: 'David Hockney\'s works are held in museums and collections around the world. Please see the Works in Public Collections section for more information.' },
-      { type: 'faq', question: 'How can I contact David Hockney\'s studio directly?', content: 'David Hockney\'s studio does not accept unsolicited correspondence. For press and media enquiries, please use the Information Requests form.' },
+      { type: 'note', content: 'NOTE: Our mailboxes are actively monitored. However, high volume prevents us from acknowledging and responding to all messages.' },
+      { type: 'section_header', content: 'Requests' },
+      { type: 'label', content: 'Advice, Autographs, Mail' },
+      { type: 'paragraph', content: 'David Hockney does not respond to requests for advice, critique on work by other artists, autographs or personalized messages.' },
+      { type: 'paragraph', content: 'David Hockney is unable to respond to requests for his time and participation in collaborative projects or invitations for visits and public speaking engagements.' },
+      { type: 'paragraph', content: 'We do not provide a mailing address. Mail, gifts, art and packages containing items for autograph sent to any address believed to be associated with the artist will not be acknowledged or returned.' },
+      { type: 'label', content: 'Interview requests' },
+      { type: 'paragraph', content: 'David Hockney only participates in a very small number of carefully managed interviews, generally in conjunction with the opening of an exhibition of his work.' },
+      { type: 'label', content: 'Donations' },
+      { type: 'paragraph', content: 'David Hockney does not donate works of art or other items for benefit auctions.' },
+      { type: 'label', content: 'Restoration and Conservation of Artwork' },
+      { type: 'paragraph', content: 'Questions regarding the conservation or restoration of artworks should be directed to the seller, qualified fine art handler or conservation professional.' },
+      { type: 'section_header', content: 'Copyright and Merchandise' },
+      { type: 'label', content: 'Copyright permissions' },
+      { type: 'paragraph', content: 'David Hockney retains full copyright in all images of his work. Requests to license images of the artist or of works by the artist should be submitted via email to repro@hockneypictures.com. Failure to obtain permission to license images of copyrighted material will result in legal action.' },
+      { type: 'label', content: 'Participation in retail ventures, merchandising, retail collaborations' },
+      { type: 'paragraph', content: "David Hockney does not participate in, nor provide images of work for, retail or commercial projects; reproduction of images of work by the artist for merchandise is permitted under strict guidelines only in conjunction with exhibitions of the artist's work in public institutions." },
+      { type: 'label', content: 'Merchandise (Posters, prints, and/or work by David Hockney for sale at on-line platforms such as Ebay, Amazon, etc.)' },
+      { type: 'paragraph', content: 'See "Reproduction Prints" below. Merchandise approved by David Hockney and produced in conjunction with exhibitions is often offered for sale at the venues hosting those exhibitions.' },
+      { type: 'paragraph', content: 'Please note that those museums who produce merchandise, including posters, postcards, prints or any other item for sale, can only do so with the approval of the artist. Please see our policy regarding reproduction of images of work by the artist.' },
+      { type: 'paragraph', content: 'Unauthorized reproduction of images of work by the artist on materials for sale is monitored closely and will result in legal action, and prosecution to the fullest extent of the laws pertaining to copyright and trademark infringement.' },
+      { type: 'label', content: 'NFT warning' },
+      { type: 'paragraph', content: 'David Hockney does not participate in or collaborate in the creation of any NFTs (Non-Fungible Tokens). Any NFT of a Hockney work or derivative of his works or one purported to be by David Hockney is not authentic, is unauthorized, and is illegal.' },
+      { type: 'paragraph', content: 'Do not create, post, sell or purchase any purported Hockney NFT or derivatives as it will subject you to legal action if you do. Upon identifying any such NFT we will have it taken down and have the transaction canceled or remove the NFT from the blockchain.' },
+      { type: 'label', content: 'Reproduction prints' },
+      { type: 'paragraph', content: "David Hockney retains copyright of all images of his work. Permission to use images of works by David Hockney in the production of posters, prints, postcards, or other merchandise is strictly limited to items created for sale in conjunction with exhibitions of the artist's work in public institutions." },
+      { type: 'paragraph', content: 'David Hockney does NOT provide or permit "reproduction prints" for personal use, nor does David Hockney provide images of his work for retail or commercial projects, other than as noted above.' },
+      { type: 'paragraph', content: 'Requests to purchase merchandise, including authorized postcards and posters, should be directed to the institutions associated with exhibitions of the work or those institutions owning the work in question.' },
+      { type: 'section_header', content: 'Museum Exhibitions and Loans' },
+      { type: 'label', content: 'Exhibitions and lending works' },
+      { type: 'paragraph', content: 'David Hockney Inc. actively lends to international exhibitions that further scholarly research and ensure that Mr Hockney\'s work reaches a wide audience. Museum loan requests should be submitted via email to info@hockneypictures.com. All loans originate from and return to Los Angeles; Borrower is responsible for all costs related to packing, shipping, and insurance.' },
+      { type: 'section_header', content: 'Purchasing Work' },
+      { type: 'label', content: 'Commissioned Works' },
+      { type: 'paragraph', content: 'David Hockney does not accept proposals for artwork commissions.' },
+      { type: 'label', content: 'Identification of works' },
+      { type: 'paragraph', content: 'We do not authenticate nor provide certificates of authenticity for works.' },
+      { type: 'label', content: 'Purchasing works by the artist' },
+      { type: 'paragraph', content: 'We do not sell works from our website. Any interest should be directed to the gallery representatives listed on our Galleries webpage.' },
+      { type: 'section_header', content: 'Students, Scholars and Art Publications' },
+      { type: 'label', content: 'Internship programs' },
+      { type: 'paragraph', content: 'David Hockney does not offer an internship program.' },
+      { type: 'label', content: 'Process and Policy for publications development' },
+      { type: 'paragraph', content: 'David Hockney retains copyright for all images of his work. Requests to produce publications about David Hockney which include images of works by the artist should be submitted via email to repro@hockneypictures.com. Provide all pertinent information about the project, including publication date, print run, publisher, etc.' },
+      { type: 'label', content: 'Requests from Schools and Teachers' },
+      { type: 'paragraph', content: 'Please do NOT send or ask to send student materials or artwork to the artist for his critique or review or praise. David Hockney is unable to offer feedback or encouragement on either an individual or group basis.' },
+      { type: 'label', content: 'Research questions' },
+      { type: 'paragraph', content: 'An extensive bibliography of works by and about David Hockney can be found on this website. Please consult the works listed here before seeking additional information about the artist and his work.' },
     ],
   },
   NFT_report: {
-    title: 'A Word of Warning Concerning NFTs',
+    title: 'A Word of Warning About NFTs (Non-fungible Tokens)',
     items: [
-      { type: 'paragraph', content: 'David Hockney has not authorised, endorsed, or participated in any NFT (Non-Fungible Token) sales of his artworks.' },
-      { type: 'paragraph', content: 'Any NFTs purporting to represent David Hockney\'s works are unauthorised and may constitute fraud. Buyers should exercise extreme caution and be aware that the purchase of such NFTs does not confer any rights over the underlying artworks, which remain the property of David Hockney and/or their respective owners.' },
-      { type: 'paragraph', content: 'David Hockney\'s studio is aware of multiple instances of fraudulent NFT sales using his name and images. We strongly advise the public not to purchase any NFTs claimed to be by or associated with David Hockney without first verifying their authenticity through official channels.' },
-      { type: 'paragraph', content: 'If you encounter what you believe to be an unauthorised NFT using David Hockney\'s work, please contact us using the Information Requests form.' },
+      { type: 'paragraph', content: 'David Hockney does not participate in or collaborate in the creation of any NFTs (Non-Fungible Tokens). Any NFT of a Hockney work or derivative of his works or one purported to be by David Hockney is not authentic, is unauthorized, and is illegal.' },
+      { type: 'paragraph', content: 'Do not create, post, sell or purchase any purported Hockney NFT or derivatives as it will subject you to legal action if you do. Upon identifying any such NFT we will have it taken down and have the transaction canceled or remove the NFT from the blockchain.' },
     ],
   },
   information_request: {
-    title: 'Information Requests',
+    title: 'Information Request',
     items: [
-      { type: 'paragraph', content: 'For general information requests, press enquiries, and media requests, please contact David Hockney\'s studio through the appropriate gallery.' },
-      { type: 'paragraph', content: 'Please note that due to the volume of correspondence received, it may not be possible to respond to every enquiry. We will do our best to respond to all legitimate press and media requests in a timely manner.' },
-      { type: 'paragraph', content: 'For press and media enquiries, please provide: your name and organisation, the nature of your enquiry, your deadline (if applicable), and your contact details.' },
-      { type: 'paragraph', content: 'All requests are handled in accordance with our Privacy Notice.' },
+      { type: 'paragraph', content: 'Please submit your request for information via email to info@hockneypictures.com.' },
+      { type: 'paragraph', content: 'Please note that responses for information may take up to 5 business days.' },
     ],
   },
   repro_request: {
-    title: 'Reproduction Requests',
+    title: 'Reproduction Request',
     items: [
-      { type: 'paragraph', content: 'All images of works by David Hockney are protected by copyright. Permission must be obtained before reproducing any image in any medium, including print, digital, and broadcast.' },
-      { type: 'paragraph', content: 'To request permission to reproduce an image, please provide: the work(s) you wish to reproduce (title, date, medium), the purpose of reproduction (book, magazine, website, exhibition, etc.), the territory and language of publication, the edition size or expected audience reach, the proposed reproduction size, and your organisation and contact details.' },
-      { type: 'paragraph', content: 'Please note that reproduction fees may apply. All requests are subject to approval and the granting of permission does not imply endorsement of the publication or project.' },
-      { type: 'paragraph', content: 'Requests should be directed through the appropriate representing gallery. Please visit the Galleries section for contact details.' },
+      { type: 'paragraph', content: 'If you wish to license an image of David Hockney or David Hockney\'s artwork, please submit your request via email to repro@hockneypictures.com.' },
+      { type: 'paragraph', content: 'David Hockney Inc. will primarily clear the copyright for image use and, in some cases, provide a file. Please note that responses to requests may take up to 5 business days.' },
     ],
   },
   privacy_notice: {
-    title: 'Privacy Notice',
+    title: 'David Hockney Group of Commercial and Charitable Entities Privacy Notice',
     items: [
-      { type: 'paragraph', content: 'This Privacy Notice explains how we collect, use, and protect your personal information when you use this website.' },
-      { type: 'paragraph', content: 'Information We Collect: We may collect personal information that you provide to us directly, such as your name, email address, and any other information you provide when contacting us.' },
-      { type: 'paragraph', content: 'How We Use Your Information: We use the information we collect to respond to your enquiries, process requests, and improve our website and services.' },
-      { type: 'paragraph', content: 'Cookies: This website may use cookies to improve your browsing experience. You can control cookie settings through your browser preferences.' },
-      { type: 'paragraph', content: 'Third Parties: We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except where required by law.' },
-      { type: 'paragraph', content: 'Data Retention: We retain personal information only for as long as necessary to fulfil the purposes for which it was collected.' },
-      { type: 'paragraph', content: 'Your Rights: You have the right to access, correct, or delete personal information we hold about you. To exercise these rights, please contact us through the Information Requests form.' },
-      { type: 'paragraph', content: 'Changes to This Notice: We may update this Privacy Notice from time to time. Changes will be posted on this page.' },
+      { type: 'label', content: 'Last updated: 24 October 2023' },
+      { type: 'paragraph', content: 'This privacy notice explains how we, the David Hockney Group, process your personal data if you use our websites, app, service, content or feature or otherwise engage with us online or offline.' },
+      { type: 'paragraph', content: 'Our notice covers both commercial and not-for-profit activities which will apply to the relevant entities, depending on their commercial or charitable objectives.' },
+      { type: 'paragraph', content: 'If you have any question about your data protection rights or if you do not understand anything explained in this notice, please contact us by email at privacy@hockneypictures.com or by writing to Privacy at PO Box 93519, Los Angeles, CA 90093, USA.' },
+      { type: 'section_header', content: 'Who does this privacy notice apply to?' },
+      { type: 'paragraph', content: 'This notice applies to visitors to museums and galleries which display our exhibits; our private purchasers and other customers; event participants; our partners and suppliers; job applicants; users of our websites, app, online content and features; and anyone else who interacts with us online or offline.' },
+      { type: 'section_header', content: 'What personal data do we collect?' },
+      { type: 'paragraph', content: 'We may collect personal information that you provide to us directly, such as your name, email address, and any other information you provide when contacting us or using our services.' },
+      { type: 'section_header', content: 'How do we use your personal data?' },
+      { type: 'paragraph', content: 'We use the information we collect to respond to your enquiries, process requests, improve our website and services, and comply with legal obligations.' },
+      { type: 'section_header', content: 'Cookies' },
+      { type: 'paragraph', content: 'This website uses cookies to analyze our traffic and improve your browsing experience. You can control cookie settings through your browser preferences.' },
+      { type: 'section_header', content: 'Third parties' },
+      { type: 'paragraph', content: 'We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except where required by law.' },
+      { type: 'section_header', content: 'Your rights' },
+      { type: 'paragraph', content: 'You have the right to access, correct, or delete personal information we hold about you. To exercise these rights, please contact us at privacy@hockneypictures.com.' },
     ],
   },
+}
+
+/* ─── Item renderer ─── */
+function renderItem(item, i) {
+  switch (item.type) {
+    case 'section_header':
+      return <h2 key={i} className="csub-section-header">{item.content}</h2>
+    case 'label':
+      return <p key={i}><strong>{item.content}</strong></p>
+    case 'note':
+      return <p key={i} className="csub-note" style={{ paddingTop: 15 }}>{item.content}</p>
+    default:
+      return <p key={i} className="csub-para">{item.content}</p>
+  }
 }
 
 function ContactSubpage() {
   const { section } = useParams()
   const [items, setItems] = useState(null)
   const [loading, setLoading] = useState(true)
-  const currentSection = SECTIONS.find(s => s.slug === section)
   const staticContent = STATIC_CONTENT[section]
 
   useEffect(() => {
@@ -82,61 +142,58 @@ function ContactSubpage() {
 
   if (loading) return <Loading />
 
-  // Resolver contenido: Sheets si hay datos, si no fallback estático
   const displayItems = items
-    ? items.map(r => ({ type: r.type, question: r.question, content: r.content }))
+    ? items.map(r => ({ type: r.type, content: r.content || r.question || '' }))
     : (staticContent?.items || [])
 
-  const title = staticContent?.title || currentSection?.label || section
+  const title = staticContent?.title || section
 
   return (
     <div className="csub-container">
 
-      {/* Breadcrumb */}
+      {/* Breadcrumb — just CONTACTS, top-right */}
       <div className="csub-breadcrumb-row">
         <Link to="/contact" className="csub-breadcrumb-link">CONTACTS</Link>
-        <span className="csub-breadcrumb-sep"> / </span>
-        <span className="csub-breadcrumb-active">
-          {currentSection?.label?.toUpperCase() || section.toUpperCase()}
-        </span>
-      </div>
-
-      {/* Subnav */}
-      <div className="csub-subnav-row">
-        {SECTIONS.map((s, i) => (
-          <span key={s.slug}>
-            {i > 0 && <span className="csub-subnav-sep"> / </span>}
-            <Link
-              to={`/contact/${s.slug}`}
-              className={`csub-subnav-link ${section === s.slug ? 'active' : ''}`}
-            >
-              {s.label.toLowerCase()}
-            </Link>
-          </span>
-        ))}
       </div>
 
       <hr className="csub-divider" />
 
-      <div className="csub-content">
-        <h2 className="csub-title">{title}</h2>
+      {/* Two-column layout */}
+      <div className="csub-layout">
 
-        {displayItems.map((item, i) => (
-          item.type === 'faq' ? (
-            <div key={i} className="csub-faq-item">
-              <p className="csub-faq-q">{item.question}</p>
-              <p className="csub-faq-a">{item.content}</p>
-            </div>
-          ) : (
-            <p key={i} className="csub-para">{item.content}</p>
-          )
-        ))}
+        {/* Main content (75%) */}
+        <main className="csub-main">
+          <h1 className="csub-title">{title}</h1>
 
-        {displayItems.length === 0 && (
-          <p className="csub-not-found">No content available for this section.</p>
-        )}
+          {displayItems.map((item, i) => renderItem(item, i))}
+
+          {displayItems.length === 0 && (
+            <p className="csub-empty">No content available for this section.</p>
+          )}
+        </main>
+
+        {/* Sidebar (25%) */}
+        <aside className="csub-sidebar">
+          <ul className="csub-sidebar-list">
+            {SIDEBAR_LINKS.map((link, i) => (
+              <li key={i} className="csub-sidebar-item">
+                <h3>
+                  {link.external ? (
+                    <a href={link.href} target="_blank" rel="noopener noreferrer" className="csub-sidebar-link">
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link to={link.href} className={`csub-sidebar-link${link.href === `/contact/${section}` ? ' active' : ''}`}>
+                      {link.label}
+                    </Link>
+                  )}
+                </h3>
+              </li>
+            ))}
+          </ul>
+        </aside>
+
       </div>
-
     </div>
   )
 }

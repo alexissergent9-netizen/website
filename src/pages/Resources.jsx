@@ -63,6 +63,7 @@ function Resources() {
             <p className="res-description"><em>{config.description2}</em></p>
           )}
 
+          <p className="res-section-label">RESOURCES</p>
           <ul className="res-links-list">
             {links.map((item) => (
               <li key={item.href}>

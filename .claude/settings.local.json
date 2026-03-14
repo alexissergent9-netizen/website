@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(curl -s \"https://www.hockney.com/works/paintings\")"
+      "Bash(curl -s \"https://www.hockney.com/works/paintings\")",
+      "Bash(grep -r \"flex-end\" src/pages/*.css src/components/*.css)"
     ]
   }
 }

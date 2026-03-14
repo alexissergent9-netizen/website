@@ -73,6 +73,8 @@ function Press() {
         </li>
       </ol>
 
+      <hr className="press-divider" />
+
       <div className="press-layout">
         {/* Columna izquierda - Imagen */}
         <main className="press-main">
