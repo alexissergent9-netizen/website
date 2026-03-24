@@ -405,6 +405,17 @@ class GoogleSheetsService {
     return filtered.sort((a, b) => Number(a.order || 0) - Number(b.order || 0));
   }
 
+  // ==================== NAV METHODS ====================
+
+  /**
+   * Obtiene los ítems del navbar desde la hoja "nav"
+   * Devuelve el array ordenado, con defaults si la hoja no existe
+   */
+  async getNavItems() {
+    const rows = await this.getSheetData('nav');
+    return rows.sort((a, b) => Number(a.order || 0) - Number(b.order || 0));
+  }
+
   // ==================== SITE DATA METHODS ====================
 
   /**

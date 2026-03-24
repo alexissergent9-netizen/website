@@ -4,7 +4,24 @@ import { useSiteData } from '../context/SiteDataContext'
 import './Header.css'
 
 function Header() {
-  const { siteNameFirst, siteNameSecond } = useSiteData()
+  const { siteNameFirst, siteNameSecond, navItems } = useSiteData()
+
+  // Helper: find a nav item by key (case-insensitive)
+  const findNav = (key) => navItems?.find(n => String(n.key).toLowerCase().trim() === key.toLowerCase())
+
+  // Helper: get label for a nav key (falls back to capitalized key)
+  const navLabel = (key) => {
+    const item = findNav(key)
+    return item?.label || key.charAt(0).toUpperCase() + key.slice(1)
+  }
+
+  // Helper: check if a nav key is enabled
+  const navEnabled = (key) => {
+    const item = findNav(key)
+    if (!item) return true
+    const val = String(item.enabled).toLowerCase().trim()
+    return val !== 'false' && val !== '0' && val !== 'no'
+  }
   const navigate = useNavigate()
 
   // Desktop hover state
@@ -81,12 +98,13 @@ function Header() {
         {/* Desktop nav */}
         <nav className="main-nav">
           {/* Press */}
+          {navEnabled('press') && (
           <div
             className="nav-item dropdown"
             onMouseEnter={() => handleMouseEnter('press')}
             onMouseLeave={handleMouseLeave}
           >
-            <Link to="/press/articles" className="nav-link">Press</Link>
+            <Link to="/press/articles" className="nav-link">{navLabel('press')}</Link>
             {activeDropdown === 'press' && (
               <div className="dropdown-menu">
                 <div className="dropdown-item has-submenu">
@@ -99,14 +117,16 @@ function Header() {
               </div>
             )}
           </div>
+          )}
 
           {/* Exhibitions */}
+          {navEnabled('exhibitions') && (
           <div
             className="nav-item dropdown"
             onMouseEnter={() => handleMouseEnter('exhibitions')}
             onMouseLeave={handleMouseLeave}
           >
-            <Link to="/exhibitions/current" className="nav-link">Exhibitions</Link>
+            <Link to="/exhibitions/current" className="nav-link">{navLabel('exhibitions')}</Link>
             {activeDropdown === 'exhibitions' && (
               <div className="dropdown-menu">
                 <Link to="/exhibitions/current" className="dropdown-link">current</Link>
@@ -115,14 +135,16 @@ function Header() {
               </div>
             )}
           </div>
+          )}
 
           {/* Works */}
+          {navEnabled('works') && (
           <div
             className="nav-item dropdown"
             onMouseEnter={() => handleMouseEnter('works')}
             onMouseLeave={handleMouseLeave}
           >
-            <Link to="/works" className="nav-link">Works</Link>
+            <Link to="/works" className="nav-link">{navLabel('works')}</Link>
             {activeDropdown === 'works' && (
               <div className="dropdown-menu">
                 <div className="dropdown-item has-submenu">
@@ -179,14 +201,16 @@ function Header() {
               </div>
             )}
           </div>
+          )}
 
           {/* Resources */}
+          {navEnabled('resources') && (
           <div
             className="nav-item dropdown"
             onMouseEnter={() => handleMouseEnter('resources')}
             onMouseLeave={handleMouseLeave}
           >
-            <Link to="/resources" className="nav-link">Resources</Link>
+            <Link to="/resources" className="nav-link">{navLabel('resources')}</Link>
             {activeDropdown === 'resources' && (
               <div className="dropdown-menu">
                 <a href="http://www.thedavidhockneyfoundation.org/" target="_blank" rel="noopener noreferrer" className="dropdown-link">the david hockney foundation</a>
@@ -197,11 +221,14 @@ function Header() {
               </div>
             )}
           </div>
+          )}
 
           {/* Contacts */}
+          {navEnabled('contacts') && (
           <div className="nav-item">
-            <Link to="/contact" className="nav-link">Contacts</Link>
+            <Link to="/contact" className="nav-link">{navLabel('contacts')}</Link>
           </div>
+          )}
         </nav>
       </div>
 
@@ -209,9 +236,10 @@ function Header() {
       {mobileOpen && (
         <nav className="mobile-nav">
           {/* Press */}
+          {navEnabled('press') && (
           <div className="mobile-nav-item">
             <button className="mobile-nav-btn" onClick={() => toggleMobileSection('press')}>
-              Press <span className="mobile-chevron">{mobileExpanded === 'press' ? '▲' : '▼'}</span>
+              {navLabel('press')} <span className="mobile-chevron">{mobileExpanded === 'press' ? '▲' : '▼'}</span>
             </button>
             {mobileExpanded === 'press' && (
               <div className="mobile-dropdown">
@@ -227,11 +255,13 @@ function Header() {
               </div>
             )}
           </div>
+          )}
 
           {/* Exhibitions */}
+          {navEnabled('exhibitions') && (
           <div className="mobile-nav-item">
             <button className="mobile-nav-btn" onClick={() => toggleMobileSection('exhibitions')}>
-              Exhibitions <span className="mobile-chevron">{mobileExpanded === 'exhibitions' ? '▲' : '▼'}</span>
+              {navLabel('exhibitions')} <span className="mobile-chevron">{mobileExpanded === 'exhibitions' ? '▲' : '▼'}</span>
             </button>
             {mobileExpanded === 'exhibitions' && (
               <div className="mobile-dropdown">
@@ -241,11 +271,13 @@ function Header() {
               </div>
             )}
           </div>
+          )}
 
           {/* Works */}
+          {navEnabled('works') && (
           <div className="mobile-nav-item">
             <button className="mobile-nav-btn" onClick={() => toggleMobileSection('works')}>
-              Works <span className="mobile-chevron">{mobileExpanded === 'works' ? '▲' : '▼'}</span>
+              {navLabel('works')} <span className="mobile-chevron">{mobileExpanded === 'works' ? '▲' : '▼'}</span>
             </button>
             {mobileExpanded === 'works' && (
               <div className="mobile-dropdown">
@@ -313,11 +345,13 @@ function Header() {
               </div>
             )}
           </div>
+          )}
 
           {/* Resources */}
+          {navEnabled('resources') && (
           <div className="mobile-nav-item">
             <button className="mobile-nav-btn" onClick={() => toggleMobileSection('resources')}>
-              Resources <span className="mobile-chevron">{mobileExpanded === 'resources' ? '▲' : '▼'}</span>
+              {navLabel('resources')} <span className="mobile-chevron">{mobileExpanded === 'resources' ? '▲' : '▼'}</span>
             </button>
             {mobileExpanded === 'resources' && (
               <div className="mobile-dropdown">
@@ -329,13 +363,16 @@ function Header() {
               </div>
             )}
           </div>
+          )}
 
           {/* Contacts */}
+          {navEnabled('contacts') && (
           <div className="mobile-nav-item">
             <button className="mobile-nav-btn mobile-nav-leaf" onClick={() => handleMobileNav('/contact')}>
-              Contacts
+              {navLabel('contacts')}
             </button>
           </div>
+          )}
         </nav>
       )}
     </header>
