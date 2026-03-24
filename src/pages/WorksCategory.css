@@ -117,10 +117,25 @@
   background-color: #f9d8e5;
 }
 
+/* Button wrapper for clickable featured image */
+.wc-featured-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: zoom-in;
+  display: block;
+  width: 100%;
+}
+
 .wc-featured-img {
   width: 100%;
   height: auto;
   display: block;
+  transition: opacity 0.2s;
+}
+
+.wc-featured-btn:hover .wc-featured-img {
+  opacity: 0.9;
 }
 
 .wc-featured-caption {

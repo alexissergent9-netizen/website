@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import googleSheetsService from '../services/googleSheetsService'
 import Loading from '../components/Loading'
+import Lightbox from '../components/Lightbox'
 import './WorksCategory.css'
 
 /* ─── Fallback estático ─── */
@@ -71,6 +72,7 @@ function WorksCategory() {
   const [works, setWorks] = useState([])
   const [loading, setLoading] = useState(true)
   const [featuredIndex, setFeaturedIndex] = useState(0)
+  const [lightboxIndex, setLightboxIndex] = useState(null)
 
   const [categoriesMap, setCategoriesMap] = useState(FALLBACK_CATEGORIES)
   const [subcategoriesMap, setSubcategoriesMap] = useState(FALLBACK_SUBCATEGORIES)
@@ -183,12 +185,18 @@ function WorksCategory() {
         <aside className="wc-image-column">
           {featuredWork ? (
             <>
-              <img
-                src={featuredWork.imageUrl}
-                alt={featuredWork.title}
-                className="wc-featured-img"
-                onError={(e) => { e.target.parentElement.classList.add('wc-no-img') }}
-              />
+              <button
+                className="wc-featured-btn"
+                onClick={() => setLightboxIndex(featuredIndex)}
+                title="Click to enlarge"
+              >
+                <img
+                  src={featuredWork.imageUrl}
+                  alt={featuredWork.title}
+                  className="wc-featured-img"
+                  onError={(e) => { e.target.closest('.wc-image-column').classList.add('wc-no-img') }}
+                />
+              </button>
               <figure className="wc-featured-caption">
                 {featuredWork.title}
                 {(featuredWork.year || featuredWork.medium) && (
@@ -235,31 +243,43 @@ function WorksCategory() {
 
           {works.length > 0 && (subcategory || !description) && thumbnails.length > 0 && (
             <div className="wc-thumbnails">
-              {thumbnails.map((work, index) => (
-                <button
-                  key={index}
-                  className={`wc-thumb-btn ${works.indexOf(work) === featuredIndex ? 'active' : ''}`}
-                  onClick={() => setFeaturedIndex(works.indexOf(work))}
-                  title={work.title}
-                >
-                  {work.imageUrl ? (
-                    <img
-                      src={work.imageUrl}
-                      alt={work.title}
-                      className="wc-thumb-img"
-                      onError={(e) => { e.target.style.display = 'none' }}
-                    />
-                  ) : (
-                    <div className="wc-thumb-placeholder" />
-                  )}
-                </button>
-              ))}
+              {thumbnails.map((work, index) => {
+                const worksIdx = works.indexOf(work)
+                return (
+                  <button
+                    key={index}
+                    className={`wc-thumb-btn ${worksIdx === featuredIndex ? 'active' : ''}`}
+                    onClick={() => { setFeaturedIndex(worksIdx); setLightboxIndex(worksIdx) }}
+                    title={work.title}
+                  >
+                    {work.imageUrl ? (
+                      <img
+                        src={work.imageUrl}
+                        alt={work.title}
+                        className="wc-thumb-img"
+                        onError={(e) => { e.target.style.display = 'none' }}
+                      />
+                    ) : (
+                      <div className="wc-thumb-placeholder" />
+                    )}
+                  </button>
+                )
+              })}
             </div>
           )}
 
         </main>
 
       </div>
+
+      {lightboxIndex !== null && works.length > 0 && (
+        <Lightbox
+          works={works}
+          index={lightboxIndex}
+          onClose={() => setLightboxIndex(null)}
+          onChangeIndex={(i) => { setLightboxIndex(i); setFeaturedIndex(i) }}
+        />
+      )}
     </div>
   )
 }
