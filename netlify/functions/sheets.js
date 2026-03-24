@@ -24,6 +24,10 @@ exports.handler = async (event) => {
     const response = await fetch(url)
     const data = await response.json()
 
+    if (!response.ok) {
+      console.error(`Google Sheets API error for "${sheetName}":`, JSON.stringify(data))
+    }
+
     return {
       statusCode: response.status,
       headers: {
@@ -33,6 +37,7 @@ exports.handler = async (event) => {
       body: JSON.stringify(data),
     }
   } catch (err) {
+    console.error('Failed to fetch sheet data:', err.message)
     return {
       statusCode: 500,
       body: JSON.stringify({ error: 'Failed to fetch sheet data' }),
