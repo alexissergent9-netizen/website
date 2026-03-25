@@ -9,6 +9,8 @@ const DEFAULT_CONFIG = {
   featuredImageAlt: '',
   featuredCaption: '',
   contactEmail: '',
+  contactEmail2: '',
+  contactInsta: '',
 }
 
 function Contact() {
@@ -62,6 +64,16 @@ function Contact() {
           {config.contactEmail && (
             <a href={`mailto:${config.contactEmail}`} target="_blank" rel="noopener noreferrer" className="contact-email">
               {config.contactEmail}
+            </a>
+          )}
+          {config.contactEmail2 && (
+            <a href={`mailto:${config.contactEmail2}`} target="_blank" rel="noopener noreferrer" className="contact-email">
+              {config.contactEmail2}
+            </a>
+          )}
+          {config.contactInsta && (
+            <a href={`https://instagram.com/${config.contactInsta.replace('@', '')}`} target="_blank" rel="noopener noreferrer" className="contact-email">
+              {config.contactInsta.startsWith('@') ? config.contactInsta : `@${config.contactInsta}`}
             </a>
           )}
           <p className="contact-dev">
