@@ -1,0 +1,12 @@
+section	parent	key	label	url	external	order	enabled
+press		articles	articles	/press/articles	false	1	true
+press	articles	current	current	/press/articles	false	1	true
+press	articles	past	past	/press/articles/past	false	2	true
+exhibitions		current	current	/exhibitions/current	false	1	true
+exhibitions		past	past	/exhibitions/past	false	2	true
+exhibitions		upcoming	upcoming	/exhibitions/upcoming	false	3	true
+resources		foundation	the david hockney foundation	http://www.thedavidhockneyfoundation.org/	true	1	true
+resources		galleries	galleries	/resources/galleries	false	2	true
+resources		making_works	making 'works'	/resources/making_works	false	3	true
+resources		publications	publications	/resources/publications	false	4	true
+resources		public_collections	works in public collections	/resources/public_collections	false	5	true

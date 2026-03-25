@@ -416,6 +416,16 @@ class GoogleSheetsService {
     return rows.sort((a, b) => Number(a.order || 0) - Number(b.order || 0));
   }
 
+  /**
+   * Obtiene los sub-ítems de los dropdowns desde la hoja "nav_items"
+   * Columnas: section | parent | key | label | url | external | order | enabled
+   * section: press | exhibitions | resources
+   */
+  async getNavSubitems() {
+    const rows = await this.getSheetData('nav_items');
+    return rows.sort((a, b) => Number(a.order || 0) - Number(b.order || 0));
+  }
+
   // ==================== SITE DATA METHODS ====================
 
   /**

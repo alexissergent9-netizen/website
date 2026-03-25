@@ -4,12 +4,17 @@ import { useSiteData } from '../context/SiteDataContext'
 import './Header.css'
 
 function Header() {
-  const { siteNameFirst, siteNameSecond, navItems, worksCategories, worksSubcategories, siteLoading } = useSiteData()
+  const { siteNameFirst, siteNameSecond, navItems, navSubitems, worksCategories, worksSubcategories, siteLoading } = useSiteData()
 
   const isEnabled = (item) => {
     const val = String(item.enabled ?? 'true').toLowerCase().trim()
     return val !== 'false' && val !== '0' && val !== 'no'
   }
+
+  const getSubitems = (section, parent = '') =>
+    navSubitems
+      .filter(i => i.section === section && (i.parent || '') === parent)
+      .filter(isEnabled)
 
   const getCategorySubs = (categorySlug) =>
     worksSubcategories
@@ -121,13 +126,21 @@ function Header() {
             <Link to="/press/articles" className="nav-link">{navLabel('press')}</Link>
             {activeDropdown === 'press' && (
               <div className="dropdown-menu">
-                <div className="dropdown-item has-submenu">
-                  <Link to="/press/articles" className="dropdown-link">articles</Link>
-                  <div className="sub-menu">
-                    <Link to="/press/articles" className="sub-link">current</Link>
-                    <Link to="/press/articles/past" className="sub-link">past</Link>
-                  </div>
-                </div>
+                {getSubitems('press').map(item => {
+                  const children = getSubitems('press', item.key)
+                  return children.length > 0 ? (
+                    <div key={item.key} className="dropdown-item has-submenu">
+                      <Link to={item.url} className="dropdown-link">{item.label}</Link>
+                      <div className="sub-menu">
+                        {children.map(child => (
+                          <Link key={child.key} to={child.url} className="sub-link">{child.label}</Link>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <Link key={item.key} to={item.url} className="dropdown-link">{item.label}</Link>
+                  )
+                })}
               </div>
             )}
           </div>
@@ -143,9 +156,9 @@ function Header() {
             <Link to="/exhibitions/current" className="nav-link">{navLabel('exhibitions')}</Link>
             {activeDropdown === 'exhibitions' && (
               <div className="dropdown-menu">
-                <Link to="/exhibitions/current" className="dropdown-link">current</Link>
-                <Link to="/exhibitions/past" className="dropdown-link">past</Link>
-                <Link to="/exhibitions/upcoming" className="dropdown-link">upcoming</Link>
+                {getSubitems('exhibitions').map(item => (
+                  <Link key={item.key} to={item.url} className="dropdown-link">{item.label}</Link>
+                ))}
               </div>
             )}
           </div>
@@ -191,11 +204,13 @@ function Header() {
             <Link to="/resources" className="nav-link">{navLabel('resources')}</Link>
             {activeDropdown === 'resources' && (
               <div className="dropdown-menu">
-                <a href="http://www.thedavidhockneyfoundation.org/" target="_blank" rel="noopener noreferrer" className="dropdown-link">the david hockney foundation</a>
-                <Link to="/resources/galleries" className="dropdown-link">galleries</Link>
-                <Link to="/resources/making_works" className="dropdown-link">making 'works'</Link>
-                <Link to="/resources/publications" className="dropdown-link">publications</Link>
-                <Link to="/resources/public_collections" className="dropdown-link">works in public collections</Link>
+                {getSubitems('resources').map(item =>
+                  String(item.external).toLowerCase() === 'true' ? (
+                    <a key={item.key} href={item.url} target="_blank" rel="noopener noreferrer" className="dropdown-link">{item.label}</a>
+                  ) : (
+                    <Link key={item.key} to={item.url} className="dropdown-link">{item.label}</Link>
+                  )
+                )}
               </div>
             )}
           </div>
@@ -221,15 +236,25 @@ function Header() {
             </button>
             {mobileExpanded === 'press' && (
               <div className="mobile-dropdown">
-                <button className="mobile-sub-btn" onClick={() => toggleMobileSub('press-articles')}>
-                  articles <span className="mobile-chevron">{mobileSubExpanded === 'press-articles' ? '▲' : '▼'}</span>
-                </button>
-                {mobileSubExpanded === 'press-articles' && (
-                  <div className="mobile-sub">
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/press/articles')}>current</button>
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/press/articles/past')}>past</button>
-                  </div>
-                )}
+                {getSubitems('press').map(item => {
+                  const children = getSubitems('press', item.key)
+                  return children.length > 0 ? (
+                    <div key={item.key}>
+                      <button className="mobile-sub-btn" onClick={() => toggleMobileSub(`press-${item.key}`)}>
+                        {item.label} <span className="mobile-chevron">{mobileSubExpanded === `press-${item.key}` ? '▲' : '▼'}</span>
+                      </button>
+                      {mobileSubExpanded === `press-${item.key}` && (
+                        <div className="mobile-sub">
+                          {children.map(child => (
+                            <button key={child.key} className="mobile-leaf" onClick={() => handleMobileNav(child.url)}>{child.label}</button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <button key={item.key} className="mobile-leaf" onClick={() => handleMobileNav(item.url)}>{item.label}</button>
+                  )
+                })}
               </div>
             )}
           </div>
@@ -243,9 +268,9 @@ function Header() {
             </button>
             {mobileExpanded === 'exhibitions' && (
               <div className="mobile-dropdown">
-                <button className="mobile-leaf" onClick={() => handleMobileNav('/exhibitions/current')}>current</button>
-                <button className="mobile-leaf" onClick={() => handleMobileNav('/exhibitions/past')}>past</button>
-                <button className="mobile-leaf" onClick={() => handleMobileNav('/exhibitions/upcoming')}>upcoming</button>
+                {getSubitems('exhibitions').map(item => (
+                  <button key={item.key} className="mobile-leaf" onClick={() => handleMobileNav(item.url)}>{item.label}</button>
+                ))}
               </div>
             )}
           </div>
@@ -295,11 +320,13 @@ function Header() {
             </button>
             {mobileExpanded === 'resources' && (
               <div className="mobile-dropdown">
-                <a href="http://www.thedavidhockneyfoundation.org/" target="_blank" rel="noopener noreferrer" className="mobile-leaf-a">the david hockney foundation</a>
-                <button className="mobile-leaf" onClick={() => handleMobileNav('/resources/galleries')}>galleries</button>
-                <button className="mobile-leaf" onClick={() => handleMobileNav('/resources/making_works')}>making 'works'</button>
-                <button className="mobile-leaf" onClick={() => handleMobileNav('/resources/publications')}>publications</button>
-                <button className="mobile-leaf" onClick={() => handleMobileNav('/resources/public_collections')}>works in public collections</button>
+                {getSubitems('resources').map(item =>
+                  String(item.external).toLowerCase() === 'true' ? (
+                    <a key={item.key} href={item.url} target="_blank" rel="noopener noreferrer" className="mobile-leaf-a">{item.label}</a>
+                  ) : (
+                    <button key={item.key} className="mobile-leaf" onClick={() => handleMobileNav(item.url)}>{item.label}</button>
+                  )
+                )}
               </div>
             )}
           </div>
