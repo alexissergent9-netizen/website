@@ -20,12 +20,14 @@ function Home() {
   return (
     <div className="home-container">
       <main className="home-main-content">
-        <img
-          src={config.featuredImageUrl}
-          className="home-img-responsive"
-          alt={config.featuredImageAlt}
-          onError={(e) => { e.target.style.display = 'none' }}
-        />
+        {config.featuredImageUrl && (
+          <img
+            src={config.featuredImageUrl}
+            className="home-img-responsive"
+            alt={config.featuredImageAlt}
+            onError={(e) => { e.target.style.display = 'none' }}
+          />
+        )}
         <div className="home-caption">{config.featuredCaption}</div>
       </main>
     </div>

@@ -52,12 +52,14 @@ function Contact() {
 
         {/* Columna izquierda: fondo rosa + imagen */}
         <aside className="contact-image-column">
-          <img
-            src={config.featuredImageUrl}
-            alt={config.featuredImageAlt}
-            className="contact-featured-img"
-            onError={(e) => { e.target.style.display = 'none' }}
-          />
+          {config.featuredImageUrl && (
+            <img
+              src={config.featuredImageUrl}
+              alt={config.featuredImageAlt}
+              className="contact-featured-img"
+              onError={(e) => { e.target.style.display = 'none' }}
+            />
+          )}
           <figure className="contact-caption">
             {config.featuredCaption}
           </figure>

@@ -43,12 +43,14 @@ function Resources() {
 
         {/* Columna izquierda: fondo rosa + imagen destacada */}
         <aside className="res-image-column">
-          <img
-            src={config.featuredImageUrl}
-            alt={config.featuredImageAlt}
-            className="res-featured-img"
-            onError={(e) => { e.target.style.display = 'none' }}
-          />
+          {config.featuredImageUrl && (
+            <img
+              src={config.featuredImageUrl}
+              alt={config.featuredImageAlt}
+              className="res-featured-img"
+              onError={(e) => { e.target.style.display = 'none' }}
+            />
+          )}
           <figure className="res-caption">
             {config.featuredCaption}
           </figure>

@@ -48,12 +48,14 @@ function Works() {
 
         {/* Columna izquierda: fondo rosa + imagen destacada */}
         <aside className="works-image-column">
-          <img
-            src={config.featuredImageUrl}
-            alt={config.featuredImageAlt}
-            className="works-featured-img"
-            onError={(e) => { e.target.style.display = 'none' }}
-          />
+          {config.featuredImageUrl && (
+            <img
+              src={config.featuredImageUrl}
+              alt={config.featuredImageAlt}
+              className="works-featured-img"
+              onError={(e) => { e.target.style.display = 'none' }}
+            />
+          )}
           <figure className="works-caption">
             {config.featuredCaption}
           </figure>

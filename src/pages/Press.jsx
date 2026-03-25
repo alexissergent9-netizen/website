@@ -88,11 +88,13 @@ function Press() {
         {/* Columna izquierda - Imagen */}
         <main className="press-main">
           <article className="press-main-content">
-            <img
-              src={pressConfig.featuredImageUrl}
-              alt={pressConfig.featuredImageAlt}
-              onError={(e) => { e.target.style.display = 'none' }}
-            />
+            {pressConfig.featuredImageUrl && (
+              <img
+                src={pressConfig.featuredImageUrl}
+                alt={pressConfig.featuredImageAlt}
+                onError={(e) => { e.target.style.display = 'none' }}
+              />
+            )}
             <figure>{pressConfig.featuredCaption}</figure>
           </article>
         </main>
