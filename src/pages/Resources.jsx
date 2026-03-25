@@ -1,15 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import googleSheetsService from '../services/googleSheetsService'
+import { useSiteData } from '../context/SiteDataContext'
 import './Resources.css'
-
-const DEFAULT_RESOURCE_LINKS = [
-  { name: 'The David Hockney Foundation', href: 'http://www.thedavidhockneyfoundation.org/', external: true },
-  { name: 'Galleries', href: '/resources/galleries', external: false },
-  { name: "Making 'Works'", href: '/resources/making_works', external: false },
-  { name: 'Publications', href: '/resources/publications', external: false },
-  { name: 'Works In Public Collections', href: '/resources/public_collections', external: false },
-]
 
 const DEFAULT_CONFIG = {
   featuredImageUrl: '',
@@ -20,8 +13,15 @@ const DEFAULT_CONFIG = {
 }
 
 function Resources() {
+  const { navSubitems } = useSiteData()
   const [config, setConfig] = useState(DEFAULT_CONFIG)
-  const [links, setLinks] = useState(DEFAULT_RESOURCE_LINKS)
+
+  const links = navSubitems
+    .filter(i => i.section === 'resources' && (i.parent || '') === '')
+    .filter(i => {
+      const val = String(i.enabled ?? 'true').toLowerCase().trim()
+      return val !== 'false' && val !== '0' && val !== 'no'
+    })
 
   useEffect(() => {
     googleSheetsService.getPageConfig('resources')
@@ -66,13 +66,13 @@ function Resources() {
           <p className="res-section-label">RESOURCES</p>
           <ul className="res-links-list">
             {links.map((item) => (
-              <li key={item.href}>
-                {item.external ? (
-                  <a href={item.href} target="_blank" rel="noopener noreferrer" className="res-link">
-                    {item.name}
+              <li key={item.key}>
+                {String(item.external).toLowerCase() === 'true' ? (
+                  <a href={item.url} target="_blank" rel="noopener noreferrer" className="res-link">
+                    {item.label}
                   </a>
                 ) : (
-                  <Link to={item.href} className="res-link">{item.name}</Link>
+                  <Link to={item.url} className="res-link">{item.label}</Link>
                 )}
               </li>
             ))}

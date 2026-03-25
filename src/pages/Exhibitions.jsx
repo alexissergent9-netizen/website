@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import googleSheetsService from '../services/googleSheetsService'
+import { useSiteData } from '../context/SiteDataContext'
 import Loading from '../components/Loading'
 import './Exhibitions.css'
 
@@ -8,6 +9,14 @@ function Exhibitions() {
   const { type = 'current' } = useParams()
   const [exhibitions, setExhibitions] = useState([])
   const [loading, setLoading] = useState(true)
+  const { navSubitems } = useSiteData()
+
+  const subnavItems = navSubitems
+    .filter(i => i.section === 'exhibitions' && (i.parent || '') === '')
+    .filter(i => {
+      const val = String(i.enabled ?? 'true').toLowerCase().trim()
+      return val !== 'false' && val !== '0' && val !== 'no'
+    })
 
   useEffect(() => {
     loadExhibitions()
@@ -47,30 +56,16 @@ function Exhibitions() {
 
       {/* Sub Navigation */}
       <ol className="exhibitions-subnav">
-        <li>
-          <Link 
-            to="/exhibitions/current" 
-            className={type === 'current' ? 'active' : ''}
-          >
-            CURRENT
-          </Link>
-        </li>
-        <li>
-          <Link 
-            to="/exhibitions/past" 
-            className={type === 'past' ? 'active' : ''}
-          >
-            PAST
-          </Link>
-        </li>
-        <li>
-          <Link 
-            to="/exhibitions/upcoming" 
-            className={type === 'upcoming' ? 'active' : ''}
-          >
-            UPCOMING
-          </Link>
-        </li>
+        {subnavItems.map(item => (
+          <li key={item.key}>
+            <Link
+              to={item.url}
+              className={item.url.includes(`/${type}`) ? 'active' : ''}
+            >
+              {item.label.toUpperCase()}
+            </Link>
+          </li>
+        ))}
       </ol>
 
       <hr className="exhibitions-divider" />

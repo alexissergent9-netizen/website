@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import googleSheetsService from '../services/googleSheetsService'
+import { useSiteData } from '../context/SiteDataContext'
 import Loading from '../components/Loading'
 import './Press.css'
 
@@ -15,9 +16,17 @@ function Press() {
   const [loading, setLoading] = useState(true)
   const [pressConfig, setPressConfig] = useState(DEFAULT_CONFIG)
   const location = useLocation()
+  const { navSubitems } = useSiteData()
 
   const isPast = location.pathname.includes('/past')
   const type = isPast ? 'past' : 'current'
+
+  const pressArticleItems = navSubitems
+    .filter(i => i.section === 'press' && (i.parent || '') === 'articles')
+    .filter(i => {
+      const val = String(i.enabled ?? 'true').toLowerCase().trim()
+      return val !== 'false' && val !== '0' && val !== 'no'
+    })
 
   useEffect(() => {
     googleSheetsService.getPageConfig('press')
@@ -94,12 +103,13 @@ function Press() {
             <h2>Articles</h2>
 
             <ul className="pagination-list">
-              <li>
-                <Link to="/press/articles" className={!isPast ? 'active' : ''}>CURRENT</Link>
-              </li>
-              <li>
-                <Link to="/press/articles/past" className={isPast ? 'active' : ''}>PAST</Link>
-              </li>
+              {pressArticleItems.map(item => (
+                <li key={item.key}>
+                  <Link to={item.url} className={location.pathname === item.url ? 'active' : ''}>
+                    {item.label.toUpperCase()}
+                  </Link>
+                </li>
+              ))}
             </ul>
 
             {articles.length === 0 ? (
