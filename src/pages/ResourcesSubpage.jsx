@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import googleSheetsService from '../services/googleSheetsService'
+import { useSiteData } from '../context/SiteDataContext'
 import Loading from '../components/Loading'
 import './Resources.css'
 
@@ -131,12 +132,6 @@ const COLLECTIONS = [
 
 /* ─── Config de subpáginas ─── */
 
-const SUBPAGES = [
-  { slug: 'galleries', label: 'galleries' },
-  { slug: 'making_works', label: "making 'works'" },
-  { slug: 'publications', label: 'publications' },
-  { slug: 'public_collections', label: 'works in public collections' },
-]
 
 const PAGE_LABELS = {
   galleries: 'GALLERIES',
@@ -168,6 +163,14 @@ const FEATURED_IMAGES = {
 
 function ResourcesSubpage() {
   const { section } = useParams()
+  const { navSubitems } = useSiteData()
+
+  const subnavItems = navSubitems
+    .filter(i => i.section === 'resources' && (i.parent || '') === '')
+    .filter(i => {
+      const val = String(i.enabled ?? 'true').toLowerCase().trim()
+      return val !== 'false' && val !== '0' && val !== 'no'
+    })
   const [featuredMaking, setFeaturedMaking] = useState(0)
   const [loading, setLoading] = useState(true)
   const [pageConfig, setPageConfig] = useState({})
@@ -219,7 +222,8 @@ function ResourcesSubpage() {
     ? sheetsPublications.map(r => r.imageUrl).filter(Boolean)
     : PUBLICATIONS_THUMBS
 
-  const label = PAGE_LABELS[section] || section?.toUpperCase()
+  const currentItem = subnavItems.find(i => i.key === section)
+  const label = currentItem ? currentItem.label.toUpperCase() : (PAGE_LABELS[section] || section?.toUpperCase())
   const staticFeatured = FEATURED_IMAGES[section] || FEATURED_IMAGES.galleries
   const featured = (section === 'making_works' && makingWorks.length > 0)
     ? { src: makingWorks[featuredMaking]?.imageUrl || '', caption: makingWorks[featuredMaking]?.name || '' }
@@ -242,14 +246,14 @@ function ResourcesSubpage() {
 
       {/* Subnav */}
       <div className="ressub-subnav-row">
-        {SUBPAGES.map((s, i) => (
-          <span key={s.slug}>
+        {subnavItems.map((item, i) => (
+          <span key={item.key}>
             {i > 0 && <span className="ressub-subnav-sep"> / </span>}
             <Link
-              to={`/resources/${s.slug}`}
-              className={`ressub-subnav-link ${section === s.slug ? 'active' : ''}`}
+              to={item.url}
+              className={`ressub-subnav-link ${section === item.key ? 'active' : ''}`}
             >
-              {s.label}
+              {item.label}
             </Link>
           </span>
         ))}
