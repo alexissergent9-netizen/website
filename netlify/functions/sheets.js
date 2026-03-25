@@ -28,7 +28,7 @@ exports.handler = async (event) => {
       statusCode: response.status,
       headers: {
         'Content-Type': 'application/json',
-        'Cache-Control': 'public, max-age=300',
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
       },
       body: JSON.stringify(data),
     }
