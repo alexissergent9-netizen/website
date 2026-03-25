@@ -17,6 +17,7 @@ const DEFAULT_CONFIG = {
   featuredImageUrl: '',
   featuredImageAlt: '',
   featuredCaption: '',
+  contactEmail: '',
 }
 
 function Contact() {
@@ -82,6 +83,15 @@ function Contact() {
                 </h3>
               </li>
             ))}
+            {config.contactEmail && (
+              <li>
+                <h3>
+                  <a href={`mailto:${config.contactEmail}`} className="contact-link">
+                    {config.contactEmail}
+                  </a>
+                </h3>
+              </li>
+            )}
           </ul>
         </main>
 
