@@ -135,16 +135,14 @@ function ContactSubpage() {
   useEffect(() => {
     setLoading(true)
     googleSheetsService.getContactContent(section)
-      .then(data => { if (data.length > 0) setItems(data) })
-      .catch(() => {})
+      .then(data => { setItems(data) })
+      .catch(() => { setItems([]) })
       .finally(() => setLoading(false))
   }, [section])
 
   if (loading) return <Loading />
 
-  const displayItems = items
-    ? items.map(r => ({ type: r.type, content: r.content || r.question || '' }))
-    : (staticContent?.items || [])
+  const displayItems = (items || []).map(r => ({ type: r.type, content: r.content || r.question || '' }))
 
   const title = staticContent?.title || section
 
