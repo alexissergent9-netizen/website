@@ -75,21 +75,24 @@ function Contact() {
         {/* Columna derecha: fondo gris + links */}
         <main className="contact-main-content">
           <ul className="contact-links-list">
-            {displayLinks.map((item, i) => (
-              <li key={i}>
-                <h3>
-                  {(item.external === 'true' || item.external === true) ? (
-                    <a href={item.href} target="_blank" rel="noopener noreferrer" className="contact-link">
-                      {item.label}
-                    </a>
-                  ) : (
-                    <Link to={item.href} className="contact-link">
-                      {item.label}
-                    </Link>
-                  )}
-                </h3>
-              </li>
-            ))}
+            {displayLinks.map((item, i) => {
+              const href = item.section ? `/contact/${item.section}` : item.href
+              return (
+                <li key={i}>
+                  <h3>
+                    {(item.external === 'true' || item.external === true) ? (
+                      <a href={href} target="_blank" rel="noopener noreferrer" className="contact-link">
+                        {item.label}
+                      </a>
+                    ) : (
+                      <Link to={href} className="contact-link">
+                        {item.label}
+                      </Link>
+                    )}
+                  </h3>
+                </li>
+              )
+            })}
           </ul>
         </main>
 
