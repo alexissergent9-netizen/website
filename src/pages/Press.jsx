@@ -5,9 +5,9 @@ import Loading from '../components/Loading'
 import './Press.css'
 
 const DEFAULT_CONFIG = {
-  featuredImageUrl: 'https://www.hockney.com/img/gallery/resources/IMG_1804_295px.jpg',
-  featuredImageAlt: 'David Hockney in his studio',
-  featuredCaption: 'David Hockney in his Normandy studio, 24th February 2021 — © David Hockney Photo credit: Jonathan Wilkinson',
+  featuredImageUrl: '',
+  featuredImageAlt: '',
+  featuredCaption: '',
 }
 
 function Press() {

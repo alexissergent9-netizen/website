@@ -4,10 +4,17 @@ import { useSiteData } from '../context/SiteDataContext'
 import './Header.css'
 
 function Header() {
-  const { siteNameFirst, siteNameSecond, navItems, worksCategories, worksSubcategories } = useSiteData()
+  const { siteNameFirst, siteNameSecond, navItems, worksCategories, worksSubcategories, siteLoading } = useSiteData()
+
+  const isEnabled = (item) => {
+    const val = String(item.enabled ?? 'true').toLowerCase().trim()
+    return val !== 'false' && val !== '0' && val !== 'no'
+  }
 
   const getCategorySubs = (categorySlug) =>
-    worksSubcategories.filter(s => String(s.category).toLowerCase() === categorySlug.toLowerCase())
+    worksSubcategories
+      .filter(s => String(s.category).toLowerCase() === categorySlug.toLowerCase())
+      .filter(isEnabled)
 
   // Helper: find a nav item by key (case-insensitive)
   const findNav = (key) => navItems?.find(n => String(n.key).toLowerCase().trim() === key.toLowerCase())
@@ -83,7 +90,11 @@ function Header() {
       <div className="header-content">
         <Link to="/home" className="logo" onClick={() => setMobileOpen(false)}>
           <div className="logo-text">
-            <span className="logo-first">{siteNameFirst}</span>{siteNameSecond}
+            {siteLoading ? (
+              <span className="logo-loading" />
+            ) : (
+              <><span className="logo-first">{siteNameFirst}</span>{siteNameSecond}</>
+            )}
           </div>
         </Link>
 
@@ -150,14 +161,14 @@ function Header() {
             <Link to="/works" className="nav-link">{navLabel('works')}</Link>
             {activeDropdown === 'works' && worksCategories.length > 0 && (
               <div className="dropdown-menu">
-                {worksCategories.map(cat => {
+                {worksCategories.filter(isEnabled).map(cat => {
                   const subs = getCategorySubs(cat.slug)
                   return subs.length > 0 ? (
                     <div key={cat.slug} className="dropdown-item has-submenu">
                       <Link to={`/works/${cat.slug}`} className="dropdown-link">{cat.label}</Link>
                       <div className="sub-menu">
                         {subs.map(sub => (
-                          <Link key={sub.slug} to={`/works/${cat.slug}/${sub.slug}`} className="sub-link">{sub.name}</Link>
+                          <Link key={sub.slug} to={`/works/${cat.slug}/${sub.slug}`} className="sub-link">{sub.label || sub.name}</Link>
                         ))}
                       </div>
                     </div>
@@ -248,7 +259,7 @@ function Header() {
             </button>
             {mobileExpanded === 'works' && (
               <div className="mobile-dropdown">
-                {worksCategories.map(cat => {
+                {worksCategories.filter(isEnabled).map(cat => {
                   const subs = getCategorySubs(cat.slug)
                   return subs.length > 0 ? (
                     <div key={cat.slug}>
@@ -259,7 +270,7 @@ function Header() {
                         <div className="mobile-sub">
                           {subs.map(sub => (
                             <button key={sub.slug} className="mobile-leaf" onClick={() => handleMobileNav(`/works/${cat.slug}/${sub.slug}`)}>
-                              {sub.name}
+                              {sub.label || sub.name}
                             </button>
                           ))}
                         </div>

@@ -3,22 +3,13 @@ import { Link } from 'react-router-dom'
 import googleSheetsService from '../services/googleSheetsService'
 import './Works.css'
 
-const DEFAULT_CATEGORIES = [
-  { name: 'Digital Works', slug: 'digital' },
-  { name: 'Drawings', slug: 'drawings' },
-  { name: 'Graphics', slug: 'graphics' },
-  { name: 'Paintings', slug: 'paintings' },
-  { name: 'Photographs', slug: 'photos' },
-  { name: 'Sketchbooks', slug: 'sketchbooks' },
-  { name: 'Stage Design', slug: 'stage_design' },
-  { name: 'Etcetera', slug: 'etcetera' },
-]
+const DEFAULT_CATEGORIES = []
 
 const DEFAULT_CONFIG = {
-  featuredImageUrl: 'https://www.hockney.com/img/gallery/photos/collages/S35-A-LG.jpg',
-  featuredImageAlt: 'Paint Trolley, L.A. 1985',
-  featuredCaption: 'Paint Trolley, L.A. 1985, 1985 - photographic collage 41x61 in.',
-  description: "This website represents an overview of David Hockney's work from the early 1950's to the present day. It is organized by categories with sub-menus for each discipline.",
+  featuredImageUrl: '',
+  featuredImageAlt: '',
+  featuredCaption: '',
+  description: '',
 }
 
 function Works() {

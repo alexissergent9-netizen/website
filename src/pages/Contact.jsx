@@ -14,9 +14,9 @@ const STATIC_LINKS = [
 ]
 
 const DEFAULT_CONFIG = {
-  featuredImageUrl: 'https://www.hockney.com/img/gallery/paintings/80s/fruitandfloors1988.jpg',
-  featuredImageAlt: 'Bowl of Fruit and Spotted Floor',
-  featuredCaption: 'Bowl of Fruit and Spotted Floor, 1988 - Oil on canvas 24x24 in.',
+  featuredImageUrl: '',
+  featuredImageAlt: '',
+  featuredCaption: '',
 }
 
 function Contact() {

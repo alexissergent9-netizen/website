@@ -12,13 +12,14 @@ const DEFAULT_NAV = [
 ]
 
 const DEFAULTS = {
-  siteNameFirst: 'DAVID',
-  siteNameSecond: 'HOCKNEY',
-  pageTitle: 'David Hockney',
-  footerCopyright: `All Images and Site Content Copyright © ${CURRENT_YEAR} David Hockney - All Rights Reserved`,
+  siteNameFirst: '',
+  siteNameSecond: '',
+  pageTitle: '',
+  footerCopyright: '',
   navItems: DEFAULT_NAV,
   worksCategories: [],
   worksSubcategories: [],
+  siteLoading: true,
 }
 
 // Replace any 4-digit year in the copyright string with the current year
@@ -35,37 +36,34 @@ export function SiteDataProvider({ children }) {
   const [siteData, setSiteData] = useState(DEFAULTS)
 
   useEffect(() => {
-    googleSheetsService.getSiteData()
-      .then(data => {
-        if (Object.keys(data).length > 0) {
-          setSiteData(prev => withCurrentYear({ ...prev, ...data }))
-        }
-      })
-      .catch(() => {})
-
-    googleSheetsService.getNavItems()
-      .then(items => {
-        if (items.length > 0) {
-          setSiteData(prev => ({ ...prev, navItems: items }))
-        }
-      })
-      .catch(() => {})
-
-    googleSheetsService.getWorksCategories()
-      .then(cats => {
-        if (cats.length > 0) {
-          setSiteData(prev => ({ ...prev, worksCategories: cats }))
-        }
-      })
-      .catch(() => {})
-
-    googleSheetsService.getWorksSubcategories()
-      .then(subs => {
-        if (subs.length > 0) {
-          setSiteData(prev => ({ ...prev, worksSubcategories: subs }))
-        }
-      })
-      .catch(() => {})
+    Promise.allSettled([
+      googleSheetsService.getSiteData()
+        .then(data => {
+          if (Object.keys(data).length > 0) {
+            setSiteData(prev => withCurrentYear({ ...prev, ...data }))
+          }
+        }),
+      googleSheetsService.getNavItems()
+        .then(items => {
+          if (items.length > 0) {
+            setSiteData(prev => ({ ...prev, navItems: items }))
+          }
+        }),
+      googleSheetsService.getWorksCategories()
+        .then(cats => {
+          if (cats.length > 0) {
+            setSiteData(prev => ({ ...prev, worksCategories: cats }))
+          }
+        }),
+      googleSheetsService.getWorksSubcategories()
+        .then(subs => {
+          if (subs.length > 0) {
+            setSiteData(prev => ({ ...prev, worksSubcategories: subs }))
+          }
+        }),
+    ]).finally(() => {
+      setSiteData(prev => ({ ...prev, siteLoading: false }))
+    })
   }, [])
 
   // Actualizar el título de la pestaña del navegador

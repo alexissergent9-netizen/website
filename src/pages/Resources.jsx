@@ -12,11 +12,11 @@ const DEFAULT_RESOURCE_LINKS = [
 ]
 
 const DEFAULT_CONFIG = {
-  featuredImageUrl: 'https://www.hockney.com/img/gallery/paintings/70s/75C04.jpg',
-  featuredImageAlt: 'Invented Man Revealing Still Life',
-  featuredCaption: 'Invented Man Revealing Still Life, 2004 - oil on canvas',
-  description1: "This website represents an overview of David Hockney's work from the early 1950's to the present day. It is organized by categories with sub-menus for each discipline.",
-  description2: 'Although not exhaustive it is thorough and you can find current and past events, exhibitions, biographical and reference data.',
+  featuredImageUrl: '',
+  featuredImageAlt: '',
+  featuredCaption: '',
+  description1: '',
+  description2: '',
 }
 
 function Resources() {
