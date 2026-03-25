@@ -222,7 +222,7 @@ function ResourcesSubpage() {
     ? sheetsPublications.map(r => r.imageUrl).filter(Boolean)
     : PUBLICATIONS_THUMBS
 
-  const currentItem = subnavItems.find(i => i.key === section)
+  const currentItem = subnavItems.find(i => i.key.replace(/\s+/g, '_').toLowerCase() === section)
   const label = currentItem ? currentItem.label.toUpperCase() : (PAGE_LABELS[section] || section?.toUpperCase())
   const staticFeatured = FEATURED_IMAGES[section] || FEATURED_IMAGES.galleries
   const featured = (section === 'making_works' && makingWorks.length > 0)
@@ -246,17 +246,20 @@ function ResourcesSubpage() {
 
       {/* Subnav */}
       <div className="ressub-subnav-row">
-        {subnavItems.map((item, i) => (
-          <span key={item.key}>
-            {i > 0 && <span className="ressub-subnav-sep"> / </span>}
-            <Link
-              to={item.url}
-              className={`ressub-subnav-link ${section === item.key ? 'active' : ''}`}
-            >
-              {item.label}
-            </Link>
-          </span>
-        ))}
+        {subnavItems.map((item, i) => {
+          const slug = item.key.replace(/\s+/g, '_').toLowerCase()
+          return (
+            <span key={item.key}>
+              {i > 0 && <span className="ressub-subnav-sep"> / </span>}
+              <Link
+                to={`/resources/${slug}`}
+                className={`ressub-subnav-link ${section === slug ? 'active' : ''}`}
+              >
+                {item.label}
+              </Link>
+            </span>
+          )
+        })}
       </div>
 
       <hr className="ressub-divider" />
