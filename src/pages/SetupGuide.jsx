@@ -3,6 +3,7 @@ import './SetupGuide.css'
 
 const SHEETS = [
   { name: 'data',                 columns: 'key\tvalue' },
+  { name: 'nav',                  columns: 'key\tlabel\tenabled\torder' },
   { name: 'page_config',          columns: 'page\tkey\tvalue' },
   { name: 'Works',                columns: 'title\tcategory\tsubcategory\tyear\tmedium\tdimensions\timageUrl' },
   { name: 'works_categories',     columns: 'slug\tlabel\tdescription\torder' },
@@ -16,6 +17,7 @@ const SHEETS = [
 
 const FILES = [
   { file: 'SHEETS_DATA_DATA.tsv',                 sheet: 'data' },
+  { file: 'SHEETS_DATA_NAV.tsv',                  sheet: 'nav' },
   { file: 'SHEETS_DATA_PAGE_CONFIG.tsv',          sheet: 'page_config' },
   { file: 'SHEETS_DATA_WORKS.tsv',                sheet: 'Works' },
   { file: 'SHEETS_DATA_WORKS_CATEGORIES.tsv',     sheet: 'works_categories' },
@@ -25,6 +27,176 @@ const FILES = [
   { file: 'SHEETS_DATA_RESOURCES.tsv',            sheet: 'Resources' },
   { file: 'SHEETS_DATA_CONTACT.tsv',              sheet: 'Contact' },
   { file: 'SHEETS_DATA_CONTACT_CONTENT.tsv',      sheet: 'contact_content' },
+]
+
+const SHEET_DETAILS = [
+  {
+    name: 'data',
+    columns: [
+      { col: 'key', required: true, accepted: 'siteNameFirst  |  siteNameSecond  |  pageTitle  |  footerCopyright',
+        desc: { en: 'Identifier for the site-wide setting.', es: 'Identificador del ajuste global del sitio.', fr: 'Identifiant du paramètre global du site.' } },
+      { col: 'value', required: true, accepted: 'Any text',
+        desc: { en: 'The value to display. For footerCopyright, any 4-digit year is replaced automatically with the current year.', es: 'El valor a mostrar. En footerCopyright, cualquier año de 4 dígitos se reemplaza automáticamente con el año actual.', fr: "La valeur à afficher. Pour footerCopyright, toute année à 4 chiffres est remplacée automatiquement par l'année en cours." } },
+    ],
+  },
+  {
+    name: 'nav',
+    columns: [
+      { col: 'key', required: true, accepted: 'press  |  exhibitions  |  works  |  resources  |  contacts',
+        desc: { en: 'Identifies which navigation tab this row controls. Case-insensitive (press, PRESS and Press all work).', es: 'Identifica qué pestaña del menú controla esta fila. No distingue mayúsculas (press, PRESS y Press funcionan igual).', fr: 'Identifie quel onglet de navigation cette ligne contrôle. Insensible à la casse (press, PRESS et Press fonctionnent tous).' } },
+      { col: 'label', required: false, accepted: 'Any text',
+        desc: { en: 'Display name for the tab. If empty, the built-in default name is used.', es: 'Nombre visible de la pestaña. Si está vacío, se usa el nombre por defecto.', fr: "Nom affiché de l'onglet. Si vide, le nom par défaut intégré est utilisé." } },
+      { col: 'enabled', required: false, accepted: 'true  |  false  (also accepts 1 / 0 / yes / no, case-insensitive)',
+        desc: { en: 'Set to false to completely hide the tab from the navigation bar. Defaults to true if the column is empty or absent.', es: 'Establecer en false para ocultar completamente la pestaña del menú. Por defecto es true si la columna está vacía o no existe.', fr: "Mettre à false pour masquer complètement l'onglet. Par défaut true si la colonne est vide ou absente." } },
+      { col: 'order', required: false, accepted: 'Integer (1, 2, 3…)',
+        desc: { en: 'Controls the display order of the tabs. Lower numbers appear first.', es: 'Controla el orden de visualización de las pestañas. Los números más bajos aparecen primero.', fr: "Contrôle l'ordre d'affichage des onglets. Les numéros plus bas apparaissent en premier." } },
+    ],
+  },
+  {
+    name: 'page_config',
+    columns: [
+      { col: 'page', required: true, accepted: 'home  |  works  |  works/digital  |  resources/galleries  |  …',
+        desc: { en: 'Page identifier matching the internal route. Use a slash for subpages (e.g. resources/galleries).', es: 'Identificador de página que coincide con la ruta interna. Usa barra para subpáginas (ej: resources/galleries).', fr: "Identifiant de page correspondant à la route interne. Utilisez une barre oblique pour les sous-pages (ex : resources/galleries)." } },
+      { col: 'key', required: true, accepted: 'featuredImageUrl  |  subtitle  |  description  |  …',
+        desc: { en: 'Setting name specific to that page.', es: 'Nombre del ajuste específico para esa página.', fr: 'Nom du paramètre spécifique à cette page.' } },
+      { col: 'value', required: true, accepted: 'Any text or full URL',
+        desc: { en: 'The value for that setting.', es: 'El valor para ese ajuste.', fr: 'La valeur pour ce paramètre.' } },
+    ],
+  },
+  {
+    name: 'Works',
+    columns: [
+      { col: 'title', required: true, accepted: 'Any text',
+        desc: { en: 'Title of the artwork. Shown in captions and lightbox.', es: 'Título de la obra. Se muestra en leyendas y en el lightbox.', fr: "Titre de l'œuvre. Affiché dans les légendes et le lightbox." } },
+      { col: 'category', required: true, accepted: 'digital  |  drawings  |  graphics  |  paintings  |  photos  |  sketchbooks  |  stage_design  |  etcetera',
+        desc: { en: 'Main category slug. Must match a slug in works_categories.', es: 'Slug de la categoría principal. Debe coincidir con un slug en works_categories.', fr: 'Slug de catégorie principale. Doit correspondre à un slug dans works_categories.' } },
+      { col: 'subcategory', required: false, accepted: 'Slug matching works_subcategories for that category',
+        desc: { en: 'Subcategory slug. Must match works_subcategories for the given category.', es: 'Slug de subcategoría. Debe coincidir con works_subcategories para esa categoría.', fr: 'Slug de sous-catégorie. Doit correspondre à works_subcategories pour la catégorie donnée.' } },
+      { col: 'year', required: false, accepted: '4-digit year (e.g. 1988)',
+        desc: { en: 'Year the work was created. Shown in captions.', es: 'Año de creación de la obra. Se muestra en leyendas.', fr: "Année de création de l'œuvre. Affichée dans les légendes." } },
+      { col: 'medium', required: false, accepted: 'Any text (e.g. Oil on canvas)',
+        desc: { en: 'Medium or technique. Shown in captions.', es: 'Técnica o medio. Se muestra en leyendas.', fr: 'Technique ou médium. Affiché dans les légendes.' } },
+      { col: 'dimensions', required: false, accepted: 'Any text (e.g. 91.4 × 121.9 cm)',
+        desc: { en: 'Physical dimensions. Shown in captions.', es: 'Dimensiones físicas. Se muestran en leyendas.', fr: 'Dimensions physiques. Affichées dans les légendes.' } },
+      { col: 'imageUrl', required: true, accepted: 'Full URL (https://…)',
+        desc: { en: 'Direct URL to the image file. Used in thumbnails and lightbox.', es: 'URL directa al archivo de imagen. Usada en miniaturas y lightbox.', fr: "URL directe vers le fichier image. Utilisée dans les vignettes et le lightbox." } },
+    ],
+  },
+  {
+    name: 'works_categories',
+    columns: [
+      { col: 'slug', required: true, accepted: 'Lowercase, no spaces (e.g. digital, stage_design)',
+        desc: { en: 'URL-safe identifier. Must match the category column in Works.', es: 'Identificador compatible con URL. Debe coincidir con la columna category en Works.', fr: 'Identifiant compatible URL. Doit correspondre à la colonne category dans Works.' } },
+      { col: 'label', required: true, accepted: 'Any text',
+        desc: { en: 'Display name shown in the works navigation menu.', es: 'Nombre visible en el menú de navegación de obras.', fr: 'Nom affiché dans le menu de navigation des œuvres.' } },
+      { col: 'description', required: false, accepted: 'Any text',
+        desc: { en: 'Short description shown on the category landing page.', es: 'Descripción corta mostrada en la página de inicio de la categoría.', fr: 'Courte description affichée sur la page de catégorie.' } },
+      { col: 'order', required: false, accepted: 'Integer',
+        desc: { en: 'Display order in the works menu. Lower numbers appear first.', es: 'Orden en el menú de obras. Los números más bajos aparecen primero.', fr: 'Ordre dans le menu des œuvres. Les numéros plus bas apparaissent en premier.' } },
+    ],
+  },
+  {
+    name: 'works_subcategories',
+    columns: [
+      { col: 'category', required: true, accepted: 'Must match a slug in works_categories',
+        desc: { en: 'Parent category slug.', es: 'Slug de la categoría padre.', fr: 'Slug de la catégorie parente.' } },
+      { col: 'name', required: true, accepted: 'Any text',
+        desc: { en: 'Display name for the subcategory tab.', es: 'Nombre visible de la pestaña de subcategoría.', fr: "Nom affiché de l'onglet de sous-catégorie." } },
+      { col: 'slug', required: true, accepted: 'Lowercase, no spaces',
+        desc: { en: 'URL-safe identifier. Must match the subcategory column in Works.', es: 'Identificador compatible con URL. Debe coincidir con la columna subcategory en Works.', fr: 'Identifiant compatible URL. Doit correspondre à la colonne subcategory dans Works.' } },
+      { col: 'order', required: false, accepted: 'Integer',
+        desc: { en: 'Display order within the parent category.', es: 'Orden de visualización dentro de la categoría padre.', fr: "Ordre d'affichage dans la catégorie parente." } },
+    ],
+  },
+  {
+    name: 'Exhibitions',
+    columns: [
+      { col: 'title', required: true, accepted: 'Any text',
+        desc: { en: 'Exhibition title.', es: 'Título de la exposición.', fr: "Titre de l'exposition." } },
+      { col: 'location', required: false, accepted: 'Any text',
+        desc: { en: 'Venue or city name.', es: 'Nombre del lugar o ciudad.', fr: 'Nom du lieu ou de la ville.' } },
+      { col: 'startDate', required: false, accepted: 'YYYY-MM-DD',
+        desc: { en: 'Opening date. Used to auto-classify the exhibition if the type column is absent.', es: 'Fecha de apertura. Se usa para clasificar la exposición automáticamente si no existe la columna type.', fr: "Date d'ouverture. Utilisée pour classer l'exposition automatiquement si la colonne type est absente." } },
+      { col: 'endDate', required: false, accepted: 'YYYY-MM-DD',
+        desc: { en: 'Closing date. Used to auto-classify the exhibition if the type column is absent.', es: 'Fecha de cierre. Se usa para clasificar automáticamente si no existe la columna type.', fr: "Date de clôture. Utilisée pour classer automatiquement si la colonne type est absente." } },
+      { col: 'type', required: false, accepted: 'current  |  past  |  upcoming',
+        desc: { en: 'Overrides date-based classification. If provided, startDate/endDate are ignored for filtering. Case-insensitive.', es: 'Reemplaza la clasificación por fechas. Si se proporciona, startDate/endDate se ignoran para filtrar. No distingue mayúsculas.', fr: "Remplace la classification par dates. Si fourni, startDate/endDate sont ignorées pour le filtrage. Insensible à la casse." } },
+      { col: 'description', required: false, accepted: 'Any text',
+        desc: { en: 'Exhibition description shown on the detail page.', es: 'Descripción de la exposición mostrada en la página de detalle.', fr: "Description de l'exposition affichée sur la page de détail." } },
+      { col: 'imageUrl', required: false, accepted: 'Full URL (https://…)',
+        desc: { en: 'Featured image for the exhibition.', es: 'Imagen destacada de la exposición.', fr: "Image mise en avant pour l'exposition." } },
+      { col: 'url', required: false, accepted: 'Full URL (https://…)',
+        desc: { en: 'External link to the exhibition page or venue website.', es: 'Enlace externo a la página de la exposición o al sitio del lugar.', fr: "Lien externe vers la page de l'exposition ou le site du lieu." } },
+    ],
+  },
+  {
+    name: 'Press',
+    columns: [
+      { col: 'title', required: true, accepted: 'Any text',
+        desc: { en: 'Article or review title.', es: 'Título del artículo o reseña.', fr: "Titre de l'article ou de la critique." } },
+      { col: 'author', required: false, accepted: 'Any text',
+        desc: { en: 'Author name.', es: 'Nombre del autor.', fr: "Nom de l'auteur." } },
+      { col: 'source', required: false, accepted: 'Any text (e.g. The Guardian)',
+        desc: { en: 'Publication or media outlet name.', es: 'Nombre de la publicación o medio de comunicación.', fr: 'Nom de la publication ou du média.' } },
+      { col: 'date', required: false, accepted: 'Any text (e.g. January 2024)',
+        desc: { en: 'Display date of the article. Free text — any format is accepted.', es: 'Fecha de visualización del artículo. Texto libre, se acepta cualquier formato.', fr: "Date d'affichage de l'article. Texte libre, tout format est accepté." } },
+      { col: 'year', required: false, accepted: '4-digit year (e.g. 2024)',
+        desc: { en: 'Year used for year-based filtering on the press page.', es: 'Año usado para filtrar por año en la página de prensa.', fr: 'Année utilisée pour le filtrage par année sur la page presse.' } },
+      { col: 'type', required: true, accepted: 'current  |  past',
+        desc: { en: 'current = shown in the active press section. past = shown in the press archive. Case-insensitive.', es: 'current = se muestra en la sección de prensa actual. past = se muestra en el archivo de prensa. No distingue mayúsculas.', fr: "current = affiché dans la section presse active. past = affiché dans les archives presse. Insensible à la casse." } },
+      { col: 'urltext', required: false, accepted: 'Any text',
+        desc: { en: 'Clickable link label (e.g. "Read article"). Shown next to the article.', es: 'Texto del enlace clicable (ej: "Leer artículo"). Se muestra junto al artículo.', fr: 'Texte du lien cliquable (ex : « Lire l\'article »). Affiché à côté de l\'article.' } },
+      { col: 'url', required: false, accepted: 'Full URL (https://…)',
+        desc: { en: 'Link to the full article online.', es: 'Enlace al artículo completo en línea.', fr: "Lien vers l'article complet en ligne." } },
+    ],
+  },
+  {
+    name: 'Resources',
+    columns: [
+      { col: 'type', required: true, accepted: 'gallery  |  collection  |  making-works  |  publication',
+        desc: { en: 'Determines which section of the Resources page this row appears in.', es: 'Determina en qué sección de la página Resources aparece esta fila.', fr: 'Détermine dans quelle section de la page Resources cette ligne apparaît.' } },
+      { col: 'name', required: true, accepted: 'Any text',
+        desc: { en: 'Name of the gallery, collection, publication, or making-works entry.', es: 'Nombre de la galería, colección, publicación o entrada de making-works.', fr: 'Nom de la galerie, collection, publication ou entrée making-works.' } },
+      { col: 'location', required: false, accepted: 'Any text',
+        desc: { en: 'City or venue (primarily for galleries and collections).', es: 'Ciudad o lugar (principalmente para galerías y colecciones).', fr: 'Ville ou lieu (principalement pour les galeries et collections).' } },
+      { col: 'address', required: false, accepted: 'Any text',
+        desc: { en: 'Street address.', es: 'Dirección postal.', fr: 'Adresse postale.' } },
+      { col: 'phone', required: false, accepted: 'Any text',
+        desc: { en: 'Phone number.', es: 'Número de teléfono.', fr: 'Numéro de téléphone.' } },
+      { col: 'website', required: false, accepted: 'Full URL (https://…)',
+        desc: { en: 'Website link.', es: 'Enlace al sitio web.', fr: 'Lien vers le site web.' } },
+      { col: 'imageUrl', required: false, accepted: 'Full URL (https://…)',
+        desc: { en: 'Image used for making-works slideshows and publication covers.', es: 'Imagen usada para slideshows de making-works y portadas de publicaciones.', fr: 'Image utilisée pour les diaporamas making-works et les couvertures de publications.' } },
+      { col: 'description', required: false, accepted: 'Any text',
+        desc: { en: 'Short description shown below the name.', es: 'Descripción corta mostrada debajo del nombre.', fr: 'Courte description affichée sous le nom.' } },
+    ],
+  },
+  {
+    name: 'Contact',
+    columns: [
+      { col: 'label', required: true, accepted: 'Any text',
+        desc: { en: 'Display text for the contact link.', es: 'Texto visible del enlace de contacto.', fr: 'Texte affiché du lien de contact.' } },
+      { col: 'href', required: true, accepted: 'Full URL (https://…) or mailto: address',
+        desc: { en: 'Destination of the link. Use mailto:email@example.com for email links.', es: 'Destino del enlace. Usa mailto:email@example.com para enlaces de correo.', fr: 'Destination du lien. Utilisez mailto:email@example.com pour les liens e-mail.' } },
+      { col: 'external', required: false, accepted: 'true  |  false',
+        desc: { en: 'Set to true to open the link in a new browser tab.', es: 'Establecer en true para abrir el enlace en una nueva pestaña del navegador.', fr: 'Mettre à true pour ouvrir le lien dans un nouvel onglet du navigateur.' } },
+    ],
+  },
+  {
+    name: 'contact_content',
+    columns: [
+      { col: 'section', required: true, accepted: 'faqs  |  NFT_report  |  (any slug)',
+        desc: { en: 'Slug identifying the contact subpage this row belongs to. Must match the URL of the subpage.', es: 'Slug que identifica la subpágina de contacto a la que pertenece esta fila. Debe coincidir con la URL de la subpágina.', fr: 'Slug identifiant la sous-page contact à laquelle appartient cette ligne. Doit correspondre à l\'URL de la sous-page.' } },
+      { col: 'type', required: true, accepted: 'faq  |  text  |  heading',
+        desc: { en: 'Row type: faq shows a question/answer pair; text shows a paragraph; heading shows a section title.', es: 'Tipo de fila: faq muestra un par pregunta/respuesta; text muestra un párrafo; heading muestra un título de sección.', fr: 'Type de ligne : faq affiche une paire question/réponse ; text affiche un paragraphe ; heading affiche un titre de section.' } },
+      { col: 'order', required: false, accepted: 'Integer',
+        desc: { en: 'Display order within the section. Lower numbers appear first.', es: 'Orden de visualización dentro de la sección. Los números más bajos aparecen primero.', fr: "Ordre d'affichage dans la section. Les numéros plus bas apparaissent en premier." } },
+      { col: 'question', required: false, accepted: 'Any text',
+        desc: { en: 'Question text. Only used when type = faq.', es: 'Texto de la pregunta. Solo se usa cuando type = faq.', fr: 'Texte de la question. Utilisé uniquement quand type = faq.' } },
+      { col: 'content', required: false, accepted: 'Any text',
+        desc: { en: 'Answer body, paragraph text, or heading text depending on type.', es: 'Cuerpo de la respuesta, texto del párrafo o texto del encabezado según el tipo.', fr: "Corps de la réponse, texte du paragraphe ou texte du titre selon le type." } },
+    ],
+  },
 ]
 
 const VARS = [
@@ -50,6 +222,7 @@ const CONTENT = {
     tableHeaders: { tab: 'Tab name', columns: 'Columns (first row)', purpose: 'Purpose', file: 'TSV file', paste: '→ Paste into sheet' },
     sheetNotes: [
       'Site name, page title, footer copyright',
+      'Navigation bar tabs — show/hide and rename each tab',
       'Featured images and texts for all pages',
       'All artworks',
       'Works category labels and descriptions',
@@ -60,6 +233,15 @@ const CONTENT = {
       'Contact page links',
       'FAQ and subpage texts',
     ],
+    sheetReference: {
+      title: 'Sheet column reference',
+      colHeader: 'Column',
+      requiredHeader: 'Required',
+      acceptedHeader: 'Accepted values',
+      descHeader: 'Description',
+      yes: 'Yes',
+      optional: 'Optional',
+    },
     steps: [
       {
         number: '01',
@@ -171,6 +353,7 @@ const CONTENT = {
       title: 'Managing content going forward',
       items: [
         'To update text, images, or links — edit the corresponding row in Google Sheets. Changes appear on the website within minutes.',
+        'To show or hide a navigation tab — set enabled to true or false in the nav sheet. To rename a tab, change the label column.',
         'To add a new exhibition — add a new row to the Exhibitions sheet with type set to current, past, or upcoming.',
         'To add new works — add rows to the Works sheet with the correct category and subcategory slugs.',
         'To add a press article — add a row to the Press sheet with type set to current or past.',
@@ -195,6 +378,7 @@ const CONTENT = {
     tableHeaders: { tab: 'Nombre de pestaña', columns: 'Columnas (primera fila)', purpose: 'Contenido', file: 'Archivo TSV', paste: '→ Pegar en la hoja' },
     sheetNotes: [
       'Nombre del sitio, título de página, copyright del pie de página',
+      'Pestañas del menú de navegación — mostrar/ocultar y renombrar cada pestaña',
       'Imágenes y textos de todas las páginas',
       'Todas las obras',
       'Etiquetas y descripciones de categorías de obras',
@@ -205,6 +389,15 @@ const CONTENT = {
       'Links de la página de contacto',
       'FAQ y textos de las subpáginas de contacto',
     ],
+    sheetReference: {
+      title: 'Referencia de columnas por hoja',
+      colHeader: 'Columna',
+      requiredHeader: 'Requerida',
+      acceptedHeader: 'Valores aceptados',
+      descHeader: 'Descripción',
+      yes: 'Sí',
+      optional: 'Opcional',
+    },
     steps: [
       {
         number: '01',
@@ -316,6 +509,7 @@ const CONTENT = {
       title: 'Gestionar el contenido en el futuro',
       items: [
         'Para actualizar textos, imágenes o enlaces — edita la fila correspondiente en Google Sheets. Los cambios aparecen en el sitio en minutos.',
+        'Para mostrar u ocultar una pestaña del menú — establece enabled en true o false en la hoja nav. Para renombrar una pestaña, cambia la columna label.',
         'Para agregar una nueva exposición — añade una fila en la hoja Exhibitions con type igual a current, past o upcoming.',
         'Para agregar nuevas obras — añade filas en la hoja Works con los slugs de categoría y subcategoría correctos.',
         'Para agregar un artículo de prensa — añade una fila en la hoja Press con type igual a current o past.',
@@ -340,6 +534,7 @@ const CONTENT = {
     tableHeaders: { tab: 'Nom de l\'onglet', columns: 'Colonnes (première ligne)', purpose: 'Contenu', file: 'Fichier TSV', paste: '→ Coller dans la feuille' },
     sheetNotes: [
       'Nom du site, titre de page, copyright du pied de page',
+      'Onglets de navigation — afficher/masquer et renommer chaque onglet',
       'Images et textes de toutes les pages',
       'Toutes les œuvres',
       "Labels et descriptions des catégories d'œuvres",
@@ -350,6 +545,15 @@ const CONTENT = {
       'Liens de la page contact',
       'FAQ et textes des sous-pages',
     ],
+    sheetReference: {
+      title: 'Référence des colonnes par feuille',
+      colHeader: 'Colonne',
+      requiredHeader: 'Requise',
+      acceptedHeader: 'Valeurs acceptées',
+      descHeader: 'Description',
+      yes: 'Oui',
+      optional: 'Optionnel',
+    },
     steps: [
       {
         number: '01',
@@ -461,6 +665,7 @@ const CONTENT = {
       title: 'Gérer le contenu par la suite',
       items: [
         'Pour mettre à jour des textes, images ou liens — modifiez la ligne correspondante dans Google Sheets. Les changements apparaissent sur le site en quelques minutes.',
+        "Pour afficher ou masquer un onglet de navigation — définissez enabled sur true ou false dans la feuille nav. Pour renommer un onglet, modifiez la colonne label.",
         "Pour ajouter une nouvelle exposition — ajoutez une ligne dans la feuille Exhibitions avec type défini sur current, past ou upcoming.",
         "Pour ajouter de nouvelles œuvres — ajoutez des lignes dans la feuille Works avec les bons slugs de catégorie et sous-catégorie.",
         "Pour ajouter un article de presse — ajoutez une ligne dans la feuille Press avec type défini sur current ou past.",
@@ -617,6 +822,40 @@ function SetupGuide() {
         <ul className="guide-managing-list">
           {t.managingContent.items.map((item, i) => <li key={i}>{item}</li>)}
         </ul>
+      </div>
+
+      {/* Sheet reference */}
+      <div className="guide-sheet-reference">
+        <h2 className="guide-managing-title">{t.sheetReference.title}</h2>
+        {SHEET_DETAILS.map((sheet) => (
+          <div key={sheet.name} className="guide-sheet-detail">
+            <h3 className="guide-sheet-detail-name"><code>{sheet.name}</code></h3>
+            <div className="guide-sheets-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>{t.sheetReference.colHeader}</th>
+                    <th>{t.sheetReference.requiredHeader}</th>
+                    <th>{t.sheetReference.acceptedHeader}</th>
+                    <th>{t.sheetReference.descHeader}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {sheet.columns.map((col) => (
+                    <tr key={col.col}>
+                      <td><code className="guide-tab-name">{col.col}</code></td>
+                      <td className={col.required ? 'guide-col-required' : 'guide-col-optional'}>
+                        {col.required ? t.sheetReference.yes : t.sheetReference.optional}
+                      </td>
+                      <td><code className="guide-columns">{col.accepted}</code></td>
+                      <td className="guide-sheet-note">{col.desc[lang]}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ))}
       </div>
 
       {/* Done */}

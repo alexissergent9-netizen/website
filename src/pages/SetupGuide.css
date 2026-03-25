@@ -329,6 +329,46 @@
 }
 
 /* Done */
+/* Sheet reference */
+.guide-sheet-reference {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid #e0c0d0;
+}
+
+.guide-sheet-detail {
+  margin-bottom: 36px;
+}
+
+.guide-sheet-detail-name {
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: #ae2a5e;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+}
+
+.guide-sheet-detail-name code {
+  font-size: 15px;
+  font-weight: bold;
+  background: none;
+  color: inherit;
+  padding: 0;
+}
+
+.guide-col-required {
+  color: #ae2a5e;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.guide-col-optional {
+  color: #999;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
 .guide-done {
   margin-top: 30px;
   padding: 20px 24px;
