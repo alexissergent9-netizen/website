@@ -360,6 +360,31 @@ const CONTENT = {
         'Do not change the column headers or sheet tab names — the website reads them exactly as shown.',
       ],
     },
+    codeRepo: {
+      title: 'Code repository',
+      description: 'The website source code is hosted on GitHub. Access requires a Google account — log in at github.com using the "Sign in with Google" option. The code is stored in a repository named "website".',
+      items: [
+        { text: 'Go to', link: 'https://github.com', linkText: 'github.com' },
+        { text: 'Click Sign in → Sign in with Google and use the authorized Google account.' },
+        { text: 'Navigate to the repository named website to view or download the source code.' },
+        { text: 'To link the repository to a Netlify site for automatic deploys, connect it from the Netlify dashboard under Site configuration → Build & deploy → Link repository.' },
+      ],
+      note: 'Never modify the code directly on GitHub unless you know what you are doing. Code changes require a new Netlify deploy to take effect.',
+    },
+    cloudinary: {
+      title: 'Uploading images with Cloudinary',
+      description: 'All images on the website (artworks, exhibitions, press, resources, etc.) must be hosted on Cloudinary. A Cloudinary account has already been created using Google authentication. Always paste the image URL into the corresponding imageUrl column in Google Sheets.',
+      items: [
+        { text: 'Go to', link: 'https://cloudinary.com', linkText: 'cloudinary.com' },
+        { text: 'Click Login in the top right corner and sign in with your Google account.' },
+        { text: 'In the left sidebar menu, select Assets.' },
+        { text: 'In the top right area, click the Upload button.' },
+        { text: 'Select the image from your device and wait for the upload to complete.' },
+        { text: 'Once uploaded, find the image in the library. Right-click on it → Copy URL → Original.' },
+        { text: 'Paste the copied URL into the imageUrl column of the corresponding row in Google Sheets.' },
+      ],
+      note: 'Always use the Original URL from Cloudinary, not the thumbnail or transformed URLs. The image will appear on the website within minutes of saving it in Google Sheets.',
+    },
     done: 'Setup complete! If anything does not work, double-check that the tab names are spelled exactly as listed in Step 06, and that the spreadsheet is set to public (Step 05).',
   },
 
@@ -515,6 +540,31 @@ const CONTENT = {
         'Para agregar un artículo de prensa — añade una fila en la hoja Press con type igual a current o past.',
         'No cambies los encabezados de columnas ni los nombres de las pestañas — el sitio los lee exactamente como están indicados.',
       ],
+    },
+    codeRepo: {
+      title: 'Repositorio de código',
+      description: 'El código fuente del sitio web está alojado en GitHub. El acceso requiere una cuenta de Google — inicia sesión en github.com usando la opción "Iniciar sesión con Google". El código está almacenado en un repositorio llamado "website".',
+      items: [
+        { text: 'Ve a', link: 'https://github.com', linkText: 'github.com' },
+        { text: 'Haz clic en Sign in → Sign in with Google y usa la cuenta de Google autorizada.' },
+        { text: 'Navega al repositorio llamado website para ver o descargar el código fuente.' },
+        { text: 'Para vincular el repositorio a un sitio de Netlify con despliegues automáticos, conéctalo desde el panel de Netlify en Site configuration → Build & deploy → Link repository.' },
+      ],
+      note: 'No modifiques el código directamente en GitHub a menos que sepas lo que estás haciendo. Los cambios de código requieren un nuevo deploy en Netlify para tener efecto.',
+    },
+    cloudinary: {
+      title: 'Subir imágenes con Cloudinary',
+      description: 'Todas las imágenes del sitio web (obras, exposiciones, prensa, recursos, etc.) deben estar alojadas en Cloudinary. Ya se creó una cuenta de Cloudinary con autenticación de Google. Siempre pega la URL de la imagen en la columna imageUrl correspondiente en Google Sheets.',
+      items: [
+        { text: 'Ve a', link: 'https://cloudinary.com', linkText: 'cloudinary.com' },
+        { text: 'Haz clic en Login en la parte superior derecha e inicia sesión con tu cuenta de Google.' },
+        { text: 'En el menú lateral izquierdo, selecciona Assets.' },
+        { text: 'En la parte superior derecha, haz clic en el botón Upload.' },
+        { text: 'Selecciona la imagen desde tu dispositivo y espera a que se suba completamente.' },
+        { text: 'Una vez subida, busca la imagen en la librería. Haz clic derecho sobre ella → Copy URL → Original.' },
+        { text: 'Pega la URL copiada en la columna imageUrl de la fila correspondiente en Google Sheets.' },
+      ],
+      note: 'Usa siempre la URL Original de Cloudinary, no las URLs de miniaturas o transformadas. La imagen aparecerá en el sitio en minutos después de guardarla en Google Sheets.',
     },
     done: '¡Configuración completada! Si algo no funciona, verifica que los nombres de las pestañas estén escritos exactamente como se indica en el Paso 06, y que la hoja de cálculo esté configurada como pública (Paso 05).',
   },
@@ -672,6 +722,31 @@ const CONTENT = {
         "Ne modifiez pas les en-têtes de colonnes ni les noms des onglets — le site les lit exactement tels qu'ils sont indiqués.",
       ],
     },
+    codeRepo: {
+      title: 'Dépôt de code',
+      description: "Le code source du site web est hébergé sur GitHub. L'accès nécessite un compte Google — connectez-vous sur github.com en utilisant l'option « Se connecter avec Google ». Le code est stocké dans un dépôt nommé « website ».",
+      items: [
+        { text: 'Rendez-vous sur', link: 'https://github.com', linkText: 'github.com' },
+        { text: "Cliquez sur Sign in → Sign in with Google et utilisez le compte Google autorisé." },
+        { text: 'Naviguez vers le dépôt nommé website pour consulter ou télécharger le code source.' },
+        { text: "Pour lier le dépôt à un site Netlify avec des déploiements automatiques, connectez-le depuis le tableau de bord Netlify sous Site configuration → Build & deploy → Link repository." },
+      ],
+      note: "Ne modifiez jamais le code directement sur GitHub sauf si vous savez ce que vous faites. Les modifications de code nécessitent un nouveau déploiement Netlify pour prendre effet.",
+    },
+    cloudinary: {
+      title: 'Télécharger des images avec Cloudinary',
+      description: "Toutes les images du site web (œuvres, expositions, presse, ressources, etc.) doivent être hébergées sur Cloudinary. Un compte Cloudinary a déjà été créé via l'authentification Google. Collez toujours l'URL de l'image dans la colonne imageUrl correspondante dans Google Sheets.",
+      items: [
+        { text: 'Rendez-vous sur', link: 'https://cloudinary.com', linkText: 'cloudinary.com' },
+        { text: "Cliquez sur Login en haut à droite et connectez-vous avec votre compte Google." },
+        { text: 'Dans le menu latéral gauche, sélectionnez Assets.' },
+        { text: 'En haut à droite, cliquez sur le bouton Upload.' },
+        { text: "Sélectionnez l'image depuis votre appareil et attendez que le téléchargement soit terminé." },
+        { text: "Une fois téléchargée, trouvez l'image dans la bibliothèque. Faites un clic droit dessus → Copy URL → Original." },
+        { text: "Collez l'URL copiée dans la colonne imageUrl de la ligne correspondante dans Google Sheets." },
+      ],
+      note: "Utilisez toujours l'URL Original de Cloudinary, pas les URLs de vignettes ou transformées. L'image apparaîtra sur le site en quelques minutes après l'avoir enregistrée dans Google Sheets.",
+    },
     done: "Configuration terminée ! Si quelque chose ne fonctionne pas, vérifiez que les noms des onglets sont orthographiés exactement comme indiqué à l'Étape 06, et que la feuille de calcul est définie comme publique (Étape 05).",
   },
 }
@@ -822,6 +897,44 @@ function SetupGuide() {
         <ul className="guide-managing-list">
           {t.managingContent.items.map((item, i) => <li key={i}>{item}</li>)}
         </ul>
+      </div>
+
+      {/* Code repository */}
+      <div className="guide-managing">
+        <h2 className="guide-managing-title">{t.codeRepo.title}</h2>
+        <p className="guide-step-desc">{t.codeRepo.description}</p>
+        <ol className="guide-step-list">
+          {t.codeRepo.items.map((item, i) => (
+            <li key={i}>
+              {item.text}{' '}
+              {item.link && (
+                <a href={item.link} target="_blank" rel="noopener noreferrer" className="guide-link">
+                  {item.linkText}
+                </a>
+              )}
+            </li>
+          ))}
+        </ol>
+        <p className="guide-note">💡 {t.codeRepo.note}</p>
+      </div>
+
+      {/* Cloudinary */}
+      <div className="guide-managing">
+        <h2 className="guide-managing-title">{t.cloudinary.title}</h2>
+        <p className="guide-step-desc">{t.cloudinary.description}</p>
+        <ol className="guide-step-list">
+          {t.cloudinary.items.map((item, i) => (
+            <li key={i}>
+              {item.text}{' '}
+              {item.link && (
+                <a href={item.link} target="_blank" rel="noopener noreferrer" className="guide-link">
+                  {item.linkText}
+                </a>
+              )}
+            </li>
+          ))}
+        </ol>
+        <p className="guide-note">💡 {t.cloudinary.note}</p>
       </div>
 
       {/* Sheet reference */}
