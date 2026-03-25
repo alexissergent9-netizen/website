@@ -8,14 +8,14 @@ import './WorksCategory.css'
 /* ─── Fallback estático ─── */
 
 const FALLBACK_CATEGORIES = {
-  digital: { label: 'Digital Works', description: 'The computer is a useful tool. Photoshop is a computer tool for picture making. It in effect allows you to draw directly in a printing machine, one of its many uses. These prints are made by drawing and collage, they exist either in the computer or on a piece of paper.\n\nDavid Hockney, November 2008' },
-  drawings: { label: 'Drawings', description: '' },
-  graphics: { label: 'Graphics', description: '' },
-  paintings: { label: 'Paintings', description: '' },
-  photos: { label: 'Photographs', description: '' },
-  sketchbooks: { label: 'Sketchbooks', description: '' },
-  stage_design: { label: 'Stage Design', description: '' },
-  etcetera: { label: 'Etcetera', description: '' },
+  digital: { label: ' Works', description: ' ' },
+  drawings: { label: '', description: '' },
+  graphics: { label: '', description: '' },
+  paintings: { label: '', description: '' },
+  photos: { label: '', description: '' },
+  sketchbooks: { label: '', description: '' },
+  stage_design: { label: ' ', description: '' },
+  etcetera: { label: '', description: '' },
 }
 
 const FALLBACK_SUBCATEGORIES = {
