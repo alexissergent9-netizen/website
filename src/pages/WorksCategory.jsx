@@ -5,66 +5,6 @@ import Loading from '../components/Loading'
 import Lightbox from '../components/Lightbox'
 import './WorksCategory.css'
 
-/* ─── Fallback estático ─── */
-
-const FALLBACK_CATEGORIES = {
-  digital: { label: ' Works', description: ' ' },
-  drawings: { label: '', description: '' },
-  graphics: { label: '', description: '' },
-  paintings: { label: '', description: '' },
-  photos: { label: '', description: '' },
-  sketchbooks: { label: '', description: '' },
-  stage_design: { label: ' ', description: '' },
-  etcetera: { label: '', description: '' },
-}
-
-const FALLBACK_SUBCATEGORIES = {
-  digital: [
-    { name: 'computer drawings', slug: 'computer-drawings' },
-    { name: 'iPhone', slug: 'iphone' },
-    { name: 'iPad Selects', slug: 'ipad' },
-    { name: 'arrival of spring woldgate', slug: 'arrival-of-spring-woldgate' },
-    { name: 'yosemite suite', slug: 'yosemite-suite' },
-    { name: 'digital movies', slug: 'movies' },
-  ],
-  drawings: [
-    { name: '1950s', slug: '1950s' }, { name: '1960s', slug: '1960s' },
-    { name: '1970s', slug: '1970s' }, { name: '1980s', slug: '1980s' },
-    { name: '1990s', slug: '1990s' }, { name: '2000s', slug: '2000s' },
-    { name: '2010s', slug: '2010s' }, { name: 'arrival of spring 2013', slug: 'arrival-of-spring-2013' },
-  ],
-  paintings: [
-    { name: '1950s', slug: '50s' }, { name: '1960s', slug: '60s' },
-    { name: '1970s', slug: '70s' }, { name: '1980s', slug: '80s' },
-    { name: '1990s', slug: '90s' }, { name: '2000s', slug: '00s' },
-    { name: '2010s', slug: '10s' }, { name: '82 Portraits', slug: '82-portraits' },
-  ],
-  graphics: [
-    { name: 'lithographs', slug: 'lithographs' }, { name: 'etchings', slug: 'etchings' },
-    { name: "a rake's progress etchings", slug: 'rakes-progress-etchings' },
-    { name: 'blue guitar etchings', slug: 'blue-guitar-etchings' },
-    { name: 'homemade prints', slug: 'prints' },
-  ],
-  photos: [
-    { name: 'photographic collages', slug: 'photographic-collages' },
-    { name: 'composite polaroids', slug: 'composite-polaroids' },
-    { name: 'photographic drawings', slug: 'photo_drawings' },
-  ],
-  stage_design: [
-    { name: "the rake's progress", slug: 'the-rakes-progress' },
-    { name: 'magic flute', slug: 'magic-flute' },
-    { name: 'french triple bill', slug: 'french-triple-bill' },
-    { name: 'stravinsky triple bill', slug: 'stravinsky-triple-bill' },
-    { name: 'tristan und isolde', slug: 'tristan-und-isolde' },
-    { name: 'turandot', slug: 'turandot' },
-    { name: 'die frau ohne schatten', slug: 'die-frau-ohne-schatten' },
-  ],
-  etcetera: [
-    { name: 'paper pulp', slug: 'pools' },
-    { name: 'BMW art car', slug: 'bmw' },
-  ],
-}
-
 /* ─── Componente ─── */
 
 function WorksCategory() {
@@ -74,30 +14,26 @@ function WorksCategory() {
   const [featuredIndex, setFeaturedIndex] = useState(0)
   const [lightboxIndex, setLightboxIndex] = useState(null)
 
-  const [categoriesMap, setCategoriesMap] = useState(FALLBACK_CATEGORIES)
-  const [subcategoriesMap, setSubcategoriesMap] = useState(FALLBACK_SUBCATEGORIES)
+  const [categoriesMap, setCategoriesMap] = useState({})
+  const [subcategoriesMap, setSubcategoriesMap] = useState({})
 
   useEffect(() => {
     googleSheetsService.getWorksCategories()
       .then(data => {
-        if (data.length > 0) {
-          const map = {}
-          data.forEach(c => { map[c.slug] = { label: c.label, description: c.description || '' } })
-          setCategoriesMap(map)
-        }
+        const map = {}
+        data.forEach(c => { map[c.slug] = { label: c.label, description: c.description || '' } })
+        setCategoriesMap(map)
       })
       .catch(() => {})
 
     googleSheetsService.getWorksSubcategories()
       .then(data => {
-        if (data.length > 0) {
-          const map = {}
-          data.forEach(s => {
-            if (!map[s.category]) map[s.category] = []
-            map[s.category].push({ name: s.name, slug: s.slug })
-          })
-          setSubcategoriesMap(map)
-        }
+        const map = {}
+        data.forEach(s => {
+          if (!map[s.category]) map[s.category] = []
+          map[s.category].push({ name: s.name, slug: s.slug })
+        })
+        setSubcategoriesMap(map)
       })
       .catch(() => {})
   }, [])
