@@ -74,6 +74,36 @@
   font-style: italic;
 }
 
+.contact-email {
+  display: block;
+  margin-top: 14px;
+  font-size: 13px;
+  color: #ae2a5e;
+  text-decoration: none;
+  max-width: 480px;
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+}
+
+.contact-dev {
+  margin-top: 10px;
+  font-size: 10px;
+  color: #aaa;
+  max-width: 480px;
+}
+
+.contact-dev-link {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.contact-dev-link:hover {
+  color: #888;
+  text-decoration: underline;
+}
+
 /* Right column: aside (41.67%) — also pink */
 .contact-main-content {
   flex: 1;

@@ -63,6 +63,17 @@ function Contact() {
           <figure className="contact-caption">
             {config.featuredCaption}
           </figure>
+          {config.contactEmail && (
+            <a href={`mailto:${config.contactEmail}`} target="_blank" rel="noopener noreferrer" className="contact-email">
+              {config.contactEmail}
+            </a>
+          )}
+          <p className="contact-dev">
+            Site developed by{' '}
+            <a href="https://luiscodev.com" target="_blank" rel="noopener noreferrer" className="contact-dev-link">
+              luiscodev
+            </a>
+          </p>
         </aside>
 
         {/* Columna derecha: fondo gris + links */}
@@ -83,15 +94,6 @@ function Contact() {
                 </h3>
               </li>
             ))}
-            {config.contactEmail && (
-              <li>
-                <h3>
-                  <a href={`mailto:${config.contactEmail}`} className="contact-link">
-                    {config.contactEmail}
-                  </a>
-                </h3>
-              </li>
-            )}
           </ul>
         </main>
 
