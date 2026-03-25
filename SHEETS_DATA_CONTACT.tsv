@@ -1,7 +1,7 @@
-label	href	external
-Frequently Asked Questions	/contact/faqs	false
-A Word of Warning Concerning NFTs	/contact/NFT_report	false
-Galleries	/resources/galleries	false
-Information Requests	/contact/information_request	false
-Reproduction Requests	/contact/repro_request	false
-Privacy Notice	/contact/privacy_notice	false
+label	href	external	order	enabled
+Frequently Asked Questions	/contact/faqs	false	1	true
+A Word of Warning Concerning NFTs	/contact/NFT_report	false	2	true
+Galleries	/resources/galleries	false	3	true
+Information Requests	/contact/information_request	false	4	true
+Reproduction Requests	/contact/repro_request	false	5	true
+Privacy Notice	/contact/privacy_notice	false	6	true

@@ -4,15 +4,6 @@ import googleSheetsService from '../services/googleSheetsService'
 import Loading from '../components/Loading'
 import './Contact.css'
 
-const STATIC_LINKS = [
-  { label: 'Frequently Asked Questions', href: '/contact/faqs', external: false },
-  { label: 'A Word of Warning Concerning NFTs', href: '/contact/NFT_report', external: false },
-  { label: 'Galleries', href: '/resources/galleries', external: false },
-  { label: 'Information Requests', href: '/contact/information_request', external: false },
-  { label: 'Reproduction Requests', href: '/contact/repro_request', external: false },
-  { label: 'Privacy Notice', href: '/contact/privacy_notice', external: false },
-]
-
 const DEFAULT_CONFIG = {
   featuredImageUrl: '',
   featuredImageAlt: '',
@@ -21,14 +12,14 @@ const DEFAULT_CONFIG = {
 }
 
 function Contact() {
-  const [links, setLinks] = useState(null)
+  const [links, setLinks] = useState([])
   const [config, setConfig] = useState(DEFAULT_CONFIG)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     Promise.all([
       googleSheetsService.getContactLinks()
-        .then(data => { if (data.length > 0) setLinks(data) })
+        .then(data => { setLinks(data) })
         .catch(() => {}),
       googleSheetsService.getPageConfig('contact')
         .then(data => { if (Object.keys(data).length > 0) setConfig({ ...DEFAULT_CONFIG, ...data }) })
@@ -36,7 +27,12 @@ function Contact() {
     ]).finally(() => setLoading(false))
   }, [])
 
-  const displayLinks = links || STATIC_LINKS
+  const displayLinks = links
+    .filter(item => {
+      const val = String(item.enabled ?? 'true').toLowerCase().trim()
+      return val !== 'false' && val !== '0' && val !== 'no'
+    })
+    .sort((a, b) => Number(a.order || 0) - Number(b.order || 0))
 
   if (loading) return <Loading />
 
