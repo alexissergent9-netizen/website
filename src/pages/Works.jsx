@@ -23,7 +23,13 @@ function Works() {
 
     googleSheetsService.getWorksCategories()
       .then(data => {
-        if (data.length > 0) setCategories(data.map(c => ({ name: c.label, slug: c.slug })))
+        if (data.length > 0) {
+          const enabled = data.filter(c => {
+            const val = String(c.enabled ?? 'true').toLowerCase().trim()
+            return val !== 'false' && val !== '0' && val !== 'no'
+          })
+          setCategories(enabled.map(c => ({ name: c.label, slug: c.slug })))
+        }
       })
       .catch(() => {})
   }, [])
