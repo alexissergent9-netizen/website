@@ -17,6 +17,8 @@ const DEFAULTS = {
   pageTitle: 'David Hockney',
   footerCopyright: `All Images and Site Content Copyright © ${CURRENT_YEAR} David Hockney - All Rights Reserved`,
   navItems: DEFAULT_NAV,
+  worksCategories: [],
+  worksSubcategories: [],
 }
 
 // Replace any 4-digit year in the copyright string with the current year
@@ -45,6 +47,22 @@ export function SiteDataProvider({ children }) {
       .then(items => {
         if (items.length > 0) {
           setSiteData(prev => ({ ...prev, navItems: items }))
+        }
+      })
+      .catch(() => {})
+
+    googleSheetsService.getWorksCategories()
+      .then(cats => {
+        if (cats.length > 0) {
+          setSiteData(prev => ({ ...prev, worksCategories: cats }))
+        }
+      })
+      .catch(() => {})
+
+    googleSheetsService.getWorksSubcategories()
+      .then(subs => {
+        if (subs.length > 0) {
+          setSiteData(prev => ({ ...prev, worksSubcategories: subs }))
         }
       })
       .catch(() => {})

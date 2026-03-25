@@ -4,7 +4,10 @@ import { useSiteData } from '../context/SiteDataContext'
 import './Header.css'
 
 function Header() {
-  const { siteNameFirst, siteNameSecond, navItems } = useSiteData()
+  const { siteNameFirst, siteNameSecond, navItems, worksCategories, worksSubcategories } = useSiteData()
+
+  const getCategorySubs = (categorySlug) =>
+    worksSubcategories.filter(s => String(s.category).toLowerCase() === categorySlug.toLowerCase())
 
   // Helper: find a nav item by key (case-insensitive)
   const findNav = (key) => navItems?.find(n => String(n.key).toLowerCase().trim() === key.toLowerCase())
@@ -145,59 +148,23 @@ function Header() {
             onMouseLeave={handleMouseLeave}
           >
             <Link to="/works" className="nav-link">{navLabel('works')}</Link>
-            {activeDropdown === 'works' && (
+            {activeDropdown === 'works' && worksCategories.length > 0 && (
               <div className="dropdown-menu">
-                <div className="dropdown-item has-submenu">
-                  <Link to="/works/digital" className="dropdown-link">digital works</Link>
-                  <div className="sub-menu">
-                    <Link to="/works/digital/computer-drawings" className="sub-link">computer drawings</Link>
-                    <Link to="/works/digital/iphone" className="sub-link">iPhone</Link>
-                    <Link to="/works/digital/ipad" className="sub-link">iPad Selects</Link>
-                    <Link to="/works/digital/arrival-of-spring-woldgate" className="sub-link">arrival of spring woldgate</Link>
-                    <Link to="/works/digital/yosemite-suite" className="sub-link">yosemite suite</Link>
-                    <Link to="/works/digital/movies" className="sub-link">digital movies</Link>
-                  </div>
-                </div>
-                <Link to="/works/drawings" className="dropdown-link">drawings</Link>
-                <div className="dropdown-item has-submenu">
-                  <Link to="/works/graphics" className="dropdown-link">graphics</Link>
-                  <div className="sub-menu">
-                    <Link to="/works/graphics/lithographs" className="sub-link">lithographs</Link>
-                    <Link to="/works/graphics/etchings" className="sub-link">etchings</Link>
-                    <Link to="/works/graphics/rakes-progress-etchings" className="sub-link">a rake's progress etchings</Link>
-                    <Link to="/works/graphics/blue-guitar-etchings" className="sub-link">blue guitar etchings</Link>
-                    <Link to="/works/graphics/prints" className="sub-link">homemade prints</Link>
-                  </div>
-                </div>
-                <Link to="/works/paintings" className="dropdown-link">paintings</Link>
-                <div className="dropdown-item has-submenu">
-                  <Link to="/works/photos" className="dropdown-link">photographs</Link>
-                  <div className="sub-menu">
-                    <Link to="/works/photos/photographic-collages" className="sub-link">photographic collages</Link>
-                    <Link to="/works/photos/composite-polaroids" className="sub-link">composite polaroids</Link>
-                    <Link to="/works/photos/photo_drawings" className="sub-link">photographic drawings</Link>
-                  </div>
-                </div>
-                <Link to="/works/sketchbooks" className="dropdown-link">sketchbooks</Link>
-                <div className="dropdown-item has-submenu">
-                  <Link to="/works/stage_design" className="dropdown-link">stage design</Link>
-                  <div className="sub-menu">
-                    <Link to="/works/stage_design/the-rakes-progress" className="sub-link">The Rake's Progress</Link>
-                    <Link to="/works/stage_design/magic-flute" className="sub-link">Magic Flute</Link>
-                    <Link to="/works/stage_design/french-triple-bill" className="sub-link">French Triple Bill</Link>
-                    <Link to="/works/stage_design/stravinsky-triple-bill" className="sub-link">Stravinsky Triple Bill</Link>
-                    <Link to="/works/stage_design/tristan-und-isolde" className="sub-link">Tristan und Isolde</Link>
-                    <Link to="/works/stage_design/turandot" className="sub-link">Turandot</Link>
-                    <Link to="/works/stage_design/die-frau-ohne-schatten" className="sub-link">Die Frau Ohne Schatten</Link>
-                  </div>
-                </div>
-                <div className="dropdown-item has-submenu">
-                  <Link to="/works/etcetera" className="dropdown-link">etcetera</Link>
-                  <div className="sub-menu">
-                    <Link to="/works/etcetera/pools" className="sub-link">paper pulp</Link>
-                    <Link to="/works/etcetera/bmw" className="sub-link">BMW art car</Link>
-                  </div>
-                </div>
+                {worksCategories.map(cat => {
+                  const subs = getCategorySubs(cat.slug)
+                  return subs.length > 0 ? (
+                    <div key={cat.slug} className="dropdown-item has-submenu">
+                      <Link to={`/works/${cat.slug}`} className="dropdown-link">{cat.label}</Link>
+                      <div className="sub-menu">
+                        {subs.map(sub => (
+                          <Link key={sub.slug} to={`/works/${cat.slug}/${sub.slug}`} className="sub-link">{sub.name}</Link>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <Link key={cat.slug} to={`/works/${cat.slug}`} className="dropdown-link">{cat.label}</Link>
+                  )
+                })}
               </div>
             )}
           </div>
@@ -281,67 +248,29 @@ function Header() {
             </button>
             {mobileExpanded === 'works' && (
               <div className="mobile-dropdown">
-                <button className="mobile-sub-btn" onClick={() => toggleMobileSub('digital')}>
-                  digital works <span className="mobile-chevron">{mobileSubExpanded === 'digital' ? '▲' : '▼'}</span>
-                </button>
-                {mobileSubExpanded === 'digital' && (
-                  <div className="mobile-sub">
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/digital/computer-drawings')}>computer drawings</button>
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/digital/iphone')}>iPhone</button>
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/digital/ipad')}>iPad Selects</button>
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/digital/arrival-of-spring-woldgate')}>arrival of spring woldgate</button>
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/digital/yosemite-suite')}>yosemite suite</button>
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/digital/movies')}>digital movies</button>
-                  </div>
-                )}
-                <button className="mobile-leaf" onClick={() => handleMobileNav('/works/drawings')}>drawings</button>
-                <button className="mobile-sub-btn" onClick={() => toggleMobileSub('graphics')}>
-                  graphics <span className="mobile-chevron">{mobileSubExpanded === 'graphics' ? '▲' : '▼'}</span>
-                </button>
-                {mobileSubExpanded === 'graphics' && (
-                  <div className="mobile-sub">
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/graphics/lithographs')}>lithographs</button>
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/graphics/etchings')}>etchings</button>
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/graphics/rakes-progress-etchings')}>a rake's progress etchings</button>
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/graphics/blue-guitar-etchings')}>blue guitar etchings</button>
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/graphics/prints')}>homemade prints</button>
-                  </div>
-                )}
-                <button className="mobile-leaf" onClick={() => handleMobileNav('/works/paintings')}>paintings</button>
-                <button className="mobile-sub-btn" onClick={() => toggleMobileSub('photos')}>
-                  photographs <span className="mobile-chevron">{mobileSubExpanded === 'photos' ? '▲' : '▼'}</span>
-                </button>
-                {mobileSubExpanded === 'photos' && (
-                  <div className="mobile-sub">
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/photos/photographic-collages')}>photographic collages</button>
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/photos/composite-polaroids')}>composite polaroids</button>
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/photos/photo_drawings')}>photographic drawings</button>
-                  </div>
-                )}
-                <button className="mobile-leaf" onClick={() => handleMobileNav('/works/sketchbooks')}>sketchbooks</button>
-                <button className="mobile-sub-btn" onClick={() => toggleMobileSub('stage')}>
-                  stage design <span className="mobile-chevron">{mobileSubExpanded === 'stage' ? '▲' : '▼'}</span>
-                </button>
-                {mobileSubExpanded === 'stage' && (
-                  <div className="mobile-sub">
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/stage_design/the-rakes-progress')}>The Rake's Progress</button>
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/stage_design/magic-flute')}>Magic Flute</button>
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/stage_design/french-triple-bill')}>French Triple Bill</button>
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/stage_design/stravinsky-triple-bill')}>Stravinsky Triple Bill</button>
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/stage_design/tristan-und-isolde')}>Tristan und Isolde</button>
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/stage_design/turandot')}>Turandot</button>
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/stage_design/die-frau-ohne-schatten')}>Die Frau Ohne Schatten</button>
-                  </div>
-                )}
-                <button className="mobile-sub-btn" onClick={() => toggleMobileSub('etcetera')}>
-                  etcetera <span className="mobile-chevron">{mobileSubExpanded === 'etcetera' ? '▲' : '▼'}</span>
-                </button>
-                {mobileSubExpanded === 'etcetera' && (
-                  <div className="mobile-sub">
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/etcetera/pools')}>paper pulp</button>
-                    <button className="mobile-leaf" onClick={() => handleMobileNav('/works/etcetera/bmw')}>BMW art car</button>
-                  </div>
-                )}
+                {worksCategories.map(cat => {
+                  const subs = getCategorySubs(cat.slug)
+                  return subs.length > 0 ? (
+                    <div key={cat.slug}>
+                      <button className="mobile-sub-btn" onClick={() => toggleMobileSub(cat.slug)}>
+                        {cat.label} <span className="mobile-chevron">{mobileSubExpanded === cat.slug ? '▲' : '▼'}</span>
+                      </button>
+                      {mobileSubExpanded === cat.slug && (
+                        <div className="mobile-sub">
+                          {subs.map(sub => (
+                            <button key={sub.slug} className="mobile-leaf" onClick={() => handleMobileNav(`/works/${cat.slug}/${sub.slug}`)}>
+                              {sub.name}
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <button key={cat.slug} className="mobile-leaf" onClick={() => handleMobileNav(`/works/${cat.slug}`)}>
+                      {cat.label}
+                    </button>
+                  )
+                })}
               </div>
             )}
           </div>
