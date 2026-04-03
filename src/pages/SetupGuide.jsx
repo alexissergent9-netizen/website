@@ -11,8 +11,9 @@ const SHEETS = [
   { name: 'Exhibitions',          columns: 'title\tlocation\tstartDate\tendDate\ttype\tdescription\timageUrl\turl' },
   { name: 'Press',                columns: 'title\tauthor\tsource\tdate\tyear\ttype\turltext\turl' },
   { name: 'Resources',            columns: 'type\tname\tlocation\taddress\tphone\twebsite\timageUrl\tdescription' },
-  { name: 'Contact',              columns: 'label\thref\texternal' },
+  { name: 'Contact',              columns: 'label\thref\tsection\texternal\torder\tenabled' },
   { name: 'contact_content',      columns: 'section\ttype\torder\tquestion\tcontent' },
+  { name: 'nav_items',            columns: 'section\tparent\tkey\tlabel\turl\texternal\torder\tenabled' },
 ]
 
 const FILES = [
@@ -27,6 +28,7 @@ const FILES = [
   { file: 'SHEETS_DATA_RESOURCES.tsv',            sheet: 'Resources' },
   { file: 'SHEETS_DATA_CONTACT.tsv',              sheet: 'Contact' },
   { file: 'SHEETS_DATA_CONTACT_CONTENT.tsv',      sheet: 'contact_content' },
+  { file: 'SHEETS_DATA_NAV_ITEMS.tsv',            sheet: 'nav_items' },
 ]
 
 const SHEET_DETAILS = [
@@ -197,6 +199,27 @@ const SHEET_DETAILS = [
         desc: { en: 'Answer body, paragraph text, or heading text depending on type.', es: 'Cuerpo de la respuesta, texto del párrafo o texto del encabezado según el tipo.', fr: "Corps de la réponse, texte du paragraphe ou texte du titre selon le type." } },
     ],
   },
+  {
+    name: 'nav_items',
+    columns: [
+      { col: 'section', required: true, accepted: 'press  |  exhibitions  |  resources',
+        desc: { en: 'Which nav dropdown this item belongs to.', es: 'A qué menú desplegable pertenece este ítem.', fr: 'Menu déroulant auquel appartient cet élément.' } },
+      { col: 'parent', required: false, accepted: 'Any key  |  (empty)',
+        desc: { en: 'Key of the parent item for nested dropdowns. Leave empty for top-level items.', es: 'Clave del ítem padre para submenús anidados. Dejar vacío para ítems de primer nivel.', fr: 'Clé de l\'élément parent pour les sous-menus imbriqués. Laisser vide pour les éléments de premier niveau.' } },
+      { col: 'key', required: true, accepted: 'Lowercase, no spaces (e.g. current, past)',
+        desc: { en: 'Unique identifier for the item. Used to build the URL slug (spaces become underscores).', es: 'Identificador único del ítem. Se usa para construir el slug de URL (los espacios se reemplazan por guiones bajos).', fr: 'Identifiant unique de l\'élément. Utilisé pour construire le slug d\'URL (les espaces deviennent des tirets bas).' } },
+      { col: 'label', required: true, accepted: 'Any text',
+        desc: { en: 'Display name shown in the dropdown menu.', es: 'Nombre visible en el menú desplegable.', fr: 'Nom affiché dans le menu déroulant.' } },
+      { col: 'url', required: false, accepted: 'Full URL (https://…) or relative path',
+        desc: { en: 'Override the auto-generated URL. Leave empty to use the key-based default.', es: 'Sobreescribe la URL generada automáticamente. Dejar vacío para usar la URL basada en el key.', fr: 'Remplace l\'URL générée automatiquement. Laisser vide pour utiliser l\'URL basée sur la clé.' } },
+      { col: 'external', required: false, accepted: 'true  |  false',
+        desc: { en: 'Set to true to open the link in a new browser tab.', es: 'Establecer en true para abrir el enlace en una nueva pestaña.', fr: 'Définir à true pour ouvrir le lien dans un nouvel onglet.' } },
+      { col: 'order', required: false, accepted: 'Integer',
+        desc: { en: 'Display order within the dropdown. Lower numbers appear first.', es: 'Orden de visualización dentro del menú. Los números más bajos aparecen primero.', fr: "Ordre d'affichage dans le menu. Les numéros plus bas apparaissent en premier." } },
+      { col: 'enabled', required: false, accepted: 'true  |  false',
+        desc: { en: 'Set to false to hide the item from the dropdown. Defaults to true.', es: 'Establecer en false para ocultar el ítem del menú. Por defecto es true.', fr: 'Définir à false pour masquer l\'élément du menu. Par défaut true.' } },
+    ],
+  },
 ]
 
 const VARS = [
@@ -232,6 +255,7 @@ const CONTENT = {
       'Galleries, collections, publications, making works',
       'Contact page links',
       'FAQ and subpage texts',
+      'Dropdown sub-items for Press, Exhibitions and Resources — show/hide and reorder each option',
     ],
     sheetReference: {
       title: 'Sheet column reference',
@@ -413,6 +437,7 @@ const CONTENT = {
       'Galerías, colecciones, publicaciones, making works',
       'Links de la página de contacto',
       'FAQ y textos de las subpáginas de contacto',
+      'Sub-ítems de los menús desplegables de Prensa, Exposiciones y Recursos — mostrar/ocultar y reordenar cada opción',
     ],
     sheetReference: {
       title: 'Referencia de columnas por hoja',
@@ -594,6 +619,7 @@ const CONTENT = {
       'Galeries, collections, publications, making works',
       'Liens de la page contact',
       'FAQ et textes des sous-pages',
+      'Sous-éléments des menus déroulants Presse, Expositions et Ressources — afficher/masquer et réordonner chaque option',
     ],
     sheetReference: {
       title: 'Référence des colonnes par feuille',
