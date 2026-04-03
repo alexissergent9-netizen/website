@@ -35,10 +35,10 @@ const SHEET_DETAILS = [
   {
     name: 'data',
     columns: [
-      { col: 'key', required: true, accepted: 'siteNameFirst  |  siteNameSecond  |  pageTitle  |  footerCopyright',
+      { col: 'key', required: true, accepted: 'siteNameFirst  |  siteNameSecond  |  pageTitle  |  metaDescription  |  footerCopyright',
         desc: { en: 'Identifier for the site-wide setting.', es: 'Identificador del ajuste global del sitio.', fr: 'Identifiant du paramètre global du site.' } },
       { col: 'value', required: true, accepted: 'Any text',
-        desc: { en: 'The value to display. For footerCopyright, any 4-digit year is replaced automatically with the current year.', es: 'El valor a mostrar. En footerCopyright, cualquier año de 4 dígitos se reemplaza automáticamente con el año actual.', fr: "La valeur à afficher. Pour footerCopyright, toute année à 4 chiffres est remplacée automatiquement par l'année en cours." } },
+        desc: { en: 'The value to display. For metaDescription, the text appears in Google search results. For footerCopyright, any 4-digit year is replaced automatically with the current year.', es: 'El valor a mostrar. En metaDescription, el texto aparece en los resultados de búsqueda de Google. En footerCopyright, cualquier año de 4 dígitos se reemplaza automáticamente con el año actual.', fr: "La valeur à afficher. Pour metaDescription, le texte apparaît dans les résultats de recherche Google. Pour footerCopyright, toute année à 4 chiffres est remplacée automatiquement par l'année en cours." } },
     ],
   },
   {

@@ -65,12 +65,23 @@ export function SiteDataProvider({ children }) {
     })
   }, [])
 
-  // Actualizar el título de la pestaña del navegador
+  // Actualizar título y meta tags SEO desde Sheets
   useEffect(() => {
     if (siteData.pageTitle) {
       document.title = siteData.pageTitle
+      const ogTitle = document.querySelector('meta[property="og:title"]')
+      if (ogTitle) ogTitle.setAttribute('content', siteData.pageTitle)
     }
   }, [siteData.pageTitle])
+
+  useEffect(() => {
+    if (siteData.metaDescription) {
+      const desc = document.querySelector('meta[name="description"]')
+      if (desc) desc.setAttribute('content', siteData.metaDescription)
+      const ogDesc = document.querySelector('meta[property="og:description"]')
+      if (ogDesc) ogDesc.setAttribute('content', siteData.metaDescription)
+    }
+  }, [siteData.metaDescription])
 
   return (
     <SiteDataContext.Provider value={siteData}>
